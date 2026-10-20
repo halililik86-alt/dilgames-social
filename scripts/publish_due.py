@@ -17,6 +17,11 @@ def main():
     dry = '--dry-run' in sys.argv
     mx = int(sys.argv[sys.argv.index('--max') + 1]) if '--max' in sys.argv else 1
     now = dt.datetime.now(dt.timezone.utc)
+    if dry:
+        # Deneme: yayın yapmadan bağlantıyı ve 24 saatlik yayın kotasını doğrula (yalnızca okuma).
+        acct = ig.whoami()
+        print(json.dumps({'hesap': acct.get('username'), 'takipci': acct.get('followers_count'), 'gonderi': acct.get('media_count'),
+                          'kota': ig.publishing_limit().get('data')}, ensure_ascii=False))
     due = []
     for path in sorted(glob.glob(os.path.join(ROOT, 'content/reels/*.json'))):
         s = json.load(open(path, encoding='utf-8'))
