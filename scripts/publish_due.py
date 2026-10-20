@@ -28,7 +28,7 @@ def main():
         if not os.path.exists(video):
             os.makedirs(os.path.dirname(video), exist_ok=True)
             subprocess.run(['gh', 'release', 'download', s['release'], '-p', rid + '.mp4', '-D', os.path.dirname(video), '--clobber'], check=True)
-        res = ig.publish_reel(video, post_text(s), s.get('cover_offset_ms', 1500), True, dry)
+        res = ig.publish_reel(video, post_text(s), s.get('cover_offset_ms', 1500), True, dry, bool(s.get('trial')))
         print(json.dumps({rid: res}, ensure_ascii=False))
         if dry: continue
         s.update({'status': 'published', 'media_id': res['media_id'], 'permalink': res.get('permalink'), 'published_at': res.get('timestamp')})

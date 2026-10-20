@@ -1,25 +1,28 @@
 # Ajan: Analist + Planlayıcı
 
-Görev: geçen haftanın sonuçlarını yorumla, önümüzdeki haftanın 4 Reels'ini planla ve **tek bir PR** aç.
+Görev: geçen haftanın sonuçlarını yorumla, önümüzdeki haftanın Reels'lerini **`content/plan/100k.md`'deki faza göre** planla ve **tek bir PR** aç.
 
 ## Girdiler
 - `reports/` içindeki en yeni rapor (yoksa ilk hafta: analiz bölümünü "henüz veri yok" diye geç)
 - `content/reels/*.json`: geçmiş reel'ler (`status`, `pillar`, `hook`, `insights`, `intro_text`)
-- `content/plan/strateji.md`, `config/catalog.json`, `config/brand.json`
+- `content/plan/100k.md` (ana plan: fazlar, formatlar, eşikler), `content/plan/strateji.md`, `config/catalog.json`, `config/brand.json`
 
 ## Adımlar
-1. Tarihleri hesapla (Europe/Istanbul). "Hafta" = gelecek pazartesiden başlayan 7 gün. Yayın günleri: **salı, perşembe, cumartesi, pazartesi (bir sonraki)** saat **20:30**. O tarihlerde zaten reel dosyası varsa onları sayıya dahil et, eksik olanları tamamla (toplam 4).
-2. **Analiz** (veri varsa): reel başına izlenme, erişim, kayıt, paylaşım, ortalama izleme süresi. En iyi ve en zayıf sütunu/kancayı bul. 3–5 maddelik, somut öneri yaz (ör. "meydan okuma formatı 2 kat kayıt aldı → bu hafta 2 tane"). Bunu en yeni rapor dosyasının sonuna `## Analist yorumu` başlığıyla ekle.
-3. **Plan**: 4 yeni `content/reels/<YYYY-AA-GG>-<seviye>-<hikâye-slug>.json` dosyası yaz. Şema için README'deki örneğe ve mevcut dosyalara bak. Kurallar:
-   - `status: "planned"`, `publish_at` ISO biçiminde `+03:00` ile.
-   - `record`: `catalog.json`'daki bir sekme + paket (premium hariç), `level: 1`. Son 4 haftada kullanılmış sekme/paket ikilisini tekrar etme; seviyeleri karıştır (her hafta en az bir A1/A2 ve bir B1+).
-   - Sütun dağılımı stratejiye ve analize göre; varsayılan: tanıtım, meydan okuma, seviye, alışkanlık.
+1. **Fazı belirle**: en yeni rapordaki takipçi sayısına ve `100k.md`'deki fazlara bak. Rapor yoksa Faz 1.
+2. Tarihleri hesapla (Europe/Istanbul). "Hafta" = gelecek pazartesiden başlayan 7 gün. **Faz 1'de her gün 1 Reel** (7 adet). Saat: ilk 2 hafta günlere göre dönüşümlü **13:00 / 20:30**; sonra rapordaki kazanan saat. O tarihlerde zaten reel dosyası varsa onları sayıya dahil et, eksikleri tamamla.
+3. **Analiz** (veri varsa): reel başına paylaşım/erişim, kayıt/erişim, izleme oranı, izlenme; format ve saat bazında ortalamalar. `100k.md`'deki eşiklerle karşılaştır. En iyi ve en zayıf formatı/kancayı/saati bul. 3–5 maddelik **somut** öneri yaz ve bu haftanın planına uygula. Bunu en yeni rapor dosyasının sonuna `## Analist yorumu` başlığıyla ekle.
+4. **Plan**: eksik günler için `content/reels/<YYYY-AA-GG>-<seviye>-<hikâye-slug>.json` yaz. Şema için README'deki örneğe ve mevcut dosyalara bak. Kurallar:
+   - `status: "planned"`, `publish_at` ISO biçiminde `+03:00` ile, `format`: `100k.md`'deki kod (F1, F2, F4, F5, F6…), `pillar`: kısa Türkçe ad.
+   - Yalnızca **durumu "Var" olan** formatları planla; "Yapılacak" formatlar için şablon hazır olana kadar en yakın mevcut formatı kullan ve PR'da not düş.
+   - Faz 1 dağılımı: F1 ×2, F2, F6, ve kalan günler veriye göre. Kazanan format varsa (eşiği geçen) payını artır; seri numarası ver ("Meydan okuma #N", `hook.lines` ve `caption` içinde).
+   - **Trial**: rapordaki takipçi ≥ 1.000 ise günde en fazla 1 ek reel'e `"trial": true` ver (aynı formatın farklı kancası, farklı saat).
+   - `record`: `catalog.json`'daki bir sekme + paket (premium hariç), `level: 1`. Son 3 haftada kullanılmış ikiliyi mümkünse tekrar etme; tekrarlanırsa kanca ve format farklı olsun. Her hafta en az bir A1/A2 ve bir B1+.
    - `hook.lines`: en fazla 3 satır, satır başına en fazla ~16 karakter, Türkçe, merak uyandıran.
-   - `caption`: ilk satır kanca, sonra 1–2 cümle, son satır soru/çağrı. Uygulama hakkında doğrulanmamış iddia (indirme sayısı, ödül, "ücretsiz" vb.) yazma.
+   - `caption`: ilk satır kanca, sonra 1–2 cümle, son satır **paylaşım çağrısı** ("Bilemeyen arkadaşına gönder", "Seviyeni yorumla"). Uygulama hakkında doğrulanmamış iddia (indirme sayısı, ödül, yüzde, "ücretsiz" vb.) yazma.
    - `hashtags`: en fazla 5.
-   - **Meydan okuma** formatında boşluk doldurma cümlesi yalnızca `catalog.json → known_level1_sentences` ya da geçmiş reel'lerdeki `intro_text` içinde geçen **gerçek** bir cümleden alınır. Cümlesi bilinmeyen paket için meydan okuma yazma.
-4. `python3 -c` ile her yeni JSON'un geçerli olduğunu ve hashtag ≤ 5 olduğunu doğrula.
-5. Dal: `plan/<YYYY>-W<hafta>`. Commit mesajı ve PR başlığı: `Plan: <ilk yayın tarihi> haftası`. PR açıklamasında: analiz özeti, 4 reel'in tablosu (tarih, sütun, sekme/paket, kanca), ve "Pazartesi 08:00'den önce birleştirilirse o hafta üretilir" notu.
+   - **F1 meydan okuma** cümlesi yalnızca `catalog.json → known_level1_sentences` ya da geçmiş reel'lerdeki `intro_text` içinde geçen **gerçek** bir cümleden alınır. Cümlesi bilinmeyen paket için F1 yazma.
+5. `python3 -c` ile her yeni JSON'un geçerli olduğunu ve hashtag ≤ 5 olduğunu doğrula.
+6. Dal: `plan/<YYYY>-W<hafta>`. Commit mesajı ve PR başlığı: `Plan: <ilk yayın tarihi> haftası`. PR açıklamasında: analiz özeti, reel tablosu (tarih, saat, format, sekme/paket, kanca, trial), ve "Pazartesi 08:00'den önce birleştirilirse o hafta üretilir" notu.
 
 ## Yapma
 - PR'ı birleştirme, mevcut `approved`/`published` reel'leri değiştirme, iş akışı dosyalarına dokunma.

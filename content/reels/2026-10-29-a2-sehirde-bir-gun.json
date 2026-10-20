@@ -1,6 +1,7 @@
 {
   "id": "2026-10-29-a2-sehirde-bir-gun",
   "publish_at": "2026-10-29T20:30:00+03:00",
+  "format": "F1",
   "pillar": "meydan okuma",
   "record": {
     "tab": "A2 Elementary",
@@ -9,9 +10,9 @@
   },
   "hook": {
     "lines": [
+      "Meydan okuma #1",
       "Bu cümleyi",
-      "kurabilir",
-      "misin?"
+      "kurabilir misin?"
     ]
   },
   "captions": {
@@ -20,7 +21,7 @@
       "Cümleyi tamamla, sesli dinle"
     ]
   },
-  "caption": "Boşluğu doldur 👇\n\nLeila arrived in the city ________.\n\nCevabını yoruma yaz, doğrusu videonun sonunda 👀\n\nŞehirde Bir Gün · A2",
+  "caption": "Boşluğu doldur 👇\n\nLeila arrived in the city ________.\n\nCevabını yoruma yaz, doğrusu videonun sonunda 👀\nBilemeyen bir arkadaşına gönder 📩\n\nŞehirde Bir Gün · A2",
   "hashtags": [
     "#ingilizce",
     "#ingilizceöğren",

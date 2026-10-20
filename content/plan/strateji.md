@@ -15,10 +15,11 @@ Türkçe konuşan, İngilizce öğrenmeye çalışan kişilere "oynayarak öğre
 | Carousel | Haftanın 5 kelimesi/kalıbı | Kaydedilir, profil ziyareti getirir | Sohbette hazırlanır |
 
 ## Ritim
-- Haftada 4 Reels (otomatik hat) + 1 geliştirici hikâyesi (elle).
+> Güncel hedef ve ritim için ana plan: [`100k.md`](100k.md) (Faz 1: her gün 1 Reel).
+- Faz 1'de her gün 1 Reel (otomatik hat) + haftada 1 geliştirici hikâyesi (elle).
 - Haftada 1–2 carousel.
 - Her gün 1–2 hikâye (Story): anket ya da quiz çıkartmasıyla "Hangisi doğru?".
-- Yayın saati: 20:30 (TR). İlk 4 haftadan sonra rapora göre ayarlanır.
+- Yayın saati: ilk 2 hafta 13:00 / 20:30 dönüşümlü test; sonra rapordaki kazanan saat.
 
 ## Paylaşım metni kuralları
 - İlk satır kanca, ikinci paragraf ne gördüğün, son satır soru/çağrı ("yoruma yaz", "arkadaşına gönder").

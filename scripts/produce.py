@@ -33,7 +33,12 @@ def main():
         r = subprocess.run(['node', os.path.join(ROOT, 'scripts/record.cjs'), path, rec])
         if r.returncode not in (0, 2):
             failed.append(rid); continue
-        b = subprocess.run([sys.executable, os.path.join(ROOT, 'scripts/build_reel.py'), path, rec, os.path.join(OUT, rid + '.mp4')])
+        b = subprocess.run([sys.executable, os.path.join(ROOT, 'scripts/build_reel.py'), path, rec, os.path.join(OUT, rid + '.mp4')], capture_output=True, text=True)
+        print(b.stdout[-2000:], b.stderr[-2000:], flush=True)
+        try:
+            spec['duration'] = json.loads(b.stdout.strip().splitlines()[-1])['duration']
+        except Exception:
+            pass
         if b.returncode != 0:
             failed.append(rid); continue
         open(os.path.join(OUT, rid + '.txt'), 'w', encoding='utf-8').write(post_text(spec))

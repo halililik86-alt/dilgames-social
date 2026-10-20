@@ -1,0 +1,27 @@
+{
+  "id": "2026-10-30-a2-mahalle-konseri",
+  "publish_at": "2026-10-30T13:00:00+03:00",
+  "format": "F2",
+  "pillar": "seviye",
+  "record": {
+    "tab": "A2 Elementary",
+    "pack": 1,
+    "level": 1
+  },
+  "hook": {
+    "lines": [
+      "A2 seviyesinde",
+      "misin?",
+      "Hemen test et"
+    ]
+  },
+  "caption": "Bu bölümü rahat geçiyorsan A2 seviyesindesin 🎯\n\n\"Mahalle Konseri\" hikâyesinden bir bölüm: dinle, kelimeleri eşleştir, cümleleri kur.\n\nSen hangi seviyedesin? A1, A2, B1… yoruma yaz 👇",
+  "hashtags": [
+    "#ingilizce",
+    "#ingilizceöğren",
+    "#englishlearning",
+    "#a2english",
+    "#ingilizcepratik"
+  ],
+  "status": "planned"
+}

@@ -4,10 +4,10 @@ OpenClaw ya da başka bir ajan çerçevesi kullanılmaz. Ajanlar **Claude zamanl
 
 ```
 Pazar 19:00  report.yml (Actions)          İstatistikleri çeker → reports/YYYY-Www.md
-Pazar 20:00  Analist + Planlayıcı (Claude)  Raporu yorumlar, önümüzdeki haftanın 4 reel'ini yazar → "Plan" PR'ı
+Pazar 19:45  Analist + Planlayıcı (Claude)  Raporu yorumlar, `100k.md` fazına göre haftanın reel'lerini yazar (Faz 1: 7) → "Plan" PR'ı
              ── sen Plan PR'ını birleştirirsin (pazartesi 08:00'den önce) ──
 Pzt  08:00   build-reels.yml (Actions)      Planlı reel'leri oyundan kaydeder, kurgular → Release + "Onay" PR'ı
-Pzt  11:00   Kalite Kontrol (Claude)        Onay PR'ındaki videoları izler (kare paftası, ses, süre) → PR yorumu
+Pzt  10:51   Kalite Kontrol (Claude)        Onay PR'ındaki videoları izler (kare paftası, ses, süre) → PR yorumu
              ── sen Onay PR'ını birleştirirsin ──
 Her 30 dk    publish.yml (Actions)          Saati gelen onaylı reel'i resmi Instagram API ile yayınlar
 ```

@@ -21,11 +21,17 @@ def main():
     f = lambda v: '–' if v is None else str(v)
     lines = [f'# Haftalık Instagram raporu — {y} hafta {w}', '',
              f"Hesap: @{acct.get('username')} · takipçi: {acct.get('followers_count')} · gönderi: {acct.get('media_count')}", '',
-             '| Reel | Sütun | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kayıt | Ort. izleme (ms) |',
-             '|---|---|---|---|---|---|---|---|---|']
+             '| Reel | Format/sütun | Saat | İzlenme | Erişim | Paylaşım/erişim | Kayıt/erişim | İzleme oranı | Beğeni | Yorum |',
+             '|---|---|---|---|---|---|---|---|---|---|']
     for s, m in sorted(rows, key=lambda r: -(r[1].get('views') or 0)):
         link = f"[{s['id']}]({s.get('permalink')})" if s.get('permalink') else s['id']
-        lines.append(f"| {link} | {s.get('pillar','')} | {f(m.get('views'))} | {f(m.get('reach'))} | {f(m.get('likes'))} | {f(m.get('comments'))} | {f(m.get('shares'))} | {f(m.get('saved'))} | {f(m.get('ig_reels_avg_watch_time'))} |")
+        reach = m.get('reach') or 0
+        pct = lambda v: '–' if not reach or v is None else f'%{100 * v / reach:.1f}'
+        wr = '–'
+        if m.get('ig_reels_avg_watch_time') and s.get('duration'):
+            wr = f"%{min(100, m['ig_reels_avg_watch_time'] / 10 / s['duration']):.0f}"
+        fmt = (s.get('format') or '') + ('/' if s.get('format') and s.get('pillar') else '') + (s.get('pillar') or '') + (' (trial)' if s.get('trial') else '')
+        lines.append(f"| {link} | {fmt} | {s.get('publish_at','')[11:16]} | {f(m.get('views'))} | {f(reach)} | {pct(m.get('shares'))} | {pct(m.get('saved'))} | {wr} | {f(m.get('likes'))} | {f(m.get('comments'))} |")
     open(out, 'w', encoding='utf-8').write('\n'.join(lines) + '\n')
     print(out)
 

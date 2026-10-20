@@ -1,0 +1,33 @@
+{
+  "id": "2026-10-28-a1-pazarda-bir-masa",
+  "publish_at": "2026-10-28T13:00:00+03:00",
+  "format": "F1",
+  "pillar": "meydan okuma",
+  "record": {
+    "tab": "A1 Beginner",
+    "pack": 2,
+    "level": 1
+  },
+  "hook": {
+    "lines": [
+      "Meydan okuma #2",
+      "Bu cümleyi",
+      "kurabilir misin?"
+    ]
+  },
+  "captions": {
+    "complete": [
+      "CEVAP",
+      "Cümleyi tamamla, sesli dinle"
+    ]
+  },
+  "caption": "Boşluğu doldur 👇\n\nMina has a small ______.\n\nCevabını yoruma yaz, doğrusu videonun sonunda 👀\nBilemeyen bir arkadaşına gönder 📩",
+  "hashtags": [
+    "#ingilizce",
+    "#ingilizceöğren",
+    "#ingilizcepratik",
+    "#englishlearning",
+    "#ingilizcekelimeler"
+  ],
+  "status": "planned"
+}
