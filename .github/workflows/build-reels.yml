@@ -31,6 +31,8 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: halililik86-alt/dilgame
+          # Oyunun güncel geliştirme dalı. Değiştirmek için repo değişkeni GAME_REF tanımlayın.
+          ref: ${{ vars.GAME_REF || 'codex/dilgame-v3' }}
           token: ${{ secrets.GAME_REPO_TOKEN }}
           path: dilgame
           persist-credentials: false
