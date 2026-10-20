@@ -1,0 +1,27 @@
+{
+  "name": "DilGames",
+  "tagline": "Learn English Through Play",
+  "subline": "Hikâyeler · Kelimeler · Dil bilgisi",
+  "cta": "Hemen indir, oynayarak öğren",
+  "colors": {
+    "navy": [10, 30, 48],
+    "mint": [140, 236, 200],
+    "gold": [255, 214, 122],
+    "white": [240, 250, 248]
+  },
+  "font_dir": "/usr/share/fonts/opentype/inter",
+  "icon": "assets/brand/icon-512.png",
+  "game_audio": {
+    "music": "audio/ai-audio-1874036.mp3",
+    "effects_dir": "audio/effects"
+  },
+  "default_captions": {
+    "intro": ["1", "Hikâyeyi dinle"],
+    "vocab": ["2", "Kelimeyi anlamıyla eşleştir"],
+    "merge": ["3", "Balonları birleştir, cümle kur"],
+    "stir": ["İPUCU", "Takıldın mı? Çalkala!"],
+    "complete": ["4", "Cümleyi tamamla, sesli dinle"],
+    "win": [null, "Bölüm tamam! Sıradaki hikâye seni bekliyor"]
+  },
+  "max_hashtags": 5
+}

@@ -1,0 +1,24 @@
+name: Instagram anahtarını yenile (yalnızca instagram modu)
+
+# facebook modunda (önerilen) uzun ömürlü sayfa anahtarı süresizdir; bu iş bir şey yapmaz.
+# instagram modunda anahtar 60 günde bir dolar; ayda bir yenileyip gizli değişkene yazar.
+# Gerekli: ADMIN_TOKEN (yalnızca bu repoda "Secrets: read and write" izinli ince ayarlı PAT).
+on:
+  schedule:
+    - cron: '0 6 1 * *'
+  workflow_dispatch:
+
+jobs:
+  refresh:
+    runs-on: ubuntu-24.04
+    if: ${{ vars.IG_MODE == 'instagram' }}
+    steps:
+      - uses: actions/checkout@v4
+      - env:
+          IG_MODE: instagram
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          GH_TOKEN: ${{ secrets.ADMIN_TOKEN }}
+        run: |
+          NEW=$(python3 scripts/ig.py refresh-token)
+          echo "::add-mask::$NEW"
+          gh secret set IG_ACCESS_TOKEN --body "$NEW" --repo "${{ github.repository }}"

@@ -1,0 +1,29 @@
+name: Haftalık Instagram raporu
+
+on:
+  schedule:
+    - cron: '0 16 * * 0'   # Pazar 19:00 (TR)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  report:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: İstatistikleri çek
+        env:
+          IG_MODE: ${{ vars.IG_MODE || 'facebook' }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+        run: |
+          if [ -z "$IG_ACCESS_TOKEN" ]; then echo "Instagram henüz bağlı değil."; exit 0; fi
+          python3 scripts/report.py
+      - name: Raporu kaydet
+        run: |
+          git config user.name "dilgames-bot"; git config user.email "dilgames-bot@users.noreply.github.com"
+          git add reports content/reels
+          git diff --cached --quiet || (git commit -m "Haftalık rapor" && git push)

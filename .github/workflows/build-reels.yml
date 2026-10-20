@@ -1,0 +1,92 @@
+name: Haftalık Reels üretimi
+
+# Her pazartesi 08:00 (TR) önümüzdeki 7 günün planlı Reels'lerini oyundan kaydedip kurgular,
+# videoları bir GitHub Release'e yükler ve onay için PR açar. PR birleştirilmeden yayın olmaz.
+on:
+  schedule:
+    - cron: '0 5 * * 1'
+  workflow_dispatch:
+    inputs:
+      until:
+        description: 'Bu tarihe kadar (YYYY-AA-GG) planlı reel’leri üret; boşsa 7 gün'
+        required: false
+      only:
+        description: 'Yalnızca bu reel id’sini üret'
+        required: false
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency: build-reels
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 150
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Oyunu al
+        uses: actions/checkout@v4
+        with:
+          repository: halililik86-alt/dilgame
+          token: ${{ secrets.GAME_REPO_TOKEN }}
+          path: dilgame
+          persist-credentials: false
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: dilgame/.node-version
+
+      - name: Oyunu derle
+        working-directory: dilgame
+        run: |
+          PNPM_VERSION=$(node -p "JSON.parse(require('fs').readFileSync('scripts/cloud/versions.json')).pnpm")
+          npm install -g "pnpm@$PNPM_VERSION"
+          pnpm install --frozen-lockfile
+          pnpm run build
+
+      - name: Kayıt ve kurgu araçları
+        run: |
+          sudo apt-get update -q
+          sudo apt-get install -y -q ffmpeg fonts-inter python3-pil
+          npm install --no-save playwright@1.56.0
+          npx playwright install --with-deps chromium
+
+      - name: Oyunu yerelde sun
+        run: |
+          (cd dilgame/dist && nohup python3 -m http.server 5191 >/tmp/game.log 2>&1 &)
+          sleep 2 && curl -sf http://127.0.0.1:5191 >/dev/null
+
+      - name: Reels üret
+        env:
+          GAME_DIST: ${{ github.workspace }}/dilgame/dist
+          PLAYWRIGHT_MODULE: ${{ github.workspace }}/node_modules/playwright
+        run: |
+          UNTIL="${{ inputs.until }}"; [ -z "$UNTIL" ] && UNTIL=$(date -u -d '+7 day' +%F)
+          TAG="reels-$(date -u +%Y%m%d-%H%M)"; echo "TAG=$TAG" >> "$GITHUB_ENV"
+          ARGS="--until $UNTIL"; [ -n "${{ inputs.only }}" ] && ARGS="--only ${{ inputs.only }}"
+          RELEASE_TAG="$TAG" python3 scripts/produce.py $ARGS
+
+      - name: Videoları Release'e yükle ve onay PR'ı aç
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          shopt -s nullglob
+          files=(out/*.mp4 out/*.jpg)
+          if [ ${#files[@]} -eq 0 ]; then echo "Üretilecek reel yok."; exit 0; fi
+          gh release create "$TAG" "${files[@]}" out/*.txt --prerelease --title "$TAG" --notes "Haftalık Reels — onay PR'ına bakın."
+          git config user.name "dilgames-bot"; git config user.email "dilgames-bot@users.noreply.github.com"
+          git checkout -b "$TAG"
+          git add content/reels
+          git commit -m "Reels hazır: $TAG"
+          git push origin "$TAG"
+          {
+            echo "Bu PR birleştirildiğinde aşağıdaki Reels, takvimdeki saatlerinde Instagram'a yayınlanır."
+            echo "Bir reel'i çıkarmak için ilgili dosyada \`status\` değerini \`planned\` yapın."
+            echo
+            echo "Videolar: https://github.com/${{ github.repository }}/releases/tag/$TAG"
+            for t in out/*.txt; do id=$(basename "$t" .txt); echo; echo "### $id"; echo; echo '```'; cat "$t"; echo; echo '```'; done
+          } > /tmp/body.md
+          gh pr create --title "Onay: $TAG Reels" --body-file /tmp/body.md --base main --head "$TAG"

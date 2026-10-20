@@ -1,0 +1,39 @@
+name: Zamanı gelen Reels'i yayınla
+
+# Yarım saatte bir: onaylı (main'deki) ve saati gelmiş reel'i resmi Instagram API ile yayınlar.
+on:
+  schedule:
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Yalnızca dene (yayınlama)'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency: publish
+
+jobs:
+  publish:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Yayınla
+        env:
+          GH_TOKEN: ${{ github.token }}
+          IG_MODE: ${{ vars.IG_MODE || 'facebook' }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          PUBLIC_MEDIA_BASE: ${{ vars.PUBLIC_MEDIA_BASE }}
+        run: |
+          if [ -z "$IG_ACCESS_TOKEN" ]; then echo "Instagram henüz bağlı değil (IG_ACCESS_TOKEN yok)."; exit 0; fi
+          python3 scripts/publish_due.py ${{ inputs.dry_run && '--dry-run' || '' }}
+      - name: Durumu kaydet
+        run: |
+          git config user.name "dilgames-bot"; git config user.email "dilgames-bot@users.noreply.github.com"
+          git add content/reels
+          git diff --cached --quiet || (git commit -m "Yayınlandı: $(date -u +%F\ %H:%M)" && git push)
