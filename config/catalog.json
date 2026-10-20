@@ -1,0 +1,67 @@
+{
+  "_not": "Hikâyeler ekranındaki seviye sekmeleri ve kart sırası (pack 0'dan başlar). Yeni kullanıcıda her paketin yalnızca 1. bölümü açıktır; kayıtlar level=1 ile yapılır. 'premium' paketler kayıt için kullanılmaz.",
+  "tabs": {
+    "A1 Beginner": [
+      "Akşam Vapuru",
+      "Çatı Bahçesi",
+      "Pazarda bir masa",
+      "Akşam Vapuru II",
+      "Çatı Bahçesi II",
+      "Pazarda bir masa II"
+    ],
+    "A2 Elementary": [
+      "Şehirde Bir Gün",
+      "Mahalle Konseri",
+      "Son kartpostal",
+      "Şehirde Bir Gün II",
+      "Mahalle Konseri II",
+      "Son kartpostal II"
+    ],
+    "B1 Intermediate": [
+      "Sanata Yer Aç",
+      "Daha Temiz Bir Kıyı",
+      "Onarım kafesi",
+      "Sanata Yer Aç II",
+      "Daha Temiz Bir Kıyı II",
+      "Onarım kafesi II"
+    ],
+    "B2 Upper intermediate": [
+      "Kütüphane kararı",
+      "Kütüphane kararı II"
+    ],
+    "C1 Advanced": [
+      "Emeğin izinde",
+      "Emeğin izinde II"
+    ],
+    "C2 Proficient": [
+      "Sesler arasında köprü",
+      "Sesler arasında köprü II"
+    ]
+  },
+  "premium": {
+    "B1 Intermediate": [
+      "Gece yarısı paketi"
+    ]
+  },
+  "known_level1_sentences": {
+    "A1 Beginner/0": [
+      "Ada takes the evening ferry.",
+      "She visits her friend Sam."
+    ],
+    "A2 Elementary/0": [
+      "Leila arrived in the city yesterday.",
+      "She wanted to visit the local market.",
+      "Her cousin offered to show her around."
+    ],
+    "B1 Intermediate/0": [
+      "Nico has planned his first exhibition.",
+      "His neighbors have offered their paintings.",
+      "One picture has arrived without information.",
+      "Who has sent this beautiful painting?"
+    ],
+    "A1 Beginner/2": [
+      "Mina has a small table.",
+      "Her friend brings fresh bread."
+    ]
+  }
+}

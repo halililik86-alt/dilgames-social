@@ -55,8 +55,11 @@ async function play(b, c, attempt) {
   if (rec.level > 1 || !(await start.count())) await p.getByText(String(rec.level).padStart(2, '0'), { exact: false }).first().click();
   else await start.first().click();
   mark('intro');
+  let introText = null;
   for (let i = 0; i < 60; i++) {
     await p.waitForTimeout(500);
+    if (!introText && await p.locator('#intro-listen').isVisible().catch(() => false))
+      introText = await p.locator('#intro-listen').evaluate(el => (el.closest('.modal, [role=dialog]') || el.parentElement.parentElement).innerText).catch(() => null);
     if (!(await p.locator('#intro-listen').isVisible().catch(() => false))) { const s = await bot.state(p); if (s && s.ready && s.hand.length) break; }
   }
   mark('vocab');
@@ -83,7 +86,7 @@ async function play(b, c, attempt) {
   await p.waitForTimeout(7000); mark('end');
   const b64 = await p.evaluate(() => window.__stopRec());
   await cdp.send('Page.stopScreencast');
-  return { result, recStart, marks, frames, errors, audio: Buffer.from(b64, 'base64'), dir };
+  return { result, recStart, marks, frames, errors, introText, audio: Buffer.from(b64, 'base64'), dir };
 }
 
 (async () => {
@@ -94,7 +97,7 @@ async function play(b, c, attempt) {
     console.log('SONUÇ', attempt, r.result, r.errors.length ? r.errors : '');
     if (r.result === 'finished' || attempt === tries) {
       fs.writeFileSync(path.join(out, 'take.webm'), r.audio);
-      fs.writeFileSync(path.join(out, 'take.json'), JSON.stringify({ result: r.result, recStart: r.recStart, marks: r.marks, frames: r.frames }));
+      fs.writeFileSync(path.join(out, 'take.json'), JSON.stringify({ result: r.result, recStart: r.recStart, marks: r.marks, frames: r.frames, introText: r.introText }));
       for (let a = 1; a <= tries; a++) if (a !== attempt) fs.rmSync(path.join(out, `frames${a}`), { recursive: true, force: true });
       if (r.result !== 'finished') { console.error('Bölüm bitirilemedi; kayıt yine de kaydedildi.'); process.exitCode = 2; }
       return;

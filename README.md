@@ -23,7 +23,9 @@ publish.yml (yarım saatte bir): saati gelen onaylı reel'i yayınlar → status
 report.yml (pazar 19:00): izlenme, erişim, kayıt, paylaşım… → reports/YYYY-Www.md
 ```
 
-PR birleştirilmeden hiçbir şey yayınlanmaz. Bir reel'i yayından çıkarmak için PR'da dosyasındaki `status` değerini `planned` yap.
+PR birleştirilmeden hiçbir şey yayınlanmaz.
+
+**Ajanlar:** Planlama ve kalite kontrolü Claude zamanlanmış görevleri yapar (OpenClaw yok). Ayrıntı: [`agents/README.md`](agents/README.md). Meta uygulamasının kapsamı: [`config/meta-app.md`](config/meta-app.md). Bir reel'i yayından çıkarmak için PR'da dosyasındaki `status` değerini `planned` yap.
 
 ## Reel dosyası
 
@@ -94,6 +96,8 @@ python3 scripts/ig.py publish-reel out/x.mp4 out/x.txt --dry-run
 | `scripts/build_reel.py` | Kanca, sahne başlıkları, telefon çerçevesi, geçişler, kapanış kartı ve ses miksi |
 | `scripts/produce.py` | Takvimdeki planlı reel'leri sırayla üretir |
 | `scripts/ig.py` | Resmi Graph API: yayın, kota, istatistik, anahtar yenileme |
+| `scripts/qa_sheet.py` | Kalite kontrol: süre, çözünürlük, ses seviyesi, siyah kare, kare paftası |
+| `agents/*.md` | Claude ajanlarının görev tanımları |
 | `scripts/publish_due.py`, `report.py` | Zamanlanmış yayın ve haftalık rapor |
 | `content/plan/strateji.md` | İçerik sütunları, ritim, elle yapılacak işler |
 | `config/brand.json` | Renkler, yazılar, varsayılan sahne başlıkları |

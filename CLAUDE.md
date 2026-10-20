@@ -7,3 +7,4 @@
 - Yayın yalnızca onay PR'ı main'e birleştirildikten sonra olur; bu güvenceyi zayıflatma.
 - Oyun kaydı oyunun dosyalarını değiştirmez; motor erişimi `record.cjs` içinde tarayıcıda yapılan yamayla sağlanır. Oyunun derlemesi değişip kanca bulunamazsa `HOOK` regex'ini güncelle.
 - Kayıt botu ipucu hakkı harcamamak için `world.hint()` kullanmaz; eşleşmeyi `world.match()` ile bulur.
+- Zamanlanmış bir ajan olarak çalışıyorsan önce `agents/README.md`, sonra sana verilen talimat dosyasını oku; secret'lara ve Instagram'a erişmeye çalışma.

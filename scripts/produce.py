@@ -37,6 +37,11 @@ def main():
         if b.returncode != 0:
             failed.append(rid); continue
         open(os.path.join(OUT, rid + '.txt'), 'w', encoding='utf-8').write(post_text(spec))
+        try:
+            intro = json.load(open(os.path.join(rec, 'take.json'))).get('introText')
+            if intro: spec['intro_text'] = intro  # bölümün gerçek cümleleri (planlayıcı ajan bunu kullanır)
+        except Exception:
+            pass
         tag = os.environ.get('RELEASE_TAG')
         spec['status'] = 'approved' if tag else 'rendered'
         if tag: spec['release'] = tag  # PR main'e birleşince yayın kuyruğuna girer
