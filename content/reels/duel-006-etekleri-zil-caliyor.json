@@ -1,0 +1,30 @@
+{
+  "id": "duel-006-etekleri-zil-caliyor",
+  "publish_at": "2026-10-26T18:00:00+03:00",
+  "type": "duel",
+  "format": "D1",
+  "pillar": "deyim düellosu",
+  "episode": 6,
+  "tr": {
+    "idiom": "Etekleri zil çalmak",
+    "literal_en": "Her skirts are ringing bells",
+    "clip": "assets/ai/duel-006-tr.mp4"
+  },
+  "en": {
+    "idiom": "To be over the moon",
+    "literal_tr": "Ayın üstünde olmak",
+    "clip": "assets/ai/duel-006-en.mp4"
+  },
+  "meaning": "Çok sevinmek, havalara uçmak.",
+  "example_en": "He passed his driving test and he's over the moon!",
+  "example_tr": "Ehliyet sınavını geçti, etekleri zil çalıyor!",
+  "caption": "Deyim Düellosu #6 🇹🇷⚔️🇬🇧\n\nBizim eteklerimiz zil çalar, İngilizler ayın üstüne çıkar 🔔🌕\n\nSıradaki düelloda hangi deyimi görmek istersin? Yoruma yaz, bilmeyen arkadaşına gönder 📩",
+  "hashtags": [
+    "#ingilizce",
+    "#ingilizceöğren",
+    "#deyimler",
+    "#englishidioms",
+    "#ingilizcedeyimler"
+  ],
+  "status": "planned"
+}

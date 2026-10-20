@@ -1,0 +1,30 @@
+{
+  "id": "duel-009-armut-pis-agzima-dus",
+  "publish_at": "2026-10-29T18:00:00+03:00",
+  "type": "duel",
+  "format": "D1",
+  "pillar": "deyim düellosu",
+  "episode": 9,
+  "tr": {
+    "idiom": "Armut piş ağzıma düş",
+    "literal_en": "Pear, ripen and drop into my mouth",
+    "clip": "assets/ai/duel-009-tr.mp4"
+  },
+  "en": {
+    "idiom": "Expect things to fall into your lap",
+    "literal_tr": "Her şeyin kucağına düşmesini beklemek",
+    "clip": "assets/ai/duel-009-en.mp4"
+  },
+  "meaning": "Hiç çaba göstermeden her şeyin hazır gelmesini beklemek.",
+  "example_en": "Success won't just fall into your lap. You have to work for it.",
+  "example_tr": "Başarı armut piş ağzıma düş diye gelmez, çalışman lazım.",
+  "caption": "Deyim Düellosu #9 🇹🇷⚔️🇬🇧\n\nBizde armut ağza düşer, İngilizlerde her şey kucağa 🍐\n\nSıradaki düelloda hangi deyimi görmek istersin? Yoruma yaz, bilmeyen arkadaşına gönder 📩",
+  "hashtags": [
+    "#ingilizce",
+    "#ingilizceöğren",
+    "#deyimler",
+    "#englishidioms",
+    "#ingilizcedeyimler"
+  ],
+  "status": "planned"
+}

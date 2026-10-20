@@ -1,0 +1,30 @@
+{
+  "id": "duel-002-bardaktan-bosanircasina",
+  "publish_at": "2026-10-22T18:00:00+03:00",
+  "type": "duel",
+  "format": "D1",
+  "pillar": "deyim düellosu",
+  "episode": 2,
+  "tr": {
+    "idiom": "Bardaktan boşanırcasına yağmak",
+    "literal_en": "To rain as if pouring out of a glass",
+    "clip": "assets/ai/duel-002-tr.mp4"
+  },
+  "en": {
+    "idiom": "It's raining cats and dogs",
+    "literal_tr": "Kediler ve köpekler yağıyor",
+    "clip": "assets/ai/duel-002-en.mp4"
+  },
+  "meaning": "Çok şiddetli yağmur yağmak.",
+  "example_en": "Take an umbrella. It's raining cats and dogs!",
+  "example_tr": "Şemsiye al, bardaktan boşanırcasına yağıyor!",
+  "caption": "Deyim Düellosu #2 🇹🇷⚔️🇬🇧\n\nTürkçede bardaktan boşanır, İngilizcede gökten kedi köpek yağar 🐱🐶☔\n\nSıradaki düelloda hangi deyimi görmek istersin? Yoruma yaz, bilmeyen arkadaşına gönder 📩",
+  "hashtags": [
+    "#ingilizce",
+    "#ingilizceöğren",
+    "#deyimler",
+    "#englishidioms",
+    "#ingilizcedeyimler"
+  ],
+  "status": "planned"
+}

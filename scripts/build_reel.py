@@ -147,6 +147,9 @@ def build(spec_path, recdir, out):
     frame_assets(tmp)
     marks, result = assemble_take(recdir, tmp)
     segs = auto_segments(marks, spec)
+    if spec.get('format') == 'F1':
+        # Meydan okuma: giriş kartı cümleyi baştan gösterip cevabı bozar; bu formatta atlanır.
+        segs = [x for x in segs if x[0] != 'intro']
     caps = dict(BRAND['default_captions']); caps.update(spec.get('captions', {}))
 
     hook = spec.get('hook', {})

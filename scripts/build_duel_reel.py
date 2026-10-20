@@ -92,8 +92,11 @@ def meaning_card(path, s):
     y = text_block(im, y + 6, s['en']['idiom'], font('ExtraBold', 64), C['white'], lh=74, blur=6) + 30
     y = text_block(im, y, 'Anlamı: ' + s['meaning'], font('Medium', 46), (200, 225, 228), lh=58, blur=4) + 50
     box_top = y
+    dm = ImageDraw.Draw(im)
+    n_en = len(wrap(dm, s['example_en'], font('SemiBold', 46), 820)); n_tr = len(wrap(dm, s['example_tr'], font('Medium', 38), 820))
+    box_h = 34 + n_en * 58 + 12 + n_tr * 48 + 30
     box = Image.new('RGBA', (W, H), (0, 0, 0, 0))
-    ImageDraw.Draw(box).rounded_rectangle([90, box_top, W - 90, box_top + 250], radius=36, fill=(255, 255, 255, 26), outline=C['mint'] + (140,), width=3)
+    ImageDraw.Draw(box).rounded_rectangle([90, box_top, W - 90, box_top + box_h], radius=36, fill=(255, 255, 255, 26), outline=C['mint'] + (140,), width=3)
     im.alpha_composite(box)
     yy = text_block(im, box_top + 34, s['example_en'], font('SemiBold', 46), C['white'], maxw=820, lh=58, blur=2)
     text_block(im, yy + 12, s['example_tr'], font('Medium', 38), (170, 200, 205), maxw=820, lh=48, blur=2)
@@ -141,7 +144,7 @@ def build(spec_path, out):
     o2 = D_TR - X; o3 = o2 + D_Q - X; o4 = o3 + D_EN - X; total = o4 + D_M
     run(['ffmpeg', '-y', '-loglevel', 'error', '-i', f'{t}/s1.mp4', '-i', f'{t}/s2.mp4', '-i', f'{t}/s3.mp4', '-i', f'{t}/s4.mp4', '-filter_complex',
          f"[0:v][1:v]xfade=transition=fade:duration={X}:offset={o2:.3f}[a];[a][2:v]xfade=transition=circleopen:duration={X}:offset={o3:.3f}[b];[b][3:v]xfade=transition=slideup:duration={X}:offset={o4:.3f},format=yuv420p[o]",
-         '-map', '[o]', '-c:v', 'libx264', '-crf', '17', '-preset', 'slow', '-r', '30', f'{t}/video.mp4'])
+         '-map', '[o]', '-c:v', 'libx264', '-crf', '17', '-preset', 'medium', '-r', '30', f'{t}/video.mp4'])
     # Ses: oyun müziği + efektler + geri sayım tıkları
     run(['ffmpeg', '-y', '-loglevel', 'error', '-f', 'lavfi', '-i', 'anoisesrc=color=pink:duration=0.6:amplitude=0.9', '-af',
          'bandpass=f=900:width_type=o:w=2.2,highpass=f=250,afade=t=in:d=0.32:curve=exp,afade=t=out:st=0.32:d=0.28',

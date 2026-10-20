@@ -1,0 +1,30 @@
+{
+  "id": "duel-010-kirk-yilda-bir",
+  "publish_at": "2026-10-30T18:00:00+03:00",
+  "type": "duel",
+  "format": "D1",
+  "pillar": "deyim düellosu",
+  "episode": 10,
+  "tr": {
+    "idiom": "Kırk yılda bir",
+    "literal_en": "Once in forty years",
+    "clip": "assets/ai/duel-010-tr.mp4"
+  },
+  "en": {
+    "idiom": "Once in a blue moon",
+    "literal_tr": "Mavi ayda bir",
+    "clip": "assets/ai/duel-010-en.mp4"
+  },
+  "meaning": "Çok nadiren.",
+  "example_en": "I only eat fast food once in a blue moon.",
+  "example_tr": "Kırk yılda bir fast food yerim.",
+  "caption": "Deyim Düellosu #10 🇹🇷⚔️🇬🇧\n\nBiz kırk yılda bir deriz, İngilizler mavi ayı bekler 🌙\n\nSıradaki düelloda hangi deyimi görmek istersin? Yoruma yaz, bilmeyen arkadaşına gönder 📩",
+  "hashtags": [
+    "#ingilizce",
+    "#ingilizceöğren",
+    "#deyimler",
+    "#englishidioms",
+    "#ingilizcedeyimler"
+  ],
+  "status": "planned"
+}

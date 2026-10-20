@@ -1,0 +1,30 @@
+{
+  "id": "duel-008-ayvayi-yemek",
+  "publish_at": "2026-10-28T18:00:00+03:00",
+  "type": "duel",
+  "format": "D1",
+  "pillar": "deyim düellosu",
+  "episode": 8,
+  "tr": {
+    "idiom": "Ayvayı yemek",
+    "literal_en": "To eat the quince",
+    "clip": "assets/ai/duel-008-tr.mp4"
+  },
+  "en": {
+    "idiom": "To be in hot water",
+    "literal_tr": "Sıcak suyun içinde olmak",
+    "clip": "assets/ai/duel-008-en.mp4"
+  },
+  "meaning": "Başı belaya girmek.",
+  "example_en": "If the boss sees this mess, we'll be in hot water!",
+  "example_tr": "Patron bu dağınıklığı görürse ayvayı yedik!",
+  "caption": "Deyim Düellosu #8 🇹🇷⚔️🇬🇧\n\nBiz ayvayı yeriz, İngilizler sıcak suya düşer 🍐🔥\n\nSıradaki düelloda hangi deyimi görmek istersin? Yoruma yaz, bilmeyen arkadaşına gönder 📩",
+  "hashtags": [
+    "#ingilizce",
+    "#ingilizceöğren",
+    "#deyimler",
+    "#englishidioms",
+    "#ingilizcedeyimler"
+  ],
+  "status": "planned"
+}

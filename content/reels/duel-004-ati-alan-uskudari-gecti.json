@@ -1,0 +1,30 @@
+{
+  "id": "duel-004-ati-alan-uskudari-gecti",
+  "publish_at": "2026-10-24T18:00:00+03:00",
+  "type": "duel",
+  "format": "D1",
+  "pillar": "deyim düellosu",
+  "episode": 4,
+  "tr": {
+    "idiom": "Atı alan Üsküdar'ı geçti",
+    "literal_en": "The one who took the horse has passed Üsküdar",
+    "clip": "assets/ai/duel-004-tr.mp4"
+  },
+  "en": {
+    "idiom": "That ship has sailed",
+    "literal_tr": "O gemi çoktan kalktı",
+    "clip": "assets/ai/duel-004-en.mp4"
+  },
+  "meaning": "Fırsat kaçtı, iş işten geçti.",
+  "example_en": "The tickets are sold out. That ship has sailed.",
+  "example_tr": "Biletler tükendi. Atı alan Üsküdar'ı geçti.",
+  "caption": "Deyim Düellosu #4 🇹🇷⚔️🇬🇧\n\nBizde at Üsküdar'ı geçer, İngilizlerde gemi çoktan kalkar 🐎🚢\n\nSıradaki düelloda hangi deyimi görmek istersin? Yoruma yaz, bilmeyen arkadaşına gönder 📩",
+  "hashtags": [
+    "#ingilizce",
+    "#ingilizceöğren",
+    "#deyimler",
+    "#englishidioms",
+    "#ingilizcedeyimler"
+  ],
+  "status": "planned"
+}

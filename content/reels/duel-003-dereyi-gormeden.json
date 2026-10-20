@@ -1,0 +1,30 @@
+{
+  "id": "duel-003-dereyi-gormeden",
+  "publish_at": "2026-10-23T18:00:00+03:00",
+  "type": "duel",
+  "format": "D1",
+  "pillar": "deyim düellosu",
+  "episode": 3,
+  "tr": {
+    "idiom": "Dereyi görmeden paçaları sıvamak",
+    "literal_en": "To roll up your trousers before seeing the stream",
+    "clip": "assets/ai/duel-003-tr.mp4"
+  },
+  "en": {
+    "idiom": "Don't count your chickens before they hatch",
+    "literal_tr": "Civcivleri yumurtadan çıkmadan sayma",
+    "clip": "assets/ai/duel-003-en.mp4"
+  },
+  "meaning": "Bir şey kesinleşmeden ona güvenip harekete geçmek.",
+  "example_en": "You haven't got the job yet. Don't count your chickens before they hatch!",
+  "example_tr": "İşi daha almadın. Dereyi görmeden paçaları sıvama!",
+  "caption": "Deyim Düellosu #3 🇹🇷⚔️🇬🇧\n\nBiz paçaları sıvarız, İngilizler civcivleri sayar 🐣\n\nSıradaki düelloda hangi deyimi görmek istersin? Yoruma yaz, bilmeyen arkadaşına gönder 📩",
+  "hashtags": [
+    "#ingilizce",
+    "#ingilizceöğren",
+    "#deyimler",
+    "#englishidioms",
+    "#ingilizcedeyimler"
+  ],
+  "status": "planned"
+}

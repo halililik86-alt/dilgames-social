@@ -1,0 +1,30 @@
+{
+  "id": "duel-007-damlaya-damlaya-gol-olur",
+  "publish_at": "2026-10-27T18:00:00+03:00",
+  "type": "duel",
+  "format": "D1",
+  "pillar": "deyim düellosu",
+  "episode": 7,
+  "tr": {
+    "idiom": "Damlaya damlaya göl olur",
+    "literal_en": "Drop by drop, it becomes a lake",
+    "clip": "assets/ai/duel-007-tr.mp4"
+  },
+  "en": {
+    "idiom": "Little drops of water make the mighty ocean",
+    "literal_tr": "Küçük su damlaları koca okyanusu yapar",
+    "clip": "assets/ai/duel-007-en.mp4"
+  },
+  "meaning": "Küçük ama düzenli çabalar zamanla büyük sonuç verir.",
+  "example_en": "Learn five new words a day. Little drops of water make the mighty ocean.",
+  "example_tr": "Her gün beş yeni kelime öğren. Damlaya damlaya göl olur.",
+  "caption": "Deyim Düellosu #7 🇹🇷⚔️🇬🇧\n\nBiz göl deriz, İngilizler direkt okyanus der 🌊 İngilizce de böyle öğrenilir: her gün biraz.\n\nSıradaki düelloda hangi deyimi görmek istersin? Yoruma yaz, bilmeyen arkadaşına gönder 📩",
+  "hashtags": [
+    "#ingilizce",
+    "#ingilizceöğren",
+    "#deyimler",
+    "#englishidioms",
+    "#ingilizcedeyimler"
+  ],
+  "status": "planned"
+}

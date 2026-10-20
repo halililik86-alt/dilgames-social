@@ -1,5 +1,6 @@
 {
   "id": "duel-001-pireyi-deve-yapmak",
+  "publish_at": "2026-10-21T18:00:00+03:00",
   "type": "duel",
   "format": "D1",
   "pillar": "deyim düellosu",
@@ -17,7 +18,13 @@
   "meaning": "Küçük bir sorunu olduğundan çok daha büyük göstermek, abartmak.",
   "example_en": "It's just a typo. Don't make a mountain out of a molehill!",
   "example_tr": "Sadece bir yazım hatası. Pireyi deve yapma!",
-  "caption": "Türkçe deyimleri kelimesi kelimesine çevirip canlandırdık 😅\n\nPireyi deve yapmak → İngilizler pire değil köstebek der: \"make a mountain out of a molehill\" 🏔️\n\nSıradaki düelloda hangi deyimi görmek istersin? Yoruma yaz, bilmeyen arkadaşına gönder 📩",
-  "hashtags": ["#ingilizce", "#ingilizceöğren", "#deyimler", "#englishidioms", "#ingilizcedeyimler"],
+  "caption": "Deyim Düellosu #1 🇹🇷⚔️🇬🇧\n\nTürkçe deyimleri kelimesi kelimesine çevirip canlandırdık 😅 Biz pireyi deve yaparız, İngilizler köstebek tepesini dağ 🏔️\n\nSıradaki düelloda hangi deyimi görmek istersin? Yoruma yaz, bilmeyen arkadaşına gönder 📩",
+  "hashtags": [
+    "#ingilizce",
+    "#ingilizceöğren",
+    "#deyimler",
+    "#englishidioms",
+    "#ingilizcedeyimler"
+  ],
   "status": "planned"
 }
