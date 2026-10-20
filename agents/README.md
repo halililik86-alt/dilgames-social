@@ -9,7 +9,7 @@ Pazar 19:45  Analist + Planlayıcı (Claude)  Raporu yorumlar, `100k.md` fazına
 Pzt  08:00   build-reels.yml (Actions)      Planlı reel'leri oyundan kaydeder, kurgular → Release + "Onay" PR'ı
 Pzt  10:51   Kalite Kontrol (Claude)        Onay PR'ındaki videoları izler (kare paftası, ses, süre) → PR yorumu
              ── sen Onay PR'ını birleştirirsin ──
-Her 30 dk    publish.yml (Actions)          Saati gelen onaylı reel'i resmi Instagram API ile yayınlar
+Her 10 dk    publish.yml (Actions)          Saati gelen onaylı reel'i resmi Instagram API ile yayınlar
 ```
 
 ## Kurallar (tüm ajanlar)

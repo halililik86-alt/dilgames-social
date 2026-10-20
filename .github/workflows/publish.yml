@@ -1,9 +1,9 @@
 name: Zamanı gelen Reels'i yayınla
 
-# Yarım saatte bir: onaylı (main'deki) ve saati gelmiş reel'i resmi Instagram API ile yayınlar.
+# 10 dakikada bir (tam saat yoğunluğundan kaçınan dakikalarda): onaylı (main'deki) ve saati gelmiş reel'i resmi Instagram API ile yayınlar.
 on:
   schedule:
-    - cron: '*/30 * * * *'
+    - cron: '3,13,23,33,43,53 * * * *'
   workflow_dispatch:
     inputs:
       dry_run:
