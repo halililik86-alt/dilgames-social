@@ -30,6 +30,21 @@ def main():
         if until and spec.get('publish_at', '9999')[:10] > until: continue
         rid = spec['id']; rec = os.path.join(OUT, 'rec-' + rid)
         print(f'==> {rid}', flush=True)
+        if spec.get('type') == 'duel':
+            # Deyim Düellosu: oyun kaydı yok; hazır AI klipleri (assets/ai) şablonla kurgulanır.
+            b = subprocess.run([sys.executable, os.path.join(ROOT, 'scripts/build_duel_reel.py'), path, os.path.join(OUT, rid + '.mp4')], capture_output=True, text=True)
+            print(b.stdout[-2000:], b.stderr[-2000:], flush=True)
+            if b.returncode != 0:
+                failed.append(rid); continue
+            try: spec['duration'] = json.loads(b.stdout.strip().splitlines()[-1])['duration']
+            except Exception: pass
+            open(os.path.join(OUT, rid + '.txt'), 'w', encoding='utf-8').write(post_text(spec))
+            tag = os.environ.get('RELEASE_TAG')
+            spec['status'] = 'approved' if tag else 'rendered'
+            if tag: spec['release'] = tag
+            spec['rendered_at'] = dt.datetime.now(dt.timezone.utc).isoformat(timespec='seconds')
+            json.dump(spec, open(path, 'w', encoding='utf-8'), ensure_ascii=False, indent=2); open(path, 'a').write('\n')
+            done.append(rid); continue
         r = subprocess.run(['node', os.path.join(ROOT, 'scripts/record.cjs'), path, rec])
         if r.returncode not in (0, 2):
             failed.append(rid); continue

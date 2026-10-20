@@ -1,0 +1,23 @@
+{
+  "id": "duel-001-pireyi-deve-yapmak",
+  "type": "duel",
+  "format": "D1",
+  "pillar": "deyim düellosu",
+  "episode": 1,
+  "tr": {
+    "idiom": "Pireyi deve yapmak",
+    "literal_en": "To make a flea into a camel",
+    "clip": "assets/ai/duel-001-tr.mp4"
+  },
+  "en": {
+    "idiom": "Make a mountain out of a molehill",
+    "literal_tr": "Köstebek tepesinden dağ yapmak",
+    "clip": "assets/ai/duel-001-en.mp4"
+  },
+  "meaning": "Küçük bir sorunu olduğundan çok daha büyük göstermek, abartmak.",
+  "example_en": "It's just a typo. Don't make a mountain out of a molehill!",
+  "example_tr": "Sadece bir yazım hatası. Pireyi deve yapma!",
+  "caption": "Türkçe deyimleri kelimesi kelimesine çevirip canlandırdık 😅\n\nPireyi deve yapmak → İngilizler pire değil köstebek der: \"make a mountain out of a molehill\" 🏔️\n\nSıradaki düelloda hangi deyimi görmek istersin? Yoruma yaz, bilmeyen arkadaşına gönder 📩",
+  "hashtags": ["#ingilizce", "#ingilizceöğren", "#deyimler", "#englishidioms", "#ingilizcedeyimler"],
+  "status": "planned"
+}

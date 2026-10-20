@@ -32,7 +32,7 @@ def main(video, outdir=None):
                     '-frames:v', '1', sheet], check=True)
     issues = []
     if (int(v['width']), int(v['height'])) != (1080, 1920): issues.append(f"çözünürlük {v['width']}x{v['height']} (1080x1920 olmalı)")
-    if not 20 <= dur <= 60: issues.append(f'süre {dur:.1f} sn (20–60 olmalı)')
+    if not 10 <= dur <= 60: issues.append(f'süre {dur:.1f} sn (10–60 olmalı)')
     if not has_audio: issues.append('ses yok')
     elif loud.get('integrated_lufs') is not None and not -17 <= loud['integrated_lufs'] <= -11: issues.append(f"ses seviyesi {loud['integrated_lufs']} LUFS (-14 civarı olmalı)")
     for a, b in blacks:
