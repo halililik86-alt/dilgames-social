@@ -150,7 +150,10 @@ def build(spec_path, recdir, out):
     if spec.get('format') == 'F1':
         # Meydan okuma: giriş kartı cümleyi baştan gösterip cevabı bozar; bu formatta atlanır.
         segs = [x for x in segs if x[0] != 'intro']
-    caps = dict(BRAND['default_captions']); caps.update(spec.get('captions', {}))
+    caps = dict(BRAND['default_captions'])
+    if spec.get('format') == 'F1':  # giriş sahnesi yok: adım numaraları 1'den başlasın
+        caps.update({'vocab': ['1', caps['vocab'][1]], 'merge': ['2', caps['merge'][1]], 'complete': ['CEVAP', caps['complete'][1]]})
+    caps.update(spec.get('captions', {}))
 
     hook = spec.get('hook', {})
     hook_clip = os.path.join(ROOT, hook.get('clip', 'assets/hook/bubbles-rise.mp4'))
