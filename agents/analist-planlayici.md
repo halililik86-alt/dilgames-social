@@ -13,6 +13,7 @@ Görev: geçen haftanın sonuçlarını yorumla, önümüzdeki haftanın Reels'l
 3. **Analiz** (veri varsa): reel başına paylaşım/erişim, kayıt/erişim, izleme oranı, izlenme; format ve saat bazında ortalamalar. `100k.md`'deki eşiklerle karşılaştır. En iyi ve en zayıf formatı/kancayı/saati bul. 3–5 maddelik **somut** öneri yaz ve bu haftanın planına uygula. Bunu en yeni rapor dosyasının sonuna `## Analist yorumu` başlığıyla ekle.
 4. **Plan**: eksik günler için `content/reels/<YYYY-AA-GG>-<seviye>-<hikâye-slug>.json` yaz. Şema için README'deki örneğe ve mevcut dosyalara bak. Kurallar:
    - `status: "planned"`, `publish_at` ISO biçiminde `+03:00` ile, `format`: `100k.md`'deki kod (F1, F2, F4, F5, F6…), `pillar`: kısa Türkçe ad.
+   - D1 (Deyim Düellosu) bölümleri AI kredisi gerektirir; **sen D1 planlama**, yalnızca mevcut D1 dosyalarını ve sonuçlarını analizde kullan. Yeni D1 fikirlerini PR açıklamasına öneri olarak yaz.
    - Yalnızca **durumu "Var" olan** formatları planla; "Yapılacak" formatlar için şablon hazır olana kadar en yakın mevcut formatı kullan ve PR'da not düş.
    - Faz 1 dağılımı: F1 ×2, F2, F6, ve kalan günler veriye göre. Kazanan format varsa (eşiği geçen) payını artır; seri numarası ver ("Meydan okuma #N", `hook.lines` ve `caption` içinde).
    - **Trial**: rapordaki takipçi ≥ 1.000 ise günde en fazla 1 ek reel'e `"trial": true` ver (aynı formatın farklı kancası, farklı saat).

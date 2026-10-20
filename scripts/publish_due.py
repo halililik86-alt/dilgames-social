@@ -30,7 +30,9 @@ def main():
     due.sort()
     for _, path, s in due[:mx]:
         rid = s['id']; video = os.path.join(ROOT, 'out', rid + '.mp4')
-        if not os.path.exists(video):
+        if s.get('video') and os.path.exists(os.path.join(ROOT, s['video'])):
+            video = os.path.join(ROOT, s['video'])  # repoda duran (elle ya da yerelde üretilmiş) video
+        elif not os.path.exists(video):
             os.makedirs(os.path.dirname(video), exist_ok=True)
             subprocess.run(['gh', 'release', 'download', s['release'], '-p', rid + '.mp4', '-D', os.path.dirname(video), '--clobber'], check=True)
         res = ig.publish_reel(video, post_text(s), s.get('cover_offset_ms', 1500), True, dry, bool(s.get('trial')))
