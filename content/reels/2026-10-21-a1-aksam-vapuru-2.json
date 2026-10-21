@@ -1,0 +1,33 @@
+{
+  "id": "2026-10-21-a1-aksam-vapuru-2",
+  "publish_at": "2026-10-21T20:37:00+03:00",
+  "format": "F1",
+  "pillar": "meydan okuma",
+  "record": {
+    "tab": "A1 Beginner",
+    "pack": 3,
+    "level": 1
+  },
+  "hook": {
+    "lines": [
+      "A1 seviyesi",
+      "Bu cümleyi",
+      "kurabilir misin?"
+    ]
+  },
+  "captions": {
+    "complete": [
+      "CEVAP",
+      "Cümleyi tamamla, sesli dinle"
+    ]
+  },
+  "caption": "(kayıttan sonra doldurulacak)",
+  "hashtags": [
+    "#ingilizce",
+    "#ingilizceöğren",
+    "#ingilizcepratik",
+    "#englishlearning",
+    "#ingilizcekelimeler"
+  ],
+  "status": "planned"
+}

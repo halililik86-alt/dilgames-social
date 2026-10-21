@@ -1,0 +1,33 @@
+{
+  "id": "2026-10-26-b2-kutuphane-karari",
+  "publish_at": "2026-10-26T12:53:00+03:00",
+  "format": "F1",
+  "pillar": "meydan okuma",
+  "record": {
+    "tab": "B2 Upper intermediate",
+    "pack": 0,
+    "level": 1
+  },
+  "hook": {
+    "lines": [
+      "B2 seviyesi",
+      "Bu cümleyi",
+      "kurabilir misin?"
+    ]
+  },
+  "captions": {
+    "complete": [
+      "CEVAP",
+      "Cümleyi tamamla, sesli dinle"
+    ]
+  },
+  "caption": "(kayıttan sonra doldurulacak)",
+  "hashtags": [
+    "#ingilizce",
+    "#ingilizceöğren",
+    "#ingilizcepratik",
+    "#englishlearning",
+    "#ingilizcekelimeler"
+  ],
+  "status": "planned"
+}

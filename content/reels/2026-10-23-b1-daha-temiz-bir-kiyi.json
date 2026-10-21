@@ -1,0 +1,33 @@
+{
+  "id": "2026-10-23-b1-daha-temiz-bir-kiyi",
+  "publish_at": "2026-10-23T20:37:00+03:00",
+  "format": "F1",
+  "pillar": "meydan okuma",
+  "record": {
+    "tab": "B1 Intermediate",
+    "pack": 1,
+    "level": 1
+  },
+  "hook": {
+    "lines": [
+      "B1 seviyesi",
+      "Bu cümleyi",
+      "kurabilir misin?"
+    ]
+  },
+  "captions": {
+    "complete": [
+      "CEVAP",
+      "Cümleyi tamamla, sesli dinle"
+    ]
+  },
+  "caption": "(kayıttan sonra doldurulacak)",
+  "hashtags": [
+    "#ingilizce",
+    "#ingilizceöğren",
+    "#ingilizcepratik",
+    "#englishlearning",
+    "#ingilizcekelimeler"
+  ],
+  "status": "planned"
+}
