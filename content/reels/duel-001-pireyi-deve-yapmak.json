@@ -31,5 +31,11 @@
   "duration": 15.3,
   "media_id": "18167470060483912",
   "permalink": "https://www.instagram.com/reel/DewvtldjVv4/",
-  "published_at": "2026-10-21T15:37:20+0000"
+  "published_at": "2026-10-21T15:37:20+0000",
+  "youtube": {
+    "video_id": "3l8Bi_gY-8o",
+    "url": "https://youtube.com/shorts/3l8Bi_gY-8o",
+    "privacy": "public",
+    "uploaded_at": "2026-10-21T19:05:36+00:00"
+  }
 }
