@@ -20,5 +20,8 @@
     "#englishlearning",
     "#ingilizcepratik"
   ],
-  "status": "planned"
+  "status": "approved",
+  "video": "media/ff/ff-003-pension.mp4",
+  "duration": 13.5,
+  "rendered_at": "2026-10-21T07:47:40+00:00"
 }
