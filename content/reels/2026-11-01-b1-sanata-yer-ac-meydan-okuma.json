@@ -29,5 +29,9 @@
     "#englishlearning",
     "#ingilizcegramer"
   ],
-  "status": "planned"
+  "status": "planned",
+  "duration": 31.13,
+  "intro_text": "ÖNCE DİNLE, SONRA BİRLEŞTİR\nHikâyenin bu bölümü\n\nkomşu · sergi · B1 · 4 cümle · 24 kelime\n\n1\nNico has planned his first exhibition.\nNico ilk sergisini planladı.\n▂▆▃\n2\nHis neighbors have offered their paintings.\nKomşuları tablolarını vermeyi teklif etti.\n▂▆▃\n3\nOne picture has arrived without information.\nBir tablo hakkında bilgi olmadan geldi.\n▂▆▃\n4\nWho has sent this beautiful painting?\nBu güzel tabloyu kim gönderdi?\n▂▆▃\n\n1 / 4 · Dinle ve hatırla\n\nCümleler seslendiriliyor…Kelime eşleştirmeye geç",
+  "rendered_at": "2026-10-20T16:52:24+00:00",
+  "note": "Yayından çıkarıldı: CI videosunda giriş kartı cevabı gösteriyordu; yeniden kayıtta bot B1 bölümünü bitiremedi. Yeniden üretilince onaylanacak."
 }
