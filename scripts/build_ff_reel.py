@@ -14,6 +14,7 @@ from PIL import Image, ImageDraw, ImageFilter
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from build_reel import BRAND, C, ROOT, W, H, font, shadow_text, wrap, run  # noqa: E402
 from build_duel_reel import chip, text_block, TR_RED, EN_BLUE  # noqa: E402
+from tr import soru_eki  # noqa: E402
 
 GREEN = (64, 190, 120)
 
@@ -33,7 +34,7 @@ def overlay_hook(path, s):
     series_tag(im, s.get('episode'))
     y = text_block(im, 520, s['en_word'], font('ExtraBold', 124), C['white'], lh=140)
     y = text_block(im, y + 10, '=', font('ExtraBold', 90), C['mint'])
-    y = text_block(im, y + 10, s['tr_word'] + ' mi?', font('ExtraBold', 112), C['gold'], lh=128)
+    y = text_block(im, y + 10, s['tr_word'] + ' ' + soru_eki(s['tr_word']) + '?', font('ExtraBold', 112), C['gold'], lh=128)
     shadow_text(im, (W / 2, y + 60), 'Çoğu kişi yanlış biliyor', font('SemiBold', 50), C['mint'])
     im.save(path)
 

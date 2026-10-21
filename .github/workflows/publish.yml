@@ -1,5 +1,7 @@
 name: Zamanı gelen Reels'i yayınla
 
+# Instagram'a yayınlar, ardından aynı onaylı reel'i YouTube Shorts'a yükler (YT_* secret'ları varsa).
+
 # 10 dakikada bir (tam saat yoğunluğundan kaçınan dakikalarda): onaylı (main'deki) ve saati gelmiş reel'i resmi Instagram API ile yayınlar.
 on:
   schedule:
@@ -32,7 +34,16 @@ jobs:
         run: |
           if [ -z "$IG_ACCESS_TOKEN" ]; then echo "Instagram henüz bağlı değil (IG_ACCESS_TOKEN yok)."; exit 0; fi
           python3 scripts/publish_due.py ${{ inputs.dry_run && '--dry-run' || '' }}
+      - name: YouTube Shorts'a yükle
+        if: ${{ !cancelled() }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+        run: python3 scripts/youtube_due.py ${{ inputs.dry_run && '--dry-run' || '' }}
       - name: Durumu kaydet
+        if: ${{ !cancelled() }}
         run: |
           git config user.name "dilgames-bot"; git config user.email "dilgames-bot@users.noreply.github.com"
           git add content/reels
