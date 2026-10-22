@@ -20,8 +20,17 @@
     "#englishlearning",
     "#ingilizcepratik"
   ],
-  "status": "approved",
+  "status": "published",
   "video": "media/ff/ff-002-magazine.mp4",
   "duration": 13.5,
-  "rendered_at": "2026-10-21T07:47:40+00:00"
+  "rendered_at": "2026-10-21T07:47:40+00:00",
+  "media_id": "17976188780940251",
+  "permalink": "https://www.instagram.com/reel/Deyv8lRE3H3/",
+  "published_at": "2026-10-22T10:17:57+0000",
+  "youtube": {
+    "video_id": "3ixPwW3fhyU",
+    "url": "https://youtube.com/shorts/3ixPwW3fhyU",
+    "privacy": "public",
+    "uploaded_at": "2026-10-22T10:18:07+00:00"
+  }
 }
