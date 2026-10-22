@@ -26,7 +26,16 @@
     "#englishidioms",
     "#ingilizcedeyimler"
   ],
-  "status": "approved",
+  "status": "published",
   "video": "media/duels/duel-002-bardaktan-bosanircasina.mp4",
-  "duration": 15.3
+  "duration": 15.3,
+  "media_id": "18034059629910439",
+  "permalink": "https://www.instagram.com/reel/DezPU8UjcTm/",
+  "published_at": "2026-10-22T14:52:08+0000",
+  "youtube": {
+    "video_id": "1devDljPh2M",
+    "url": "https://youtube.com/shorts/1devDljPh2M",
+    "privacy": "public",
+    "uploaded_at": "2026-10-22T14:52:18+00:00"
+  }
 }
