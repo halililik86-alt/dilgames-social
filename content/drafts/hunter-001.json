@@ -1,0 +1,7 @@
+{"id":"hunter-001","type":"hunter","episode":1,"level":"A1",
+ "tr":"Kedim masanın altında uyur.",
+ "words":["My","cat","sleeps","under","the","table"],
+ "traps":[{"word":"sleep","after":2}],
+ "pause":{"after":3,"decoy":"on"},
+ "decoys":["is"],
+ "layout":{"My":[230,560],"cat":[830,590],"sleep":[540,760],"sleeps":[250,930],"on":[840,950],"under":[540,1110],"is":[880,1300],"the":[240,1280],"table":[620,1400]}}
