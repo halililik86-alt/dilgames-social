@@ -20,8 +20,17 @@
     "#englishlearning",
     "#ingilizcepratik"
   ],
-  "status": "approved",
+  "status": "published",
   "video": "media/ff/ff-003-pension.mp4",
   "duration": 13.5,
-  "rendered_at": "2026-10-21T07:47:40+00:00"
+  "rendered_at": "2026-10-21T07:47:40+00:00",
+  "media_id": "18125904100906881",
+  "permalink": "https://www.instagram.com/reel/De2HRzAjx2K/",
+  "published_at": "2026-10-23T17:39:28+0000",
+  "youtube": {
+    "video_id": "vfePv5jcUys",
+    "url": "https://youtube.com/shorts/vfePv5jcUys",
+    "privacy": "public",
+    "uploaded_at": "2026-10-23T17:39:37+00:00"
+  }
 }
