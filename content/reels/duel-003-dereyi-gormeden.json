@@ -26,7 +26,16 @@
     "#englishidioms",
     "#ingilizcedeyimler"
   ],
-  "status": "approved",
+  "status": "published",
   "video": "media/duels/duel-003-dereyi-gormeden.mp4",
-  "duration": 15.3
+  "duration": 15.3,
+  "media_id": "18109513658603147",
+  "permalink": "https://www.instagram.com/reel/De1z1pTDqc0/",
+  "published_at": "2026-10-23T14:49:37+0000",
+  "youtube": {
+    "video_id": "VoiQd22W_nw",
+    "url": "https://youtube.com/shorts/VoiQd22W_nw",
+    "privacy": "public",
+    "uploaded_at": "2026-10-23T14:49:46+00:00"
+  }
 }
