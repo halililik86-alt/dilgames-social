@@ -59,10 +59,11 @@ def whoami():
             'abone': c.get('statistics', {}).get('subscriberCount'), 'video': c.get('statistics', {}).get('videoCount')}
 
 
-def upload(video, title, description, tags=(), dry=False):
+def upload(video, title, description, tags=(), dry=False, synthetic=False):
     meta = {'snippet': {'title': title[:100], 'description': description[:4900], 'tags': [t.lstrip('#') for t in tags][:15],
                         'categoryId': '27', 'defaultLanguage': 'tr', 'defaultAudioLanguage': 'tr'},
-            'status': {'privacyStatus': 'public', 'selfDeclaredMadeForKids': False, 'embeddable': True}}
+            'status': {'privacyStatus': 'public', 'selfDeclaredMadeForKids': False, 'embeddable': True,
+                       'containsSyntheticMedia': bool(synthetic)}}  # YouTube kuralı: gerçekçi AI görüntü bildirilir
     if dry:
         return {'dry_run': True, 'video': video, 'bytes': os.path.getsize(video), 'meta': meta, 'kanal': whoami()}
     size = os.path.getsize(video)
