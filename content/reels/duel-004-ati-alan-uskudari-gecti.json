@@ -26,7 +26,16 @@
     "#englishidioms",
     "#ingilizcedeyimler"
   ],
-  "status": "approved",
+  "status": "published",
   "video": "media/duels/duel-004-ati-alan-uskudari-gecti.mp4",
-  "duration": 15.3
+  "duration": 15.3,
+  "media_id": "17938100385399771",
+  "permalink": "https://www.instagram.com/reel/De4YmVnDPve/",
+  "published_at": "2026-10-24T14:49:20+0000",
+  "youtube": {
+    "video_id": "zDsUFGDya6A",
+    "url": "https://youtube.com/shorts/zDsUFGDya6A",
+    "privacy": "public",
+    "uploaded_at": "2026-10-24T14:49:28+00:00"
+  }
 }
