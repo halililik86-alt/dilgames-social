@@ -10,10 +10,11 @@ Pzt  08:00   build-reels.yml (Actions)      Planlı reel'leri oyundan kaydeder, 
 Pzt  10:51   Kalite Kontrol (Claude)        Onay PR'ındaki videoları izler (kare paftası, ses, süre) → PR yorumu
              ── sen Onay PR'ını birleştirirsin ──
 Her 10 dk    publish.yml (Actions)          Saati gelen onaylı reel'i resmi Instagram API ile yayınlar
+12:54 17:48 21:38  Yayın tetikleyici (Claude)  GitHub zamanlayıcısı saatlerce gecikebildiği için publish.yml'i elle tetikler (yalnızca tetikler)
 ```
 
 ## Kurallar (tüm ajanlar)
-- Ajanlar **hiçbir şeyi yayınlamaz**, PR birleştirmez, secret okumaz/yazmaz, Instagram'a ya da Meta'ya bağlanmaz.
+- Ajanlar **hiçbir şeyi yayınlamaz** (yayın tetikleyici yalnızca publish.yml'i başlatır; yayınlanan yine yalnızca main'de onaylı reel'lerdir), PR birleştirmez, secret okumaz/yazmaz, Instagram'a ya da Meta'ya bağlanmaz.
 - Her çıktı insan onayından geçer: Plan PR'ı ve Onay PR'ı.
 - Dil Türkçe. `content/plan/strateji.md`, `config/brand.json` ve `config/catalog.json` esas alınır.
 - Takip/beğeni/yorum/DM otomasyonu önerilmez ve yazılmaz.
