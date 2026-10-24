@@ -10,7 +10,7 @@ Pzt  08:00   build-reels.yml (Actions)      Planlı reel'leri oyundan kaydeder, 
 Pzt  10:51   Kalite Kontrol (Claude)        Onay PR'ındaki videoları izler (kare paftası, ses, süre) → PR yorumu
              ── sen Onay PR'ını birleştirirsin ──
 Her 10 dk    publish.yml (Actions)          Saati gelen onaylı reel'i resmi Instagram API ile yayınlar
-12:54 17:48 20:38  Yayın tetikleyici (Claude)  GitHub zamanlayıcısı saatlerce gecikebildiği için publish.yml'i elle tetikler (yalnızca tetikler)
+12:54 17:48 21:38  Yayın tetikleyici (Claude)  GitHub zamanlayıcısı saatlerce gecikebildiği için publish.yml'i elle tetikler (yalnızca tetikler)
 ```
 
 ## Kurallar (tüm ajanlar)
