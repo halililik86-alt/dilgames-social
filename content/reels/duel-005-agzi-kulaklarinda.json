@@ -26,7 +26,16 @@
     "#englishidioms",
     "#ingilizcedeyimler"
   ],
-  "status": "approved",
+  "status": "published",
   "video": "media/duels/duel-005-agzi-kulaklarinda.mp4",
-  "duration": 15.3
+  "duration": 15.3,
+  "media_id": "17999803233042492",
+  "permalink": "https://www.instagram.com/reel/De69dmlj-EY/",
+  "published_at": "2026-10-25T14:49:58+0000",
+  "youtube": {
+    "video_id": "eZUBby7JZ34",
+    "url": "https://youtube.com/shorts/eZUBby7JZ34",
+    "privacy": "public",
+    "uploaded_at": "2026-10-25T14:50:08+00:00"
+  }
 }
