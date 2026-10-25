@@ -32,5 +32,17 @@
     "url": "https://youtube.com/shorts/d4RDbjuQl5A",
     "privacy": "public",
     "uploaded_at": "2026-10-24T09:55:39+00:00"
-  }
+  },
+  "insights": {
+    "views": 169,
+    "reach": 149,
+    "likes": 1,
+    "comments": 0,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 1,
+    "ig_reels_avg_watch_time": 3462,
+    "ig_reels_video_view_total_time": 519342
+  },
+  "insights_at": "2026-10-25T18:49:33+00:00"
 }
