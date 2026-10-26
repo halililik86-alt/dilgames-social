@@ -26,7 +26,16 @@
     "#englishidioms",
     "#ingilizcedeyimler"
   ],
-  "status": "approved",
+  "status": "published",
   "video": "media/duels/duel-006-etekleri-zil-caliyor.mp4",
-  "duration": 15.3
+  "duration": 15.3,
+  "media_id": "18122730049934078",
+  "permalink": "https://www.instagram.com/reel/De9iVrHiTEz/",
+  "published_at": "2026-10-26T14:50:39+0000",
+  "youtube": {
+    "video_id": "mRA6UN9V-5E",
+    "url": "https://youtube.com/shorts/mRA6UN9V-5E",
+    "privacy": "public",
+    "uploaded_at": "2026-10-26T14:50:46+00:00"
+  }
 }
