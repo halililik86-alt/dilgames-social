@@ -65,8 +65,8 @@
    ]
   },
   {
-   "clip": "media/harf/harf-003-a.mp4",
-   "start": 2.8,
+   "clip": "media/harf/harf-003-c.mp4",
+   "start": 0.0,
    "blur": true,
    "chip": "AYNI SES · 2 FARKLI ANLAM",
    "word": {
@@ -97,8 +97,8 @@
    "tail": 0.1
   },
   {
-   "clip": "media/harf/harf-003-c.mp4",
-   "start": 0.0,
+   "clip": "media/harf/harf-003-a.mp4",
+   "start": 2.8,
    "blur": true,
    "chip": "AYNI SES · 2 FARKLI ANLAM",
    "word": {
