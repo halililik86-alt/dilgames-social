@@ -26,7 +26,16 @@
     "#englishidioms",
     "#ingilizcedeyimler"
   ],
-  "status": "approved",
+  "status": "published",
   "video": "media/duels/duel-010-kirk-yilda-bir.mp4",
-  "duration": 15.3
+  "duration": 15.3,
+  "media_id": "17969692938195435",
+  "permalink": "https://www.instagram.com/reel/DfH6n_AjTQM/",
+  "published_at": "2026-10-30T15:35:16+0000",
+  "youtube": {
+    "video_id": "VAOWyP02ct8",
+    "url": "https://youtube.com/shorts/VAOWyP02ct8",
+    "privacy": "public",
+    "uploaded_at": "2026-10-30T15:35:22+00:00"
+  }
 }
