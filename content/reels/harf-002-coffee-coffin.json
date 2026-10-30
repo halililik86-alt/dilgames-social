@@ -1,0 +1,202 @@
+{
+  "id": "harf-002-coffee-coffin",
+  "type": "harf",
+  "episode": 2,
+  "voice_dir": "tts/audio/harf-002",
+  "music": "tts/audio/harf-002/music.mp3",
+  "beats": [
+    {
+      "clip": "media/harf/harf-002-a.mp4",
+      "start": 0.0,
+      "chip": "İKİ HARFİN HİKÂYESİ",
+      "title": [
+        "KAHVE İSTEDİ.",
+        "TABUT GELDİ!"
+      ],
+      "sub": "Nerede yanlış yaptı?",
+      "say": [
+        [
+          "tr#Kahve istedi... tabut geldi!",
+          0.1
+        ]
+      ],
+      "sfx": [
+        [
+          "sting",
+          0.9
+        ]
+      ]
+    },
+    {
+      "clip": "media/harf/harf-002-b.mp4",
+      "start": 0.2,
+      "chip": "3 SANİYE ÖNCE",
+      "title": [
+        "“One coffin,",
+        "please!”"
+      ],
+      "sub": "Bir kahve, lütfen!",
+      "say": [
+        [
+          "en#One coffin, please!",
+          0.3
+        ]
+      ],
+      "sfx": [
+        [
+          "whoosh",
+          0.0
+        ]
+      ]
+    },
+    {
+      "clip": "media/harf/harf-002-a.mp4",
+      "start": 1.6,
+      "chip": "SORUN SİPARİŞTE",
+      "title": [
+        "SADECE SON İKİ HARF",
+        "FARKLIYDI."
+      ],
+      "say": [
+        [
+          "tr#Çünkü sadece son iki harf farklıydı.",
+          0.1
+        ]
+      ]
+    },
+    {
+      "clip": "media/harf/harf-002-c.mp4",
+      "start": 0.0,
+      "blur": true,
+      "chip": "2 HARF · 2 FARKLI ANLAM",
+      "word": {
+        "en": "COFFEE",
+        "hi": [
+          4,
+          6
+        ],
+        "tr": "KAHVE"
+      },
+      "sub": "Okunuşu: “kofi”",
+      "say": [
+        [
+          "en#Coffee.",
+          0.1
+        ],
+        [
+          "tr#Kahve.",
+          0.75
+        ]
+      ],
+      "sfx": [
+        [
+          "pop",
+          0.0
+        ]
+      ],
+      "tail": 0.1
+    },
+    {
+      "clip": "media/harf/harf-002-a.mp4",
+      "start": 2.8,
+      "blur": true,
+      "chip": "2 HARF · 2 FARKLI ANLAM",
+      "word": {
+        "en": "COFFIN",
+        "hi": [
+          4,
+          6
+        ],
+        "tr": "TABUT"
+      },
+      "sub": "Okunuşu: “kofin”",
+      "say": [
+        [
+          "en#Coffin.",
+          0.1
+        ],
+        [
+          "tr#Tabut.",
+          0.75
+        ]
+      ],
+      "sfx": [
+        [
+          "pop",
+          0.0
+        ]
+      ]
+    },
+    {
+      "clip": "media/harf/harf-002-b.mp4",
+      "start": 1.8,
+      "chip": "ŞİMDİ OLDU",
+      "title": [
+        "“One coffee,",
+        "please!”"
+      ],
+      "accent": [
+        120,
+        230,
+        190
+      ],
+      "say": [
+        [
+          "en#One coffee, please!",
+          0.2
+        ]
+      ]
+    },
+    {
+      "clip": "media/harf/harf-002-c.mp4",
+      "start": 0.8,
+      "chip": "MUTLU SON",
+      "title": [
+        "İKİ HARF DEĞİŞTİ.",
+        "KORKU DA GİTTİ!"
+      ],
+      "accent": [
+        120,
+        230,
+        190
+      ],
+      "say": [
+        [
+          "tr#İki harf değişti... [laughs] korku da gitti!",
+          0.1
+        ]
+      ],
+      "sfx": [
+        [
+          "boo",
+          0.6
+        ]
+      ]
+    },
+    {
+      "clip": "media/harf/harf-002-c.mp4",
+      "start": 3.3,
+      "chip": "COFFEE ≠ COFFIN",
+      "title": [
+        "Bir kelime daha?"
+      ],
+      "sub": "DilGames'i takip et.",
+      "dur": 1.6
+    }
+  ],
+  "format": "H1",
+  "pillar": "bir harfin hikâyesi",
+  "publish_at": "2026-10-31T21:37:00+03:00",
+  "status": "approved",
+  "video": "media/harf/harf-002-coffee-coffin.mp4",
+  "duration": 18.87,
+  "yt_title": "Coffee mi Coffin mi? Kahve istedi, tabut geldi! | Bir Harfin Hikâyesi",
+  "caption": "Kahve istedi, tabut geldi! ☕⚰️\n\n☕ Coffee = Kahve (okunuşu: kofi)\n⚰️ Coffin = Tabut (okunuşu: kofin)\n\nSadece son iki harf farklı ama anlam bambaşka 😅 Cadılar Bayramı'nda sipariş verirken dikkat! 🎃\n\nSen bu ikisini karıştırır mıydın? Yorumlara yaz 👇\n\nKısa ve eğlenceli İngilizce içerikleri için @dilgamesapp'i takip et! ✨",
+  "hashtags": [
+    "#ingilizce",
+    "#ingilizceöğren",
+    "#halloween",
+    "#englishlearning",
+    "#DilGames"
+  ]
+}

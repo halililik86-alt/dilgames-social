@@ -8,20 +8,26 @@ tts/requests/<ad>.json:
    "sfx":   [{"id": "s1", "text": "whoosh", "seconds": 0.8}]}
 Çıktı: tts/audio/<ad>/<id>.mp3 ; aynı id ve metin bir kez üretilir (kredi tasarrufu).
 """
-import glob, hashlib, json, os, sys, urllib.request, urllib.error
+import base64, glob, hashlib, json, os, sys, urllib.request, urllib.error
 
 API = 'https://api.elevenlabs.io/v1'
 KEY = os.environ.get('ELEVENLABS_API_KEY')
 
 
-def req(method, path, body=None, accept='application/json'):
+class ApiError(Exception):
+    pass
+
+
+def req(method, path, body=None, accept='application/json', soft=False):
     r = urllib.request.Request(API + path, method=method, data=json.dumps(body).encode() if body is not None else None,
                                headers={'xi-api-key': KEY, 'Content-Type': 'application/json', 'Accept': accept})
     try:
         with urllib.request.urlopen(r, timeout=120) as f:
             return f.read()
     except urllib.error.HTTPError as e:
-        sys.exit(f'ElevenLabs API hatası {e.code} {path}: {e.read().decode()[:400]}')
+        msg = f'ElevenLabs API hatası {e.code} {path}: {e.read().decode()[:400]}'
+        if soft: raise ApiError(msg)
+        sys.exit(msg)
 
 
 def main():
@@ -43,12 +49,25 @@ def main():
             path = os.path.join(out, f"{ln['id']}.mp3"); meta = path + '.sig'
             if os.path.exists(path) and os.path.exists(meta) and open(meta).read() == sig:
                 continue
-            body = {'text': ln['text'], 'model_id': ln.get('model', model)}
-            if ln.get('settings'): body['voice_settings'] = ln['settings']
-            if ln.get('language'): body['language_code'] = ln['language']
-            audio = req('POST', f"/text-to-speech/{ln['voice']}?output_format=mp3_44100_128", body, accept='audio/mpeg')
+            models = ln.get('model', model); models = models if isinstance(models, list) else [models]
+            for k, mid in enumerate(models):  # ilk model desteklenmiyorsa sıradakine geç (ör. eleven_v4 → eleven_v3)
+                body = {'text': ln['text'], 'model_id': mid}
+                if ln.get('settings'): body['voice_settings'] = ln['settings']
+                if ln.get('language'): body['language_code'] = ln['language']
+                try:
+                    if ln.get('timestamps'):  # tek parça anlatım + karakter zamanları (sahnelere bölmek için)
+                        j = json.loads(req('POST', f"/text-to-speech/{ln['voice']}/with-timestamps?output_format=mp3_44100_128", body, soft=True))
+                        audio = base64.b64decode(j['audio_base64'])
+                        json.dump({'model': mid, 'text': ln['text'], 'alignment': j.get('alignment'), 'normalized_alignment': j.get('normalized_alignment')},
+                                  open(path[:-4] + '.align.json', 'w', encoding='utf-8'), ensure_ascii=False)
+                    else:
+                        audio = req('POST', f"/text-to-speech/{ln['voice']}?output_format=mp3_44100_128", body, accept='audio/mpeg', soft=True)
+                    break
+                except ApiError as e:
+                    print(f"{name}/{ln['id']}: {mid} olmadı ({e})")
+                    if k == len(models) - 1: sys.exit(str(e))
             open(path, 'wb').write(audio); open(meta, 'w').write(sig)
-            print(f"{name}/{ln['id']}: {len(ln['text'])} karakter")
+            print(f"{name}/{ln['id']}: {len(ln['text'])} karakter, {mid}")
         for sx in r.get('sfx', []):
             path = os.path.join(out, f"{sx['id']}.mp3")
             if os.path.exists(path): continue
