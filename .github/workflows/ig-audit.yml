@@ -21,14 +21,17 @@ jobs:
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
         run: python3 scripts/ig_audit.py
       - name: Sesi yazıya dök
+        continue-on-error: true
         run: |
           pip install -q faster-whisper
           python3 - <<'PY'
-          import glob
+          import glob, subprocess, numpy as np
           from faster_whisper import WhisperModel
           m = WhisperModel('small', compute_type='int8')
           for v in glob.glob('analysis/top/*.mp4'):
-              segs, info = m.transcribe(v, word_timestamps=False)
+              raw = subprocess.run(['ffmpeg', '-v', 'error', '-i', v, '-ac', '1', '-ar', '16000', '-f', 's16le', '-'], capture_output=True).stdout
+              audio = np.frombuffer(raw, np.int16).astype(np.float32) / 32768.0
+              segs, info = m.transcribe(audio, word_timestamps=False)
               with open(v[:-4] + '.txt', 'w', encoding='utf-8') as f:
                   f.write(f'dil: {info.language}\n')
                   for s in segs: f.write(f'[{s.start:5.1f}-{s.end:5.1f}] {s.text.strip()}\n')
