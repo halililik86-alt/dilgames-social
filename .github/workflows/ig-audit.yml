@@ -1,0 +1,39 @@
+name: Hesap analizi (tek seferlik)
+
+# analiz/** dalına itildiğinde: tüm gönderilerin istatistikleri + en çok izlenen elle paylaşılan videolar + sesin yazıya dökümü.
+on:
+  push:
+    branches: ['analiz/**']
+
+permissions:
+  contents: write
+
+jobs:
+  audit:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Gönderiler ve istatistikler
+        env:
+          IG_MODE: ${{ vars.IG_MODE || 'facebook' }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+        run: python3 scripts/ig_audit.py
+      - name: Sesi yazıya dök
+        run: |
+          pip install -q faster-whisper
+          python3 - <<'PY'
+          import glob
+          from faster_whisper import WhisperModel
+          m = WhisperModel('small', compute_type='int8')
+          for v in glob.glob('analysis/top/*.mp4'):
+              segs, info = m.transcribe(v, word_timestamps=False)
+              with open(v[:-4] + '.txt', 'w', encoding='utf-8') as f:
+                  f.write(f'dil: {info.language}\n')
+                  for s in segs: f.write(f'[{s.start:5.1f}-{s.end:5.1f}] {s.text.strip()}\n')
+          PY
+      - name: Kaydet
+        run: |
+          git config user.name "dilgames-bot"; git config user.email "dilgames-bot@users.noreply.github.com"
+          git add analysis && git commit -m "Hesap analizi" && git push
