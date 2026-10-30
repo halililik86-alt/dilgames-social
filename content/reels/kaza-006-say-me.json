@@ -1,0 +1,55 @@
+{
+  "id": "kaza-006-say-me",
+  "type": "kaza",
+  "format": "K1",
+  "pillar": "mizah",
+  "episode": 6,
+  "publish_at": "2026-11-02T21:37:00+03:00",
+  "hook": "Elif yeni ofisinde ilk gün...",
+  "voice_dir": "tts/audio/kaza-006",
+  "scenes": [
+    {
+      "clip": "media/kaza/kaza-006-a.mp4",
+      "start": 0.0,
+      "sub": "Say me the wifi password!",
+      "speaker": "Elif",
+      "line": "e1",
+      "line_at": 0.15
+    },
+    {
+      "clip": "media/kaza/kaza-006-b.mp4",
+      "start": 0.3,
+      "sub": "Say... you? Okay... YOU!",
+      "speaker": "Liam",
+      "line": "g1",
+      "line_at": 0.2
+    }
+  ],
+  "wrong": "Say me",
+  "right": "Tell me",
+  "why": "birine söylerken “tell me” denir",
+  "more": [
+    "Tell me the password.",
+    "Say it again, please."
+  ],
+  "narration": {
+    "why": "n2",
+    "right": "a1",
+    "cta": "n3"
+  },
+  "sfx": {
+    "scratch": "scratch",
+    "laugh": "laugh",
+    "music": "../kaza-001/music"
+  },
+  "caption": "Elif yeni ofisinde ilk gün... 😅\n\n“Say me” ❌ → “Tell me” ✅\n\nSen de böyle diyor muydun? Yorumlara itiraf et 👇\n\nTürk İngilizcesi Kazaları #6 · Elif'in kazaları her gün devam ediyor, kaçırmamak için takip et 🔔\nBu hatayı yapan arkadaşını etiketle 📩",
+  "hashtags": [
+    "#ingilizce",
+    "#ingilizceöğren",
+    "#ingilizcepratik",
+    "#englishlearning",
+    "#komikvideolar"
+  ],
+  "status": "approved",
+  "video": "media/kaza/kaza-006-say-me.mp4"
+}

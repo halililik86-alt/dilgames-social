@@ -23,9 +23,10 @@
     "#dilöğrenmek",
     "#mobiloyun"
   ],
-  "status": "approved",
+  "status": "planned",
   "duration": 31.12,
   "intro_text": "ÖNCE DİNLE, SONRA BİRLEŞTİR\nHikâyenin bu bölümü\n\naçmak · bahçe · A1 · 2 cümle · 10 kelime\n\n1\nMira opens the roof door.\nMira çatı kapısını açıyor.\n▂▆▃\n2\nShe discovers a small garden.\nKüçük bir bahçe keşfediyor.\n▂▆▃\n\n1 / 2 · Dinle ve hatırla\n\nCümleler seslendiriliyor…Kelime eşleştirmeye geç",
   "release": "reels-20261020-1604",
-  "rendered_at": "2026-10-20T16:57:16+00:00"
+  "rendered_at": "2026-10-20T16:57:16+00:00",
+  "replaced_by": "kaza-006-say-me"
 }
