@@ -88,11 +88,13 @@ def build(spec_path, out):
             al = json.load(open(os.path.join(vd, take + '.align.json'), encoding='utf-8'))['alignment']
             text = ''.join(al['characters']); i = text.index(sub); j = i + len(sub) - 1
             st, en = al['character_start_times_seconds'], al['character_end_times_seconds']
-            a = max(0.0, st[i] - 0.06)
+            prv = [en[k] for k in range(0, i) if text[k].strip() and text[k] not in '[]' and not _in_tag(text, k)]
+            a = max(prv[-1] + 0.02 if prv else 0.0, st[i] - 0.3)  # biraz erken başla, önceki kelimeye taşma
             nxt = [st[k] for k in range(j + 1, len(text)) if text[k].strip() and text[k] not in '[]' and not _in_tag(text, k)]
             b = min(en[j] + 0.25, nxt[0] - 0.02) if nxt else en[j] + 0.3
-            run(['ffmpeg', '-y', '-loglevel', 'error', '-i', os.path.join(vd, take + '.mp3'), '-ss', f'{a:.3f}', '-to', f'{b:.3f}',
-                 '-af', 'afade=t=out:st=%.3f:d=0.05,apad=pad_dur=0.05' % max(0, b - a - 0.05), dst])
+            # atrim + asetpts: kesilen parçanın zamanı 0'dan başlar, kısma efekti parçanın kendi sonuna uygulanır
+            run(['ffmpeg', '-y', '-loglevel', 'error', '-i', os.path.join(vd, take + '.mp3'), '-af',
+                 f'atrim=start={a:.3f}:end={b:.3f},asetpts=PTS-STARTPTS,afade=t=out:st={max(0, b - a - 0.05):.3f}:d=0.05,apad=pad_dur=0.05', dst])
         else:
             run(['ffmpeg', '-y', '-loglevel', 'error', '-i', os.path.join(vd, n + '.mp3'), '-af',
                  'silenceremove=start_periods=1:start_threshold=-45dB,areverse,silenceremove=start_periods=1:start_threshold=-45dB,areverse,apad=pad_dur=0.05', dst])
