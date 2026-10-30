@@ -6,7 +6,7 @@ tts/requests/<ad>.json:
   {"model": "eleven_multilingual_v2",
    "lines": [{"id": "l1", "voice": "<voice_id>", "text": "...", "settings": {...}}],
    "sfx":   [{"id": "s1", "text": "whoosh", "seconds": 0.8}]}
-Çıktı: tts/out/<ad>/<id>.mp3 ; aynı id ve metin bir kez üretilir (kredi tasarrufu).
+Çıktı: tts/audio/<ad>/<id>.mp3 ; aynı id ve metin bir kez üretilir (kredi tasarrufu).
 """
 import glob, hashlib, json, os, sys, urllib.request, urllib.error
 
@@ -36,7 +36,7 @@ def main():
                      'labels': v.get('labels'), 'preview_url': v.get('preview_url')} for v in data.get('voices', [])]
             json.dump(slim, open('tts/voices.json', 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
             print(f'{len(slim)} ses listelendi')
-        out = os.path.join('tts', 'out', name); os.makedirs(out, exist_ok=True)
+        out = os.path.join('tts', 'audio', name); os.makedirs(out, exist_ok=True)
         model = r.get('model', 'eleven_multilingual_v2')
         for ln in r.get('lines', []):
             sig = hashlib.sha1(json.dumps([ln, model], sort_keys=True).encode()).hexdigest()[:10]
