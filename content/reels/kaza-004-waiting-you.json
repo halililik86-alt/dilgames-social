@@ -1,0 +1,55 @@
+{
+  "id": "kaza-004-waiting-you",
+  "type": "kaza",
+  "format": "K1",
+  "pillar": "mizah",
+  "episode": 4,
+  "publish_at": "2026-11-01T21:37:00+03:00",
+  "hook": "Elif arkadaşını bekliyor ve sabrı tükendi...",
+  "voice_dir": "tts/audio/kaza-004",
+  "scenes": [
+    {
+      "clip": "media/kaza/kaza-004-a.mp4",
+      "start": 0.0,
+      "sub": "Where are you? I am waiting you!",
+      "speaker": "Elif",
+      "line": "e1",
+      "line_at": 0.15
+    },
+    {
+      "clip": "media/kaza/kaza-004-b.mp4",
+      "start": 0.3,
+      "sub": "You're waiting... me? Or FOR me?",
+      "speaker": "Tom",
+      "line": "g1",
+      "line_at": 0.2
+    }
+  ],
+  "wrong": "I am waiting you",
+  "right": "I'm waiting for you",
+  "why": "wait’ten sonra “for” gelir",
+  "more": [
+    "Wait for me!",
+    "I'm waiting for the bus."
+  ],
+  "narration": {
+    "why": "n2",
+    "right": "a1",
+    "cta": "n3"
+  },
+  "sfx": {
+    "scratch": "scratch",
+    "laugh": "laugh",
+    "music": "../kaza-001/music"
+  },
+  "caption": "Elif arkadaşını bekliyor ve sabrı tükendi... 😅\n\n“I am waiting you” ❌ → “I'm waiting for you” ✅\n\nSen de böyle diyor muydun? Yorumlara itiraf et 👇\n\nTürk İngilizcesi Kazaları #4 · Elif'in kazaları her gün devam ediyor, kaçırmamak için takip et 🔔\nBu hatayı yapan arkadaşını etiketle 📩",
+  "hashtags": [
+    "#ingilizce",
+    "#ingilizceöğren",
+    "#ingilizcepratik",
+    "#englishlearning",
+    "#komikvideolar"
+  ],
+  "status": "approved",
+  "video": "media/kaza/kaza-004-waiting-you.mp4"
+}

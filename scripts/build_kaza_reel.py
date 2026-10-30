@@ -117,7 +117,7 @@ def build(spec_path, out):
     # 2) Donma + KAZA! + kahkaha
     D_F = 1.6
     lc = s['scenes'][-1]
-    run(['ffmpeg', '-y', '-loglevel', 'error', '-ss', str(lc.get('start', 0) + segs[-1][1] - 0.1), '-i', os.path.join(ROOT, lc['clip']), '-frames:v', '1',
+    run(['ffmpeg', '-y', '-loglevel', 'error', '-ss', str(min(lc.get('start', 0) + segs[-1][1], dur(os.path.join(ROOT, lc['clip']))) - 0.15), '-i', os.path.join(ROOT, lc['clip']), '-frames:v', '1',
          '-vf', UP.replace(',fps=30', ''), f'{t}/last.png'])
     run(['ffmpeg', '-y', '-loglevel', 'error', '-ss', '2.5', '-i', os.path.join(ROOT, s['scenes'][0]['clip']), '-frames:v', '1',
          '-vf', UP.replace(',fps=30', ''), f'{t}/bg.png'])
