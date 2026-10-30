@@ -23,7 +23,7 @@ jobs:
       - name: Sesi yazıya dök
         continue-on-error: true
         run: |
-          pip install -q faster-whisper
+          sudo apt-get install -y -qq ffmpeg >/dev/null; pip install -q faster-whisper
           python3 - <<'PY'
           import glob, subprocess, numpy as np
           from faster_whisper import WhisperModel
