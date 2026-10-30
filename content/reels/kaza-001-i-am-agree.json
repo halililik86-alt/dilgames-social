@@ -50,6 +50,15 @@
     "#englishlearning",
     "#komikvideolar"
   ],
-  "status": "approved",
-  "video": "media/kaza/kaza-001-i-am-agree.mp4"
+  "status": "published",
+  "video": "media/kaza/kaza-001-i-am-agree.mp4",
+  "media_id": "18026953172924208",
+  "permalink": "https://www.instagram.com/reel/DfIjSFriRf5/",
+  "published_at": "2026-10-30T21:30:33+0000",
+  "youtube": {
+    "video_id": "Hl163AdeDDU",
+    "url": "https://youtube.com/shorts/Hl163AdeDDU",
+    "privacy": "public",
+    "uploaded_at": "2026-10-30T21:30:42+00:00"
+  }
 }
