@@ -1,0 +1,9 @@
+dil: tr
+[  0.0-  2.5] Kek yapacaktı. Çiçek geldi.
+[  2.5-  5.0] Aynı ses, bambaşka anlam.
+[  5.0-  6.0] Flower
+[  6.0-  7.0] Çiçek
+[  7.0-  8.0] Flower
+[  8.0-  9.0] Un
+[  9.0- 12.0] Flower for the cake, please.
+[ 12.0- 14.0] Unu buldu, keki kurtardı.

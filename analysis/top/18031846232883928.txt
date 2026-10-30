@@ -1,0 +1,6 @@
+dil: tr
+[  0.0-  2.4] Tatlı istedi. Kum geldi.
+[  3.6-  6.0] Çünkü tek bir harf eksikti.
+[  6.6-  7.6] Çöl.
+[  8.4-  9.4] Tatlı.
+[ 10.8- 13.6] Bir harf fazla. Çok daha lezzetli.
