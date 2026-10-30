@@ -70,15 +70,31 @@ def overlay(path, b, progress):
     im.save(path)
 
 
+def _in_tag(text, k):
+    return text.rfind('[', 0, k + 1) > text.rfind(']', 0, k)
+
+
 def build(spec_path, out):
     s = json.load(open(spec_path, encoding='utf-8'))
     vd = os.path.join(ROOT, s['voice_dir'])
     t = tempfile.mkdtemp(prefix='harf-')
 
-    def V(n):  # baştaki/sondaki sessizliği kırpılmış kopya (tempo için)
-        src, dst = os.path.join(vd, n + '.mp3'), os.path.join(t, n + '.wav')
-        if not os.path.exists(dst):
-            run(['ffmpeg', '-y', '-loglevel', 'error', '-i', src, '-af',
+    def V(n):  # "take#metin": tek parça anlatımdan o cümleyi zaman damgasıyla keser; düz ad: dosyanın kendisi
+        key = n if '#' not in n else n.split('#')[0] + '_' + str(abs(hash(n)) % 10 ** 8)
+        dst = os.path.join(t, key + '.wav')
+        if os.path.exists(dst): return dst
+        if '#' in n:
+            take, sub = n.split('#', 1)
+            al = json.load(open(os.path.join(vd, take + '.align.json'), encoding='utf-8'))['alignment']
+            text = ''.join(al['characters']); i = text.index(sub); j = i + len(sub) - 1
+            st, en = al['character_start_times_seconds'], al['character_end_times_seconds']
+            a = max(0.0, st[i] - 0.06)
+            nxt = [st[k] for k in range(j + 1, len(text)) if text[k].strip() and text[k] not in '[]' and not _in_tag(text, k)]
+            b = min(en[j] + 0.25, nxt[0] - 0.02) if nxt else en[j] + 0.3
+            run(['ffmpeg', '-y', '-loglevel', 'error', '-i', os.path.join(vd, take + '.mp3'), '-ss', f'{a:.3f}', '-to', f'{b:.3f}',
+                 '-af', 'afade=t=out:st=%.3f:d=0.05,apad=pad_dur=0.05' % max(0, b - a - 0.05), dst])
+        else:
+            run(['ffmpeg', '-y', '-loglevel', 'error', '-i', os.path.join(vd, n + '.mp3'), '-af',
                  'silenceremove=start_periods=1:start_threshold=-45dB,areverse,silenceremove=start_periods=1:start_threshold=-45dB,areverse,apad=pad_dur=0.05', dst])
         return dst
     beats = s['beats']

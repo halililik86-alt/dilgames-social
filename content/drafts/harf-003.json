@@ -1,0 +1,182 @@
+{
+ "id": "harf-003-meet-meat",
+ "type": "harf",
+ "episode": 3,
+ "voice_dir": "tts/audio/harf-003",
+ "music": "tts/audio/harf-003/music.mp3",
+ "beats": [
+  {
+   "clip": "media/harf/harf-003-a.mp4",
+   "start": 0.0,
+   "chip": "BİR HARFİN HİKÂYESİ",
+   "title": [
+    "TANIŞMAYA GELDİ.",
+    "ET GETİRDİ!"
+   ],
+   "sub": "Nerede yanlış yaptı?",
+   "say": [
+    [
+     "tr#Tanışmaya geldi... et getirdi!",
+     0.1
+    ]
+   ],
+   "sfx": [
+    [
+     "sizzle",
+     0.9
+    ]
+   ]
+  },
+  {
+   "clip": "media/harf/harf-003-b.mp4",
+   "start": 0.2,
+   "chip": "3 SANİYE ÖNCE",
+   "title": [
+    "“Nice to",
+    "meat you!”"
+   ],
+   "sub": "Tanıştığıma memnun oldum!",
+   "say": [
+    [
+     "en#Nice to meat you!",
+     0.3
+    ]
+   ],
+   "sfx": [
+    [
+     "whoosh",
+     0.0
+    ]
+   ]
+  },
+  {
+   "clip": "media/harf/harf-003-a.mp4",
+   "start": 1.6,
+   "chip": "SORUN MESAJDA",
+   "title": [
+    "SES AYNI,",
+    "YAZILIŞ FARKLI."
+   ],
+   "say": [
+    [
+     "tr#Çünkü ses aynı, yazılış farklıydı.",
+     0.1
+    ]
+   ]
+  },
+  {
+   "clip": "media/harf/harf-003-a.mp4",
+   "start": 2.8,
+   "blur": true,
+   "chip": "AYNI SES · 2 FARKLI ANLAM",
+   "word": {
+    "en": "MEET",
+    "hi": [
+     1,
+     3
+    ],
+    "tr": "TANIŞMAK"
+   },
+   "sub": "İki “e” = iki göz: göz göze gelirsin",
+   "say": [
+    [
+     "en#Meet.",
+     0.1
+    ],
+    [
+     "tr#Tanışmak.",
+     0.75
+    ]
+   ],
+   "sfx": [
+    [
+     "pop",
+     0.0
+    ]
+   ],
+   "tail": 0.1
+  },
+  {
+   "clip": "media/harf/harf-003-c.mp4",
+   "start": 0.0,
+   "blur": true,
+   "chip": "AYNI SES · 2 FARKLI ANLAM",
+   "word": {
+    "en": "MEAT",
+    "hi": [
+     1,
+     3
+    ],
+    "tr": "ET"
+   },
+   "sub": "Okunuşu ikisinde de: “miit”",
+   "say": [
+    [
+     "en#Meat.",
+     0.1
+    ],
+    [
+     "tr#Et.",
+     0.75
+    ]
+   ],
+   "sfx": [
+    [
+     "pop",
+     0.0
+    ]
+   ]
+  },
+  {
+   "clip": "media/harf/harf-003-b.mp4",
+   "start": 1.8,
+   "chip": "ŞİMDİ OLDU",
+   "title": [
+    "“Nice to",
+    "meet you!”"
+   ],
+   "accent": [
+    120,
+    230,
+    190
+   ],
+   "say": [
+    [
+     "en#Nice to meet you!",
+     0.2
+    ]
+   ]
+  },
+  {
+   "clip": "media/harf/harf-003-c.mp4",
+   "start": 0.8,
+   "chip": "MUTLU SON",
+   "title": [
+    "ÖNCE TANIŞTILAR,",
+    "SONRA MANGAL YAPTILAR!"
+   ],
+   "accent": [
+    120,
+    230,
+    190
+   ],
+   "say": [
+    [
+     "tr#Önce tanıştılar... [laughs] sonra mangal yaptılar!",
+     0.1
+    ]
+   ],
+   "sfx": []
+  },
+  {
+   "clip": "media/harf/harf-003-c.mp4",
+   "start": 3.3,
+   "chip": "MEET ≠ MEAT",
+   "title": [
+    "Bir kelime daha?"
+   ],
+   "sub": "DilGames'i takip et.",
+   "dur": 1.6
+  }
+ ]
+}
