@@ -1,0 +1,20 @@
+{
+  "model": "eleven_v3",
+  "lines": [
+    {"id": "n1", "voice": "5RqXmIU9ikjifeWoXHMG", "language": "tr", "text": "Atıştırmalık istedi... [surprised] yılan geldi!", "settings": {"stability": 0.5}},
+    {"id": "e1", "voice": "5RqXmIU9ikjifeWoXHMG", "text": "[cheerfully] Can I have a snake, please?", "settings": {"stability": 0.5}},
+    {"id": "n2", "voice": "5RqXmIU9ikjifeWoXHMG", "language": "tr", "text": "Çünkü tek bir harf farklıydı.", "settings": {"stability": 0.5}},
+    {"id": "w1", "voice": "Xb7hH8MSUJpSbSDYk0k2", "text": "Snake.", "settings": {"stability": 0.5}},
+    {"id": "t1", "voice": "5RqXmIU9ikjifeWoXHMG", "language": "tr", "text": "Yılan.", "settings": {"stability": 0.5}},
+    {"id": "w2", "voice": "Xb7hH8MSUJpSbSDYk0k2", "text": "Snack.", "settings": {"stability": 0.5}},
+    {"id": "t2", "voice": "5RqXmIU9ikjifeWoXHMG", "language": "tr", "text": "Atıştırmalık.", "settings": {"stability": 0.5}},
+    {"id": "e2", "voice": "5RqXmIU9ikjifeWoXHMG", "text": "[happily] Can I have a snack, please?", "settings": {"stability": 0.5}},
+    {"id": "n3", "voice": "5RqXmIU9ikjifeWoXHMG", "language": "tr", "text": "Bir harf değişti... [laughs] yılan gitti!", "settings": {"stability": 0.5}}
+  ],
+  "sfx": [
+    {"id": "music", "text": "warm cozy lo-fi café background music, soft piano and light acoustic guitar, gentle and cheerful, no vocals, loopable", "seconds": 20},
+    {"id": "hiss", "text": "short cute cartoon snake hiss, comedic", "seconds": 1},
+    {"id": "pop", "text": "soft bright UI pop, word appears", "seconds": 0.5},
+    {"id": "whoosh", "text": "quick soft rewind whoosh, flashback transition", "seconds": 0.8}
+  ]
+}
