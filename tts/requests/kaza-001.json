@@ -1,0 +1,15 @@
+{
+  "model": "eleven_multilingual_v2",
+  "lines": [
+    {"id": "n1", "voice": "5RqXmIU9ikjifeWoXHMG", "language": "tr", "text": "Toplantıda bunu sakın söyleme!", "settings": {"stability": 0.4, "similarity_boost": 0.8, "style": 0.4}},
+    {"id": "e1", "voice": "5RqXmIU9ikjifeWoXHMG", "text": "Yes! Yes! I am agree!", "settings": {"stability": 0.35, "similarity_boost": 0.8, "style": 0.6}},
+    {"id": "g1", "voice": "JBFqnCBsd6RMkjVDRZzb", "text": "Sorry... you *are* agree?", "settings": {"stability": 0.45, "similarity_boost": 0.8, "style": 0.5}},
+    {"id": "n2", "voice": "5RqXmIU9ikjifeWoXHMG", "language": "tr", "text": "Agree zaten bir fiil, önüne am gelmez. Doğrusu:", "settings": {"stability": 0.5, "similarity_boost": 0.8, "style": 0.3}},
+    {"id": "a1", "voice": "Xb7hH8MSUJpSbSDYk0k2", "text": "I agree.", "settings": {"stability": 0.6, "similarity_boost": 0.8, "style": 0.2}},
+    {"id": "n3", "voice": "5RqXmIU9ikjifeWoXHMG", "language": "tr", "text": "Sen de böyle diyor muydun? Takip et, her gün bir kaza!", "settings": {"stability": 0.4, "similarity_boost": 0.8, "style": 0.45}}
+  ],
+  "sfx": [
+    {"id": "scratch", "text": "vinyl record scratch, comedic stop", "seconds": 1},
+    {"id": "room", "text": "quiet modern office meeting room ambience, soft air conditioning hum, distant keyboard", "seconds": 8}
+  ]
+}
