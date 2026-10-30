@@ -1,0 +1,59 @@
+{
+ "model": "eleven_v3",
+ "lines": [
+  {
+   "id": "e1",
+   "voice": "5RqXmIU9ikjifeWoXHMG",
+   "text": "[confidently] I am twenty-five years.",
+   "settings": {
+    "stability": 0.0
+   }
+  },
+  {
+   "id": "g1",
+   "voice": "EXAVITQu4vr4xnSDxMaL",
+   "text": "[confused] Twenty-five years... of what? Experience?",
+   "settings": {
+    "stability": 0.0
+   }
+  },
+  {
+   "id": "n2",
+   "voice": "5RqXmIU9ikjifeWoXHMG",
+   "language": "tr",
+   "text": "[laughs] Elif yine yaptı! Yaşını söylerken years old dersin, ya da sadece sayıyı. Doğrusu:",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "a1",
+   "voice": "Xb7hH8MSUJpSbSDYk0k2",
+   "text": "I'm twenty-five years old.",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "n3",
+   "voice": "5RqXmIU9ikjifeWoXHMG",
+   "language": "tr",
+   "text": "[playfully] Sen yaşını nasıl söylüyordun? Yorumlara yaz!",
+   "settings": {
+    "stability": 0.5
+   }
+  }
+ ],
+ "sfx": [
+  {
+   "id": "scratch",
+   "text": "vinyl record scratch, comedic stop",
+   "seconds": 1
+  },
+  {
+   "id": "laugh",
+   "text": "short sitcom studio audience laughter burst",
+   "seconds": 2.5
+  }
+ ]
+}
