@@ -1,0 +1,59 @@
+{
+ "model": "eleven_v3",
+ "lines": [
+  {
+   "id": "e1",
+   "voice": "5RqXmIU9ikjifeWoXHMG",
+   "text": "Can you open the light, please?",
+   "settings": {
+    "stability": 0.0
+   }
+  },
+  {
+   "id": "g1",
+   "voice": "cgSgspJ2msm6clMCkdW9",
+   "text": "[confused] Open it? Like... a door?",
+   "settings": {
+    "stability": 0.0
+   }
+  },
+  {
+   "id": "n2",
+   "voice": "5RqXmIU9ikjifeWoXHMG",
+   "language": "tr",
+   "text": "[laughs] Elif yine yaptı! İngilizcede ışık açılmaz, turn on edilir. Doğrusu:",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "a1",
+   "voice": "Xb7hH8MSUJpSbSDYk0k2",
+   "text": "Turn on the light, please.",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "n3",
+   "voice": "5RqXmIU9ikjifeWoXHMG",
+   "language": "tr",
+   "text": "[playfully] Sen de ışığı açıyor muydun? Yorumlara itiraf et!",
+   "settings": {
+    "stability": 0.5
+   }
+  }
+ ],
+ "sfx": [
+  {
+   "id": "scratch",
+   "text": "vinyl record scratch, comedic stop",
+   "seconds": 1
+  },
+  {
+   "id": "laugh",
+   "text": "short sitcom studio audience laughter burst",
+   "seconds": 2.5
+  }
+ ]
+}

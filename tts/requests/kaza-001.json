@@ -1,0 +1,16 @@
+{
+  "model": "eleven_v3",
+  "rev": 3,
+  "lines": [
+    {"id": "e1", "voice": "5RqXmIU9ikjifeWoXHMG", "text": "[excited] Yes! Yes! I am agree! [proudly] Totally agree!", "settings": {"stability": 0.0}},
+    {"id": "g1", "voice": "JBFqnCBsd6RMkjVDRZzb", "text": "[confused] Sorry... you... [pause] ARE agree?", "settings": {"stability": 0.0}},
+    {"id": "n2", "voice": "5RqXmIU9ikjifeWoXHMG", "language": "tr", "text": "[laughs] Elif yine yaptı! Agree zaten fiil, önüne \"am\" gelmez. Doğrusu:", "settings": {"stability": 0.5}},
+    {"id": "a1", "voice": "Xb7hH8MSUJpSbSDYk0k2", "text": "I agree.", "settings": {"stability": 0.5}},
+    {"id": "n3", "voice": "5RqXmIU9ikjifeWoXHMG", "language": "tr", "text": "[playfully] Sen de böyle diyor muydun? Yorumlara itiraf et!", "settings": {"stability": 0.5}}
+  ],
+  "sfx": [
+    {"id": "scratch", "text": "vinyl record scratch, comedic stop", "seconds": 1},
+    {"id": "laugh", "text": "short sitcom studio audience laughter burst", "seconds": 2.5},
+    {"id": "music", "text": "light playful comedic sitcom background music, pizzicato strings and ukulele, cheerful, no vocals, loopable", "seconds": 20}
+  ]
+}

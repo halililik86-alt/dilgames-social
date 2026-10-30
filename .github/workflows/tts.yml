@@ -1,0 +1,29 @@
+name: ElevenLabs seslendirme
+
+# tts/** dalına itildiğinde çalışır: tts/requests/*.json isteklerini seslendirir, mp3'leri aynı dala geri yazar.
+# Anahtar yalnızca GitHub secret'ında (ELEVENLABS_API_KEY); repoya ya da loga yazılmaz.
+on:
+  push:
+    branches: ['tts/**']
+    paths: ['tts/requests/**']
+
+permissions:
+  contents: write
+
+concurrency: tts-${{ github.ref }}
+
+jobs:
+  tts:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Seslendir
+        env:
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+        run: python3 scripts/tts.py
+      - name: Kaydet
+        run: |
+          git config user.name "dilgames-bot"; git config user.email "dilgames-bot@users.noreply.github.com"
+          git add tts
+          git diff --cached --quiet || (git commit -m "Seslendirme: $(date -u +%F\ %H:%M)" && git push)
