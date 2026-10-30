@@ -1,5 +1,5 @@
 {
-  "model": "eleven_multilingual_v2",
+  "model": "eleven_multilingual_v2", "rev": 2,
   "lines": [
     {"id": "n1", "voice": "5RqXmIU9ikjifeWoXHMG", "language": "tr", "text": "Toplantıda bunu sakın söyleme!", "settings": {"stability": 0.4, "similarity_boost": 0.8, "style": 0.4}},
     {"id": "e1", "voice": "5RqXmIU9ikjifeWoXHMG", "text": "Yes! Yes! I am agree!", "settings": {"stability": 0.35, "similarity_boost": 0.8, "style": 0.6}},
