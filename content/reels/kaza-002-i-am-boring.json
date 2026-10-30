@@ -1,0 +1,55 @@
+{
+  "id": "kaza-002-i-am-boring",
+  "type": "kaza",
+  "format": "K1",
+  "pillar": "mizah",
+  "episode": 2,
+  "publish_at": "2026-10-31T12:53:00+03:00",
+  "hook": "Elif partide sıkıldığını söylemek istedi...",
+  "voice_dir": "tts/audio/kaza-002",
+  "scenes": [
+    {
+      "clip": "media/kaza/kaza-002-a.mp4",
+      "start": 0.0,
+      "sub": "Ugh... I am so boring.",
+      "speaker": "Elif",
+      "line": "e1",
+      "line_at": 0.15
+    },
+    {
+      "clip": "media/kaza/kaza-002-b.mp4",
+      "start": 0.3,
+      "sub": "Well... at least you're honest!",
+      "speaker": "Jack",
+      "line": "g1",
+      "line_at": 0.2
+    }
+  ],
+  "wrong": "I am boring",
+  "right": "I'm bored",
+  "why": "boring = sıkıcı, bored = sıkılmış",
+  "more": [
+    "This party is boring.",
+    "I'm so bored."
+  ],
+  "narration": {
+    "why": "n2",
+    "right": "a1",
+    "cta": "n3"
+  },
+  "sfx": {
+    "scratch": "scratch",
+    "laugh": "laugh",
+    "music": "../kaza-001/music"
+  },
+  "caption": "Elif partide sıkıldığını söylemek istedi... 😅\n\n“I am boring” ❌ → “I'm bored” ✅\n\nSen de böyle diyor muydun? Yorumlara itiraf et 👇\n\nTürk İngilizcesi Kazaları #2 · Elif'in kazaları her gün devam ediyor, kaçırmamak için takip et 🔔\nBu hatayı yapan arkadaşını etiketle 📩",
+  "hashtags": [
+    "#ingilizce",
+    "#ingilizceöğren",
+    "#ingilizcepratik",
+    "#englishlearning",
+    "#komikvideolar"
+  ],
+  "status": "approved",
+  "video": "media/kaza/kaza-002-i-am-boring.mp4"
+}
