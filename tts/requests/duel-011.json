@@ -1,0 +1,49 @@
+{
+ "model": [
+  "eleven_v4",
+  "eleven_v3"
+ ],
+ "lines": [
+  {
+   "id": "tr",
+   "voice": "5RqXmIU9ikjifeWoXHMG",
+   "language": "tr",
+   "timestamps": true,
+   "settings": {
+    "stability": 0.5
+   },
+   "text": "[playful] Bir iş çok kolaysa biz ne deriz? [pause] [confident] Tereyağından kıl çeker gibi! [pause] [curious] Peki İngilizler ne der? [pause] [laughs] Biz tereyağıyla uğraşırken, onlar pastayı yiyor! [pause] [playful] Sence hangisi daha komik? Yorumlara yaz!"
+  },
+  {
+   "id": "en",
+   "voice": "JBFqnCBsd6RMkjVDRZzb",
+   "timestamps": true,
+   "settings": {
+    "stability": 0.5
+   },
+   "text": "[cheerfully] Piece of cake! [pause] [slowly] Piece... of... cake. [pause] [warmly] Don't worry, this exam is a piece of cake."
+  }
+ ],
+ "sfx": [
+  {
+   "id": "music",
+   "text": "light playful comedic background music, pizzicato strings, soft marimba and light percussion, cheerful and professional, no vocals, loopable",
+   "seconds": 22
+  },
+  {
+   "id": "whoosh",
+   "text": "quick soft whoosh transition",
+   "seconds": 0.8
+  },
+  {
+   "id": "pop",
+   "text": "soft bright UI pop, word appears",
+   "seconds": 0.5
+  },
+  {
+   "id": "ding",
+   "text": "short cheerful bell ding, correct answer",
+   "seconds": 1
+  }
+ ]
+}
