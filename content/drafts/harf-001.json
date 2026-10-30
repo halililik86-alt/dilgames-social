@@ -1,0 +1,181 @@
+{
+ "id": "harf-001-snake-snack",
+ "type": "harf",
+ "episode": 1,
+ "voice_dir": "tts/audio/harf-001",
+ "music": "tts/audio/harf-001/music.mp3",
+ "beats": [
+  {
+   "clip": "media/harf/harf-001-a.mp4",
+   "start": 0.0,
+   "chip": "BİR HARFİN HİKÂYESİ",
+   "title": [
+    "ATIŞTIRMALIK İSTEDİ.",
+    "YILAN GELDİ!"
+   ],
+   "sub": "Nerede yanlış yaptı?",
+   "say": [
+    [
+     "n1",
+     0.15
+    ]
+   ],
+   "sfx": [
+    [
+     "hiss",
+     1.0
+    ]
+   ]
+  },
+  {
+   "clip": "media/harf/harf-001-b.mp4",
+   "start": 0.2,
+   "chip": "3 SANİYE ÖNCE",
+   "title": [
+    "“Can I have",
+    "a snake, please?”"
+   ],
+   "sub": "Bir atıştırmalık alabilir miyim?",
+   "say": [
+    [
+     "e1",
+     0.25
+    ]
+   ],
+   "sfx": [
+    [
+     "whoosh",
+     0.0
+    ]
+   ]
+  },
+  {
+   "clip": "media/harf/harf-001-a.mp4",
+   "start": 1.6,
+   "chip": "SORUN SİPARİŞTE",
+   "title": [
+    "TEK BİR HARF",
+    "FARKLIYDI."
+   ],
+   "say": [
+    [
+     "n2",
+     0.15
+    ]
+   ]
+  },
+  {
+   "clip": "media/harf/harf-001-a.mp4",
+   "start": 2.8,
+   "blur": true,
+   "chip": "1 HARF · 2 FARKLI ANLAM",
+   "word": {
+    "en": "SNAKE",
+    "hi": [
+     3,
+     5
+    ],
+    "tr": "YILAN"
+   },
+   "sub": "Okunuşu: “sneyk”",
+   "say": [
+    [
+     "w1",
+     0.1
+    ],
+    [
+     "t1",
+     0.75
+    ]
+   ],
+   "sfx": [
+    [
+     "pop",
+     0.0
+    ]
+   ],
+   "tail": 0.0
+  },
+  {
+   "clip": "media/harf/harf-001-c.mp4",
+   "start": 0.0,
+   "blur": true,
+   "chip": "1 HARF · 2 FARKLI ANLAM",
+   "word": {
+    "en": "SNACK",
+    "hi": [
+     3,
+     5
+    ],
+    "tr": "ATIŞTIRMALIK"
+   },
+   "sub": "Okunuşu: “snek”",
+   "say": [
+    [
+     "w2",
+     0.1
+    ],
+    [
+     "t2",
+     0.75
+    ]
+   ],
+   "sfx": [
+    [
+     "pop",
+     0.0
+    ]
+   ]
+  },
+  {
+   "clip": "media/harf/harf-001-b.mp4",
+   "start": 1.8,
+   "chip": "ŞİMDİ OLDU",
+   "title": [
+    "“Can I have",
+    "a snack, please?”"
+   ],
+   "accent": [
+    120,
+    230,
+    190
+   ],
+   "say": [
+    [
+     "e2",
+     0.2
+    ]
+   ]
+  },
+  {
+   "clip": "media/harf/harf-001-c.mp4",
+   "start": 0.8,
+   "chip": "MUTLU SON",
+   "title": [
+    "BİR HARF DEĞİŞTİ.",
+    "YILAN GİTTİ!"
+   ],
+   "accent": [
+    120,
+    230,
+    190
+   ],
+   "say": [
+    [
+     "n3",
+     0.15
+    ]
+   ]
+  },
+  {
+   "clip": "media/harf/harf-001-c.mp4",
+   "start": 3.3,
+   "chip": "SNAKE ≠ SNACK",
+   "title": [
+    "Bir kelime daha?"
+   ],
+   "sub": "DilGames'i takip et.",
+   "dur": 1.5
+  }
+ ]
+}
