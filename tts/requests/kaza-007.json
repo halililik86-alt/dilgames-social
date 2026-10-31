@@ -1,27 +1,21 @@
 {
- "model": "eleven_v3",
+ "model": [
+  "eleven_v4",
+  "eleven_v3"
+ ],
  "lines": [
   {
    "id": "e1",
    "voice": "5RqXmIU9ikjifeWoXHMG",
    "text": "[confidently] I am twenty-five years.",
    "settings": {
-    "stability": 0.0
+    "stability": 0.5
    }
   },
   {
    "id": "g1",
    "voice": "EXAVITQu4vr4xnSDxMaL",
    "text": "[confused] Twenty-five years... of what? Experience?",
-   "settings": {
-    "stability": 0.0
-   }
-  },
-  {
-   "id": "n2",
-   "voice": "5RqXmIU9ikjifeWoXHMG",
-   "language": "tr",
-   "text": "[laughs] Elif yine yaptı! Yaşını söylerken years old dersin, ya da sadece sayıyı. Doğrusu:",
    "settings": {
     "stability": 0.5
    }
@@ -35,13 +29,14 @@
    }
   },
   {
-   "id": "n3",
+   "id": "tr",
    "voice": "5RqXmIU9ikjifeWoXHMG",
    "language": "tr",
-   "text": "[playfully] Sen yaşını nasıl söylüyordun? Yorumlara yaz!",
+   "timestamps": true,
    "settings": {
     "stability": 0.5
-   }
+   },
+   "text": "[laughs] Elif yine yaptı! Yaşını söylerken years old dersin, ya da sadece sayıyı. Doğrusu: [pause] [pause] [playfully] Sen yaşını nasıl söylüyordun? Yorumlara yaz!"
   }
  ],
  "sfx": [

@@ -17,6 +17,7 @@ from PIL import Image, ImageDraw, ImageFilter
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from build_reel import BRAND, C, ROOT, W, H, font, shadow_text, wrap, run  # noqa: E402
 from build_duel_reel import chip, text_block, TR_RED  # noqa: E402
+from build_harf_reel import voice  # noqa: E402
 
 GREEN = (64, 190, 120)
 UP = 'scale=1080:1920:force_original_aspect_ratio=increase:flags=lanczos,crop=1080:1920,fps=30,setsar=1'
@@ -99,7 +100,7 @@ def card(path, s, cta, bg=None):
 def build(spec_path, out):
     s = json.load(open(spec_path, encoding='utf-8'))
     vd = os.path.join(ROOT, s['voice_dir']); nar = s['narration']; fx = s['sfx']
-    V = lambda n: os.path.join(vd, n + '.mp3')  # noqa: E731
+    V = lambda n: voice(vd, t, n)  # noqa: E731  ("take#metin" tek parça anlatımdan keser)
     t = tempfile.mkdtemp(prefix='kaza-')
     segs, audio, at = [], [], 0.0
 

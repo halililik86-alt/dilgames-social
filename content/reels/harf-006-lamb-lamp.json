@@ -1,0 +1,195 @@
+{
+  "id": "harf-006-lamb-lamp",
+  "type": "harf",
+  "format": "H1",
+  "pillar": "bir harfin hikâyesi",
+  "episode": 6,
+  "publish_at": "2026-11-09T17:48:00+03:00",
+  "voice_dir": "tts/audio/harf-006",
+  "music": "tts/audio/harf-001/music.mp3",
+  "beats": [
+    {
+      "clip": "media/harf/harf-006-a.mp4",
+      "start": 0.0,
+      "chip": "BİR HARFİN HİKÂYESİ",
+      "title": [
+        "LAMBA İSTEDİ.",
+        "KUZU GELDİ!"
+      ],
+      "sub": "Nerede yanlış yaptı?",
+      "say": [
+        [
+          "tr#Lamba istedi... kuzu geldi!",
+          0.1
+        ]
+      ],
+      "sfx": [
+        [
+          "baa",
+          0.9
+        ]
+      ]
+    },
+    {
+      "clip": "media/harf/harf-006-b.mp4",
+      "start": 0.2,
+      "chip": "3 SANİYE ÖNCE",
+      "title": [
+        "“I need a lamb",
+        "for my desk!”"
+      ],
+      "sub": "Masam için bir lamba lazım!",
+      "say": [
+        [
+          "en#I need a lamb for my desk!",
+          0.3
+        ]
+      ],
+      "sfx": [
+        [
+          "whoosh",
+          0.0
+        ]
+      ]
+    },
+    {
+      "clip": "media/harf/harf-006-a.mp4",
+      "start": 1.6,
+      "chip": "SORUN SİPARİŞTE",
+      "title": [
+        "TEK BİR HARF",
+        "FARKLIYDI."
+      ],
+      "say": [
+        [
+          "tr#Çünkü tek bir harf farklıydı.",
+          0.1
+        ]
+      ]
+    },
+    {
+      "clip": "media/harf/harf-006-a.mp4",
+      "start": 2.8,
+      "blur": true,
+      "chip": "1 HARF · 2 FARKLI ANLAM",
+      "word": {
+        "en": "LAMB",
+        "hi": [
+          3,
+          4
+        ],
+        "tr": "KUZU"
+      },
+      "sub": "Okunuşu: “lem” (b okunmaz!)",
+      "say": [
+        [
+          "en#Lamb.",
+          0.1
+        ],
+        [
+          "tr#Kuzu.",
+          0.75
+        ]
+      ],
+      "sfx": [
+        [
+          "pop",
+          0.0
+        ]
+      ],
+      "tail": 0.1
+    },
+    {
+      "clip": "media/harf/harf-006-c.mp4",
+      "start": 0.0,
+      "blur": true,
+      "chip": "1 HARF · 2 FARKLI ANLAM",
+      "word": {
+        "en": "LAMP",
+        "hi": [
+          3,
+          4
+        ],
+        "tr": "LAMBA"
+      },
+      "sub": "Okunuşu: “lemp”",
+      "say": [
+        [
+          "en#Lamp.",
+          0.1
+        ],
+        [
+          "tr#Lamba.",
+          0.75
+        ]
+      ],
+      "sfx": [
+        [
+          "pop",
+          0.0
+        ]
+      ]
+    },
+    {
+      "clip": "media/harf/harf-006-b.mp4",
+      "start": 1.8,
+      "chip": "ŞİMDİ OLDU",
+      "title": [
+        "“I need a lamp",
+        "for my desk!”"
+      ],
+      "accent": [
+        120,
+        230,
+        190
+      ],
+      "say": [
+        [
+          "en#I need a lamp for my desk!",
+          0.2
+        ]
+      ]
+    },
+    {
+      "clip": "media/harf/harf-006-c.mp4",
+      "start": 0.8,
+      "chip": "MUTLU SON",
+      "title": [
+        "BİR HARF DEĞİŞTİ.",
+        "MASA AYDINLANDI!"
+      ],
+      "accent": [
+        120,
+        230,
+        190
+      ],
+      "say": [
+        [
+          "tr#Bir harf değişti... [laughs] masa aydınlandı!",
+          0.1
+        ]
+      ]
+    },
+    {
+      "clip": "media/harf/harf-006-c.mp4",
+      "start": 3.3,
+      "chip": "LAMB ≠ LAMP",
+      "title": [
+        "Bir kelime daha?"
+      ],
+      "sub": "DilGames'i takip et.",
+      "dur": 1.6
+    }
+  ],
+  "caption": "Lamba istedi, kuzu geldi! 🐑💡\n\n🐑 Lamb = Kuzu (okunuşu: lem, b okunmaz!)\n💡 Lamp = Lamba (okunuşu: lemp)\n\nTek bir harf, masada bir kuzu 😅\n\nLamb kelimesindeki b’nin okunmadığını biliyor muydun? Yorumlara yaz 👇\n\nKısa ve eğlenceli İngilizce içerikleri için @dilgamesapp'i takip et! ✨",
+  "hashtags": [
+    "#ingilizce",
+    "#ingilizceöğren",
+    "#ingilizcekelimeler",
+    "#englishlearning",
+    "#DilGames"
+  ],
+  "status": "approved",
+  "video": "media/harf/harf-006-lamb-lamp.mp4",
+  "duration": 22.0
+}

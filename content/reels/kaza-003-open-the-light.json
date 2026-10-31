@@ -33,9 +33,9 @@
     "Turn on the radio."
   ],
   "narration": {
-    "why": "n2",
+    "why": "tr#[laughs] Elif yine yaptı! İngilizcede ışık açılmaz, turn on edilir. Doğrusu:",
     "right": "a1",
-    "cta": "n3"
+    "cta": "tr#[playfully] Sen de ışığı açıyor muydun? Yorumlara itiraf et!"
   },
   "sfx": {
     "scratch": "scratch",
@@ -51,5 +51,6 @@
     "#komikvideolar"
   ],
   "status": "approved",
-  "video": "media/kaza/kaza-003-open-the-light.mp4"
+  "video": "media/kaza/kaza-003-open-the-light.mp4",
+  "duration": 17.93
 }

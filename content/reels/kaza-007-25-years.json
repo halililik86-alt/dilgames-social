@@ -33,9 +33,9 @@
     "How old are you?"
   ],
   "narration": {
-    "why": "n2",
+    "why": "tr#[laughs] Elif yine yaptı! Yaşını söylerken years old dersin, ya da sadece sayıyı. Doğrusu:",
     "right": "a1",
-    "cta": "n3"
+    "cta": "tr#[playfully] Sen yaşını nasıl söylüyordun? Yorumlara yaz!"
   },
   "sfx": {
     "scratch": "scratch",
@@ -51,5 +51,6 @@
     "#komikvideolar"
   ],
   "status": "approved",
-  "video": "media/kaza/kaza-007-25-years.mp4"
+  "video": "media/kaza/kaza-007-25-years.mp4",
+  "duration": 19.77
 }

@@ -1,27 +1,21 @@
 {
- "model": "eleven_v3",
+ "model": [
+  "eleven_v4",
+  "eleven_v3"
+ ],
  "lines": [
   {
    "id": "e1",
    "voice": "5RqXmIU9ikjifeWoXHMG",
    "text": "Can you open the light, please?",
    "settings": {
-    "stability": 0.0
+    "stability": 0.5
    }
   },
   {
    "id": "g1",
    "voice": "cgSgspJ2msm6clMCkdW9",
    "text": "[confused] Open it? Like... a door?",
-   "settings": {
-    "stability": 0.0
-   }
-  },
-  {
-   "id": "n2",
-   "voice": "5RqXmIU9ikjifeWoXHMG",
-   "language": "tr",
-   "text": "[laughs] Elif yine yaptı! İngilizcede ışık açılmaz, turn on edilir. Doğrusu:",
    "settings": {
     "stability": 0.5
    }
@@ -35,13 +29,14 @@
    }
   },
   {
-   "id": "n3",
+   "id": "tr",
    "voice": "5RqXmIU9ikjifeWoXHMG",
    "language": "tr",
-   "text": "[playfully] Sen de ışığı açıyor muydun? Yorumlara itiraf et!",
+   "timestamps": true,
    "settings": {
     "stability": 0.5
-   }
+   },
+   "text": "[laughs] Elif yine yaptı! İngilizcede ışık açılmaz, turn on edilir. Doğrusu: [pause] [pause] [playfully] Sen de ışığı açıyor muydun? Yorumlara itiraf et!"
   }
  ],
  "sfx": [

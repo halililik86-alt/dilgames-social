@@ -33,9 +33,9 @@
     "I'm waiting for the bus."
   ],
   "narration": {
-    "why": "n2",
+    "why": "tr#[laughs] Elif yine yaptı! Wait kelimesinden sonra for gelir. Doğrusu:",
     "right": "a1",
-    "cta": "n3"
+    "cta": "tr#[playfully] Bunu bilmeyen bir arkadaşını etiketle!"
   },
   "sfx": {
     "scratch": "scratch",
@@ -51,5 +51,6 @@
     "#komikvideolar"
   ],
   "status": "approved",
-  "video": "media/kaza/kaza-004-waiting-you.mp4"
+  "video": "media/kaza/kaza-004-waiting-you.mp4",
+  "duration": 18.5
 }
