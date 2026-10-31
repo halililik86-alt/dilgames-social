@@ -60,7 +60,8 @@ def build(s):
         first = f'İngilizcede {a} ve {b} farkı: küçük bir fark, bambaşka anlam! 😅'
         lesson = '\n'.join(f'🔤 {w["en"].title()} = {tr_cap(w["tr"])}' + (f' ({tr_lower(sb)})' if sb else '') for w, sb in zip(words, subs))
         ig_tags = ['#ingilizce', '#ingilizceöğren', '#ingilizcekelimeler', '#ingilizcetelaffuz', '#englishlearning']
-        title = cut(f'{a} / {b} farkı 😅 İngilizcede tek harf, iki anlam', 95)
+        unit = 'küçük bir ses' if any('KÜÇÜK' in (x.get('chip') or '') for x in s['beats']) else ('iki harf' if any('İKİ HARF' in (x.get('chip') or '') for x in s['beats']) else 'tek harf')
+        title = cut(f'{a} / {b} farkı 😅 İngilizcede {unit}, iki anlam', 95)
         lead = f'İngilizcede {a} ile {b} karıştırılıyor: {tr_lower(words[0]["tr"])} ve {tr_lower(words[1]["tr"])}. Okunuşu ve farkı bu videoda.'
         yt3 = '#ingilizce #ingilizcekelimeler #shorts'
         tags = CORE_TAGS + ['ingilizce kelimeler', 'ingilizce telaffuz', 'karıştırılan ingilizce kelimeler', a.lower(), b.lower(), f'{a.lower()} {b.lower()} farkı', 'bir harfin hikayesi']
