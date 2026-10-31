@@ -50,6 +50,15 @@
     "#englishlearning",
     "#komikvideolar"
   ],
-  "status": "approved",
-  "video": "media/kaza/kaza-002-i-am-boring.mp4"
+  "status": "published",
+  "video": "media/kaza/kaza-002-i-am-boring.mp4",
+  "media_id": "18135567202598464",
+  "permalink": "https://www.instagram.com/reel/DfJ4mPBjWHI/",
+  "published_at": "2026-10-31T09:56:02+0000",
+  "youtube": {
+    "video_id": "VYKolmQsl6M",
+    "url": "https://youtube.com/shorts/VYKolmQsl6M",
+    "privacy": "public",
+    "uploaded_at": "2026-10-31T09:56:10+00:00"
+  }
 }
