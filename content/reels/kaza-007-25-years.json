@@ -1,0 +1,55 @@
+{
+  "id": "kaza-007-25-years",
+  "type": "kaza",
+  "format": "K1",
+  "pillar": "mizah",
+  "episode": 7,
+  "publish_at": "2026-11-03T21:37:00+03:00",
+  "hook": "Elif doktora kayıt yaptırıyor...",
+  "voice_dir": "tts/audio/kaza-007",
+  "scenes": [
+    {
+      "clip": "media/kaza/kaza-007-a.mp4",
+      "start": 0.0,
+      "sub": "I am twenty-five years.",
+      "speaker": "Elif",
+      "line": "e1",
+      "line_at": 0.15
+    },
+    {
+      "clip": "media/kaza/kaza-007-b.mp4",
+      "start": 0.3,
+      "sub": "Twenty-five years... of what? Experience?",
+      "speaker": "Receptionist",
+      "line": "g1",
+      "line_at": 0.2
+    }
+  ],
+  "wrong": "I am 25 years",
+  "right": "I'm 25 years old",
+  "why": "yaş söylerken “years old” denir",
+  "more": [
+    "I'm 25.",
+    "How old are you?"
+  ],
+  "narration": {
+    "why": "n2",
+    "right": "a1",
+    "cta": "n3"
+  },
+  "sfx": {
+    "scratch": "scratch",
+    "laugh": "laugh",
+    "music": "../kaza-001/music"
+  },
+  "caption": "Elif doktora kayıt yaptırıyor... 😅\n\n“I am 25 years” ❌ → “I'm 25 years old” ✅\n\nSen de böyle diyor muydun? Yorumlara itiraf et 👇\n\nTürk İngilizcesi Kazaları #7 · Elif'in kazaları her gün devam ediyor, kaçırmamak için takip et 🔔\nBu hatayı yapan arkadaşını etiketle 📩",
+  "hashtags": [
+    "#ingilizce",
+    "#ingilizceöğren",
+    "#ingilizcepratik",
+    "#englishlearning",
+    "#komikvideolar"
+  ],
+  "status": "approved",
+  "video": "media/kaza/kaza-007-25-years.mp4"
+}

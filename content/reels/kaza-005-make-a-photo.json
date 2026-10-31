@@ -1,0 +1,55 @@
+{
+  "id": "kaza-005-make-a-photo",
+  "type": "kaza",
+  "format": "K1",
+  "pillar": "mizah",
+  "episode": 5,
+  "publish_at": "2026-11-02T12:53:00+03:00",
+  "hook": "Elif Londra’da fotoğraf çektirmek istedi...",
+  "voice_dir": "tts/audio/kaza-005",
+  "scenes": [
+    {
+      "clip": "media/kaza/kaza-005-a.mp4",
+      "start": 0.0,
+      "sub": "Excuse me, can you make a photo?",
+      "speaker": "Elif",
+      "line": "e1",
+      "line_at": 0.15
+    },
+    {
+      "clip": "media/kaza/kaza-005-b.mp4",
+      "start": 0.3,
+      "sub": "Make one? Oh darling, I can't even draw!",
+      "speaker": "Mrs. Price",
+      "line": "g1",
+      "line_at": 0.2
+    }
+  ],
+  "wrong": "Make a photo",
+  "right": "Take a photo",
+  "why": "fotoğraf yapılmaz, “take” edilir",
+  "more": [
+    "Let's take a selfie!",
+    "Can you take a photo of me?"
+  ],
+  "narration": {
+    "why": "n2",
+    "right": "a1",
+    "cta": "n3"
+  },
+  "sfx": {
+    "scratch": "scratch",
+    "laugh": "laugh",
+    "music": "../kaza-001/music"
+  },
+  "caption": "Elif Londra’da fotoğraf çektirmek istedi... 😅\n\n“Make a photo” ❌ → “Take a photo” ✅\n\nSen de böyle diyor muydun? Yorumlara itiraf et 👇\n\nTürk İngilizcesi Kazaları #5 · Elif'in kazaları her gün devam ediyor, kaçırmamak için takip et 🔔\nBu hatayı yapan arkadaşını etiketle 📩",
+  "hashtags": [
+    "#ingilizce",
+    "#ingilizceöğren",
+    "#ingilizcepratik",
+    "#englishlearning",
+    "#komikvideolar"
+  ],
+  "status": "approved",
+  "video": "media/kaza/kaza-005-make-a-photo.mp4"
+}
