@@ -39,6 +39,12 @@ def main():
         print(json.dumps({rid: res}, ensure_ascii=False))
         if dry: continue
         s.update({'status': 'published', 'media_id': res['media_id'], 'permalink': res.get('permalink'), 'published_at': res.get('timestamp')})
+        if s.get('story', True):  # aynı videoyu hikâyeye de ekle; hata olursa reel yayını etkilenmez
+            try:
+                st = ig.publish_story(video)
+                s['story_id'] = st['story_id']; print(json.dumps({rid: st}, ensure_ascii=False))
+            except SystemExit as e:
+                s['story_error'] = str(e)[:300]; print(f'Hikâye paylaşılamadı: {e}')
         json.dump(s, open(path, 'w', encoding='utf-8'), ensure_ascii=False, indent=2); open(path, 'a').write('\n')
     if not due:
         print('Zamanı gelmiş onaylı reel yok.')

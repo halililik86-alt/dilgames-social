@@ -15,6 +15,7 @@ Komutlar:
   python3 scripts/ig.py whoami
   python3 scripts/ig.py limit
   python3 scripts/ig.py publish-reel <video.mp4> <caption.txt> [--cover-offset-ms 1500] [--no-feed] [--dry-run]
+  python3 scripts/ig.py publish-story <video.mp4> [--dry-run]
   python3 scripts/ig.py insights <media_id>
   python3 scripts/ig.py refresh-token          (yalnızca instagram modu; yeni anahtarı stdout'a yazar)
 """
@@ -99,6 +100,29 @@ def publish_reel(video, caption, cover_offset_ms=None, share_to_feed=True, dry_r
     return {'container_id': c['id'], 'media_id': pub['id'], 'permalink': media.get('permalink'), 'timestamp': media.get('timestamp')}
 
 
+def publish_story(video, dry_run=False):
+    """Aynı videoyu hikâye olarak paylaşır (resmi API; çıkartma/link eklenemez). Yalnızca onaylı reel'in ardından çağrılır."""
+    params = {'media_type': 'STORIES'}
+    if dry_run:
+        return {'dry_run': True, 'mode': MODE, 'video': video, 'params': params}
+    uid = env('IG_USER_ID')
+    if MODE == 'facebook':
+        params['upload_type'] = 'resumable'
+        c = call('POST', f'{uid}/media', params)
+        size = os.path.getsize(video)
+        with open(video, 'rb') as f:
+            up = call('POST', '', data=f.read(), url=c['uri'], headers={'offset': '0', 'file_size': str(size), 'Content-Type': 'application/octet-stream'})
+        if not up.get('success'):
+            raise SystemExit(f'Hikâye yüklemesi başarısız: {up}')
+    else:
+        base = env('PUBLIC_MEDIA_BASE').rstrip('/')
+        params['video_url'] = f'{base}/{os.path.basename(video)}'
+        c = call('POST', f'{uid}/media', params)
+    wait_container(c['id'])
+    pub = call('POST', f'{uid}/media_publish', {'creation_id': c['id']})
+    return {'story_id': pub['id']}
+
+
 REEL_METRICS = ['views', 'reach', 'likes', 'comments', 'shares', 'saved', 'total_interactions', 'ig_reels_avg_watch_time', 'ig_reels_video_view_total_time']
 
 
@@ -138,6 +162,8 @@ if __name__ == '__main__':
             cover = a[a.index('--cover-offset-ms') + 1]
         cap = open(a[2], encoding='utf-8').read().strip()
         print(json.dumps(publish_reel(a[1], cap, cover, '--no-feed' not in a, '--dry-run' in a), ensure_ascii=False, indent=1))
+    elif cmd == 'publish-story':
+        print(json.dumps(publish_story(a[1], '--dry-run' in a), ensure_ascii=False, indent=1))
     elif cmd == 'insights':
         print(json.dumps(insights(a[1]), ensure_ascii=False, indent=1))
     elif cmd == 'refresh-token':
