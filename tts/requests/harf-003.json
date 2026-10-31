@@ -1,0 +1,49 @@
+{
+ "lines": [
+  {
+   "id": "tr",
+   "voice": "5RqXmIU9ikjifeWoXHMG",
+   "language": "tr",
+   "timestamps": true,
+   "settings": {
+    "stability": 0.5
+   },
+   "text": "[surprised] Tanışmaya geldi... et getirdi! [pause] Çünkü ses aynı, yazılış farklıydı. [pause] Tanışmak. [pause] Et. [playful] Önce tanıştılar... [laughs] sonra mangal yaptılar!"
+  },
+  {
+   "id": "en",
+   "voice": "cgSgspJ2msm6clMCkdW9",
+   "timestamps": true,
+   "settings": {
+    "stability": 0.5
+   },
+   "text": "[cheerfully] Nice to meat you! [pause] Meet. [pause] Meat. [pause] [warmly] Nice to meet you!"
+  }
+ ],
+ "sfx": [
+  {
+   "id": "pop",
+   "text": "soft bright UI pop, word appears",
+   "seconds": 0.5
+  },
+  {
+   "id": "whoosh",
+   "text": "quick soft rewind whoosh, flashback transition",
+   "seconds": 0.8
+  },
+  {
+   "id": "sizzle",
+   "text": "short comedic sizzling steak sound",
+   "seconds": 1.2
+  },
+  {
+   "id": "music",
+   "text": "warm cheerful acoustic ukulele background music, sunny and light, no vocals, loopable",
+   "seconds": 20
+  }
+ ],
+ "model": [
+  "eleven_v4",
+  "eleven_v3"
+ ]
+}

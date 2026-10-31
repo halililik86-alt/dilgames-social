@@ -1,0 +1,54 @@
+{
+ "lines": [
+  {
+   "id": "tr",
+   "voice": "5RqXmIU9ikjifeWoXHMG",
+   "language": "tr",
+   "timestamps": true,
+   "settings": {
+    "stability": 0.5
+   },
+   "text": "[surprised] Kahve istedi... tabut geldi! [pause] Çünkü sadece son iki harf farklıydı. [pause] Kahve. [pause] Tabut. [playful] İki harf değişti... [laughs] korku da gitti!"
+  },
+  {
+   "id": "en",
+   "voice": "cgSgspJ2msm6clMCkdW9",
+   "timestamps": true,
+   "settings": {
+    "stability": 0.5
+   },
+   "text": "[confident] One coffin, please! [pause] Coffee. [pause] Coffin. [pause] [relieved] One coffee, please!"
+  }
+ ],
+ "sfx": [
+  {
+   "id": "music",
+   "text": "playful spooky Halloween comedy background music, pizzicato strings and celesta, light and cute, no vocals, loopable",
+   "seconds": 20
+  },
+  {
+   "id": "sting",
+   "text": "short comedic spooky organ sting, cartoon Halloween",
+   "seconds": 1.5
+  },
+  {
+   "id": "pop",
+   "text": "soft bright UI pop, word appears",
+   "seconds": 0.5
+  },
+  {
+   "id": "whoosh",
+   "text": "quick soft rewind whoosh, flashback transition",
+   "seconds": 0.8
+  },
+  {
+   "id": "boo",
+   "text": "cute cartoon ghost giggle, playful",
+   "seconds": 1.5
+  }
+ ],
+ "model": [
+  "eleven_v4",
+  "eleven_v3"
+ ]
+}
