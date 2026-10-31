@@ -33,9 +33,9 @@
     "Say it again, please."
   ],
   "narration": {
-    "why": "n2",
+    "why": "tr#[laughs] Elif yine yaptı! Birine bir şey söylerken tell kullanılır, say me olmaz. Doğrusu:",
     "right": "a1",
-    "cta": "n3"
+    "cta": "tr#[playfully] Sen de say me diyor muydun? Yorumlara itiraf et!"
   },
   "sfx": {
     "scratch": "scratch",
@@ -51,5 +51,6 @@
     "#komikvideolar"
   ],
   "status": "approved",
-  "video": "media/kaza/kaza-006-say-me.mp4"
+  "video": "media/kaza/kaza-006-say-me.mp4",
+  "duration": 19.77
 }

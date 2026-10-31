@@ -33,9 +33,9 @@
     "Can you take a photo of me?"
   ],
   "narration": {
-    "why": "n2",
+    "why": "tr#[laughs] Elif yine yaptı! Fotoğraf yapılmaz, take edilir. Doğrusu:",
     "right": "a1",
-    "cta": "n3"
+    "cta": "tr#[playfully] Sen de fotoğraf yapıyor muydun? Yorumlara yaz!"
   },
   "sfx": {
     "scratch": "scratch",
@@ -51,5 +51,6 @@
     "#komikvideolar"
   ],
   "status": "approved",
-  "video": "media/kaza/kaza-005-make-a-photo.mp4"
+  "video": "media/kaza/kaza-005-make-a-photo.mp4",
+  "duration": 18.27
 }

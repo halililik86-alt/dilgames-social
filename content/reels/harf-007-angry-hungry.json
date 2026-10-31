@@ -1,0 +1,195 @@
+{
+  "id": "harf-007-angry-hungry",
+  "type": "harf",
+  "format": "H1",
+  "pillar": "bir harfin hikâyesi",
+  "episode": 7,
+  "publish_at": "2026-11-10T17:48:00+03:00",
+  "voice_dir": "tts/audio/harf-007",
+  "music": "tts/audio/harf-001/music.mp3",
+  "beats": [
+    {
+      "clip": "media/harf/harf-007-a.mp4",
+      "start": 0.0,
+      "chip": "KÜÇÜK BİR SESİN HİKÂYESİ",
+      "title": [
+        "ACIKTIM DEDİ.",
+        "HERKES KAÇTI!"
+      ],
+      "sub": "Nerede yanlış yaptı?",
+      "say": [
+        [
+          "tr#Acıktım dedi... herkes kaçtı!",
+          0.1
+        ]
+      ],
+      "sfx": [
+        [
+          "scream",
+          0.9
+        ]
+      ]
+    },
+    {
+      "clip": "media/harf/harf-007-b.mp4",
+      "start": 0.2,
+      "chip": "3 SANİYE ÖNCE",
+      "title": [
+        "“I'm so",
+        "angry!”"
+      ],
+      "sub": "Çok acıktım!",
+      "say": [
+        [
+          "en#I'm so angry!",
+          0.3
+        ]
+      ],
+      "sfx": [
+        [
+          "whoosh",
+          0.0
+        ]
+      ]
+    },
+    {
+      "clip": "media/harf/harf-007-a.mp4",
+      "start": 1.6,
+      "chip": "SORUN SESTE",
+      "title": [
+        "KÜÇÜK BİR SES",
+        "HER ŞEYİ DEĞİŞTİRDİ."
+      ],
+      "say": [
+        [
+          "tr#Çünkü küçük bir ses her şeyi değiştirdi.",
+          0.1
+        ]
+      ]
+    },
+    {
+      "clip": "media/harf/harf-007-a.mp4",
+      "start": 2.8,
+      "blur": true,
+      "chip": "KÜÇÜK FARK · 2 FARKLI ANLAM",
+      "word": {
+        "en": "ANGRY",
+        "hi": [
+          0,
+          1
+        ],
+        "tr": "SİNİRLİ"
+      },
+      "sub": "Okunuşu: “engri”",
+      "say": [
+        [
+          "en#Angry.",
+          0.1
+        ],
+        [
+          "tr#Sinirli.",
+          0.75
+        ]
+      ],
+      "sfx": [
+        [
+          "pop",
+          0.0
+        ]
+      ],
+      "tail": 0.1
+    },
+    {
+      "clip": "media/harf/harf-007-c.mp4",
+      "start": 0.0,
+      "blur": true,
+      "chip": "KÜÇÜK FARK · 2 FARKLI ANLAM",
+      "word": {
+        "en": "HUNGRY",
+        "hi": [
+          0,
+          2
+        ],
+        "tr": "AÇ"
+      },
+      "sub": "Okunuşu: “hangri”",
+      "say": [
+        [
+          "en#Hungry.",
+          0.1
+        ],
+        [
+          "tr#Aç.",
+          0.75
+        ]
+      ],
+      "sfx": [
+        [
+          "pop",
+          0.0
+        ]
+      ]
+    },
+    {
+      "clip": "media/harf/harf-007-b.mp4",
+      "start": 0.4,
+      "chip": "ŞİMDİ OLDU",
+      "title": [
+        "“I'm so",
+        "hungry!”"
+      ],
+      "accent": [
+        120,
+        230,
+        190
+      ],
+      "say": [
+        [
+          "en#I'm so hungry!",
+          0.2
+        ]
+      ]
+    },
+    {
+      "clip": "media/harf/harf-007-c.mp4",
+      "start": 0.8,
+      "chip": "MUTLU SON",
+      "title": [
+        "SES DÜZELDİ.",
+        "ÖĞLE YEMEĞİ KURTULDU!"
+      ],
+      "accent": [
+        120,
+        230,
+        190
+      ],
+      "say": [
+        [
+          "tr#Ses düzeldi... [laughs] öğle yemeği kurtuldu!",
+          0.1
+        ]
+      ]
+    },
+    {
+      "clip": "media/harf/harf-007-c.mp4",
+      "start": 3.3,
+      "chip": "ANGRY ≠ HUNGRY",
+      "title": [
+        "Bir kelime daha?"
+      ],
+      "sub": "DilGames'i takip et.",
+      "dur": 1.6
+    }
+  ],
+  "caption": "Acıktım dedi, herkes kaçtı! 😡🍕\n\n😡 Angry = Sinirli (okunuşu: engri)\n🍕 Hungry = Aç (okunuşu: hangri)\n\nBaştaki H sesi her şeyi değiştiriyor 😅\n\nSen hiç acıktım derken sinirli göründün mü? Yorumlara yaz 👇\n\nKısa ve eğlenceli İngilizce içerikleri için @dilgamesapp'i takip et! ✨",
+  "hashtags": [
+    "#ingilizce",
+    "#ingilizceöğren",
+    "#ingilizcekelimeler",
+    "#englishlearning",
+    "#DilGames"
+  ],
+  "status": "approved",
+  "video": "media/harf/harf-007-angry-hungry.mp4",
+  "duration": 21.65
+}

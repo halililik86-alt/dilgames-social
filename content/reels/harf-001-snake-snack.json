@@ -1,0 +1,195 @@
+{
+  "id": "harf-001-snake-snack",
+  "type": "harf",
+  "format": "H1",
+  "pillar": "bir harfin hikâyesi",
+  "episode": 1,
+  "publish_at": "2026-11-03T12:53:00+03:00",
+  "voice_dir": "tts/audio/harf-001v2",
+  "music": "tts/audio/harf-001/music.mp3",
+  "beats": [
+    {
+      "clip": "media/harf/harf-001-a.mp4",
+      "start": 0.0,
+      "chip": "BİR HARFİN HİKÂYESİ",
+      "title": [
+        "ATIŞTIRMALIK İSTEDİ.",
+        "YILAN GELDİ!"
+      ],
+      "sub": "Nerede yanlış yaptı?",
+      "say": [
+        [
+          "tr#Atıştırmalık istedi... yılan geldi!",
+          0.1
+        ]
+      ],
+      "sfx": [
+        [
+          "hiss",
+          0.9
+        ]
+      ]
+    },
+    {
+      "clip": "media/harf/harf-001-b.mp4",
+      "start": 0.2,
+      "chip": "3 SANİYE ÖNCE",
+      "title": [
+        "“Can I have",
+        "a snake, please?”"
+      ],
+      "sub": "Bir atıştırmalık alabilir miyim?",
+      "say": [
+        [
+          "en#Can I have a snake, please?",
+          0.3
+        ]
+      ],
+      "sfx": [
+        [
+          "whoosh",
+          0.0
+        ]
+      ]
+    },
+    {
+      "clip": "media/harf/harf-001-a.mp4",
+      "start": 1.6,
+      "chip": "SORUN SİPARİŞTE",
+      "title": [
+        "TEK BİR HARF",
+        "FARKLIYDI."
+      ],
+      "say": [
+        [
+          "tr#Çünkü tek bir harf farklıydı.",
+          0.1
+        ]
+      ]
+    },
+    {
+      "clip": "media/harf/harf-001-a.mp4",
+      "start": 2.8,
+      "blur": true,
+      "chip": "1 HARF · 2 FARKLI ANLAM",
+      "word": {
+        "en": "SNAKE",
+        "hi": [
+          3,
+          5
+        ],
+        "tr": "YILAN"
+      },
+      "sub": "Okunuşu: “sneyk”",
+      "say": [
+        [
+          "en#Snake.",
+          0.1
+        ],
+        [
+          "tr#Yılan.",
+          0.75
+        ]
+      ],
+      "sfx": [
+        [
+          "pop",
+          0.0
+        ]
+      ],
+      "tail": 0.1
+    },
+    {
+      "clip": "media/harf/harf-001-c.mp4",
+      "start": 0.0,
+      "blur": true,
+      "chip": "1 HARF · 2 FARKLI ANLAM",
+      "word": {
+        "en": "SNACK",
+        "hi": [
+          3,
+          5
+        ],
+        "tr": "ATIŞTIRMALIK"
+      },
+      "sub": "Okunuşu: “snek”",
+      "say": [
+        [
+          "en#Snack.",
+          0.1
+        ],
+        [
+          "tr#Atıştırmalık.",
+          0.75
+        ]
+      ],
+      "sfx": [
+        [
+          "pop",
+          0.0
+        ]
+      ]
+    },
+    {
+      "clip": "media/harf/harf-001-b.mp4",
+      "start": 1.8,
+      "chip": "ŞİMDİ OLDU",
+      "title": [
+        "“Can I have",
+        "a snack, please?”"
+      ],
+      "accent": [
+        120,
+        230,
+        190
+      ],
+      "say": [
+        [
+          "en#Can I have a snack, please?",
+          0.2
+        ]
+      ]
+    },
+    {
+      "clip": "media/harf/harf-001-c.mp4",
+      "start": 0.8,
+      "chip": "MUTLU SON",
+      "title": [
+        "BİR HARF DEĞİŞTİ.",
+        "YILAN GİTTİ!"
+      ],
+      "accent": [
+        120,
+        230,
+        190
+      ],
+      "say": [
+        [
+          "tr#Bir harf değişti... [laughs] yılan gitti!",
+          0.1
+        ]
+      ]
+    },
+    {
+      "clip": "media/harf/harf-001-c.mp4",
+      "start": 3.3,
+      "chip": "SNAKE ≠ SNACK",
+      "title": [
+        "Bir kelime daha?"
+      ],
+      "sub": "DilGames'i takip et.",
+      "dur": 1.6
+    }
+  ],
+  "caption": "Atıştırmalık istedi, yılan geldi! 🐍🍿\n\n🐍 Snake = Yılan (okunuşu: sneyk)\n🍿 Snack = Atıştırmalık (okunuşu: snek)\n\nTek bir harf, bambaşka bir sipariş 😅\n\nSen bu ikisini karıştırır mıydın? Yorumlara yaz 👇\n\nKısa ve eğlenceli İngilizce içerikleri için @dilgamesapp'i takip et! ✨",
+  "hashtags": [
+    "#ingilizce",
+    "#ingilizceöğren",
+    "#ingilizcekelimeler",
+    "#englishlearning",
+    "#DilGames"
+  ],
+  "status": "approved",
+  "video": "media/harf/harf-001-snake-snack.mp4",
+  "duration": 21.58
+}

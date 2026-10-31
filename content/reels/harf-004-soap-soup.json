@@ -1,0 +1,195 @@
+{
+  "id": "harf-004-soap-soup",
+  "type": "harf",
+  "format": "H1",
+  "pillar": "bir harfin hikâyesi",
+  "episode": 4,
+  "publish_at": "2026-11-07T17:48:00+03:00",
+  "voice_dir": "tts/audio/harf-004",
+  "music": "tts/audio/harf-001/music.mp3",
+  "beats": [
+    {
+      "clip": "media/harf/harf-004-a.mp4",
+      "start": 0.0,
+      "chip": "BİR HARFİN HİKÂYESİ",
+      "title": [
+        "ÇORBA İSTEDİ.",
+        "SABUN GELDİ!"
+      ],
+      "sub": "Nerede yanlış yaptı?",
+      "say": [
+        [
+          "tr#Çorba istedi... sabun geldi!",
+          0.1
+        ]
+      ],
+      "sfx": [
+        [
+          "bubbles",
+          0.9
+        ]
+      ]
+    },
+    {
+      "clip": "media/harf/harf-004-b.mp4",
+      "start": 0.2,
+      "chip": "3 SANİYE ÖNCE",
+      "title": [
+        "“One soap,",
+        "please!”"
+      ],
+      "sub": "Bir çorba, lütfen!",
+      "say": [
+        [
+          "en#One soap, please!",
+          0.3
+        ]
+      ],
+      "sfx": [
+        [
+          "whoosh",
+          0.0
+        ]
+      ]
+    },
+    {
+      "clip": "media/harf/harf-004-a.mp4",
+      "start": 1.6,
+      "chip": "SORUN SİPARİŞTE",
+      "title": [
+        "TEK BİR HARF",
+        "FARKLIYDI."
+      ],
+      "say": [
+        [
+          "tr#Çünkü tek bir harf farklıydı.",
+          0.1
+        ]
+      ]
+    },
+    {
+      "clip": "media/harf/harf-004-a.mp4",
+      "start": 2.8,
+      "blur": true,
+      "chip": "1 HARF · 2 FARKLI ANLAM",
+      "word": {
+        "en": "SOAP",
+        "hi": [
+          2,
+          3
+        ],
+        "tr": "SABUN"
+      },
+      "sub": "Okunuşu: “sooup”",
+      "say": [
+        [
+          "en#Soap.",
+          0.1
+        ],
+        [
+          "tr#Sabun.",
+          0.75
+        ]
+      ],
+      "sfx": [
+        [
+          "pop",
+          0.0
+        ]
+      ],
+      "tail": 0.1
+    },
+    {
+      "clip": "media/harf/harf-004-c.mp4",
+      "start": 0.0,
+      "blur": true,
+      "chip": "1 HARF · 2 FARKLI ANLAM",
+      "word": {
+        "en": "SOUP",
+        "hi": [
+          2,
+          3
+        ],
+        "tr": "ÇORBA"
+      },
+      "sub": "Okunuşu: “suup”",
+      "say": [
+        [
+          "en#Soup.",
+          0.1
+        ],
+        [
+          "tr#Çorba.",
+          0.75
+        ]
+      ],
+      "sfx": [
+        [
+          "pop",
+          0.0
+        ]
+      ]
+    },
+    {
+      "clip": "media/harf/harf-004-b.mp4",
+      "start": 1.8,
+      "chip": "ŞİMDİ OLDU",
+      "title": [
+        "“One soup,",
+        "please!”"
+      ],
+      "accent": [
+        120,
+        230,
+        190
+      ],
+      "say": [
+        [
+          "en#One soup, please!",
+          0.2
+        ]
+      ]
+    },
+    {
+      "clip": "media/harf/harf-004-c.mp4",
+      "start": 0.8,
+      "chip": "MUTLU SON",
+      "title": [
+        "BİR HARF DEĞİŞTİ.",
+        "KÖPÜKLER GİTTİ!"
+      ],
+      "accent": [
+        120,
+        230,
+        190
+      ],
+      "say": [
+        [
+          "tr#Bir harf değişti... [laughs] köpükler gitti!",
+          0.1
+        ]
+      ]
+    },
+    {
+      "clip": "media/harf/harf-004-c.mp4",
+      "start": 3.3,
+      "chip": "SOAP ≠ SOUP",
+      "title": [
+        "Bir kelime daha?"
+      ],
+      "sub": "DilGames'i takip et.",
+      "dur": 1.6
+    }
+  ],
+  "caption": "Çorba istedi, sabun geldi! 🍲🧼\n\n🧼 Soap = Sabun (okunuşu: sooup)\n🍲 Soup = Çorba (okunuşu: suup)\n\nTek bir harf, ağızda köpük 😅\n\nSen bu ikisini karıştırır mıydın? Yorumlara yaz 👇\n\nKısa ve eğlenceli İngilizce içerikleri için @dilgamesapp'i takip et! ✨",
+  "hashtags": [
+    "#ingilizce",
+    "#ingilizceöğren",
+    "#ingilizcekelimeler",
+    "#englishlearning",
+    "#DilGames"
+  ],
+  "status": "approved",
+  "video": "media/harf/harf-004-soap-soup.mp4",
+  "duration": 20.67
+}

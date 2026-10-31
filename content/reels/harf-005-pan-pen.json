@@ -1,0 +1,195 @@
+{
+  "id": "harf-005-pan-pen",
+  "type": "harf",
+  "format": "H1",
+  "pillar": "bir harfin hikâyesi",
+  "episode": 5,
+  "publish_at": "2026-11-08T17:48:00+03:00",
+  "voice_dir": "tts/audio/harf-005",
+  "music": "tts/audio/harf-001/music.mp3",
+  "beats": [
+    {
+      "clip": "media/harf/harf-005-a.mp4",
+      "start": 0.0,
+      "chip": "BİR HARFİN HİKÂYESİ",
+      "title": [
+        "KALEM İSTEDİ.",
+        "TAVA GELDİ!"
+      ],
+      "sub": "Nerede yanlış yaptı?",
+      "say": [
+        [
+          "tr#Kalem istedi... tava geldi!",
+          0.1
+        ]
+      ],
+      "sfx": [
+        [
+          "clang",
+          0.9
+        ]
+      ]
+    },
+    {
+      "clip": "media/harf/harf-005-b.mp4",
+      "start": 0.2,
+      "chip": "3 SANİYE ÖNCE",
+      "title": [
+        "“Can I borrow",
+        "a pan?”"
+      ],
+      "sub": "Bir kalem ödünç alabilir miyim?",
+      "say": [
+        [
+          "en#Can I borrow a pan?",
+          0.3
+        ]
+      ],
+      "sfx": [
+        [
+          "whoosh",
+          0.0
+        ]
+      ]
+    },
+    {
+      "clip": "media/harf/harf-005-a.mp4",
+      "start": 1.6,
+      "chip": "SORUN SORUDA",
+      "title": [
+        "TEK BİR HARF",
+        "FARKLIYDI."
+      ],
+      "say": [
+        [
+          "tr#Çünkü tek bir harf farklıydı.",
+          0.1
+        ]
+      ]
+    },
+    {
+      "clip": "media/harf/harf-005-a.mp4",
+      "start": 2.8,
+      "blur": true,
+      "chip": "1 HARF · 2 FARKLI ANLAM",
+      "word": {
+        "en": "PAN",
+        "hi": [
+          1,
+          2
+        ],
+        "tr": "TAVA"
+      },
+      "sub": "Okunuşu: “pæn” (ağzını daha çok aç)",
+      "say": [
+        [
+          "en#Pan.",
+          0.1
+        ],
+        [
+          "tr#Tava.",
+          0.75
+        ]
+      ],
+      "sfx": [
+        [
+          "pop",
+          0.0
+        ]
+      ],
+      "tail": 0.1
+    },
+    {
+      "clip": "media/harf/harf-005-c.mp4",
+      "start": 0.0,
+      "blur": true,
+      "chip": "1 HARF · 2 FARKLI ANLAM",
+      "word": {
+        "en": "PEN",
+        "hi": [
+          1,
+          2
+        ],
+        "tr": "KALEM"
+      },
+      "sub": "Okunuşu: “pen”",
+      "say": [
+        [
+          "en#Pen.",
+          0.1
+        ],
+        [
+          "tr#Kalem.",
+          0.75
+        ]
+      ],
+      "sfx": [
+        [
+          "pop",
+          0.0
+        ]
+      ]
+    },
+    {
+      "clip": "media/harf/harf-005-b.mp4",
+      "start": 1.8,
+      "chip": "ŞİMDİ OLDU",
+      "title": [
+        "“Can I borrow",
+        "a pen?”"
+      ],
+      "accent": [
+        120,
+        230,
+        190
+      ],
+      "say": [
+        [
+          "en#Can I borrow a pen?",
+          0.2
+        ]
+      ]
+    },
+    {
+      "clip": "media/harf/harf-005-c.mp4",
+      "start": 0.8,
+      "chip": "MUTLU SON",
+      "title": [
+        "BİR HARF DEĞİŞTİ.",
+        "SINAV KURTULDU!"
+      ],
+      "accent": [
+        120,
+        230,
+        190
+      ],
+      "say": [
+        [
+          "tr#Bir harf değişti... [laughs] sınav kurtuldu!",
+          0.1
+        ]
+      ]
+    },
+    {
+      "clip": "media/harf/harf-005-c.mp4",
+      "start": 3.3,
+      "chip": "PAN ≠ PEN",
+      "title": [
+        "Bir kelime daha?"
+      ],
+      "sub": "DilGames'i takip et.",
+      "dur": 1.6
+    }
+  ],
+  "caption": "Kalem istedi, tava geldi! 🍳✏️\n\n🍳 Pan = Tava (okunuşu: pæn, ağız daha açık)\n✏️ Pen = Kalem (okunuşu: pen)\n\nTürklerin en çok karıştırdığı seslerden biri 😅\n\nSen bu ikisini nasıl okuyordun? Yorumlara yaz 👇\n\nKısa ve eğlenceli İngilizce içerikleri için @dilgamesapp'i takip et! ✨",
+  "hashtags": [
+    "#ingilizce",
+    "#ingilizceöğren",
+    "#ingilizcekelimeler",
+    "#englishlearning",
+    "#DilGames"
+  ],
+  "status": "approved",
+  "video": "media/harf/harf-005-pan-pen.mp4",
+  "duration": 20.82
+}

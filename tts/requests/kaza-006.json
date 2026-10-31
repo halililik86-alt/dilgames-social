@@ -1,27 +1,21 @@
 {
- "model": "eleven_v3",
+ "model": [
+  "eleven_v4",
+  "eleven_v3"
+ ],
  "lines": [
   {
    "id": "e1",
    "voice": "5RqXmIU9ikjifeWoXHMG",
    "text": "[cheerfully] Say me the wifi password!",
    "settings": {
-    "stability": 0.0
+    "stability": 0.5
    }
   },
   {
    "id": "g1",
    "voice": "IKne3meq5aSn9XLyUdCD",
    "text": "[puzzled] Say... you? Okay... YOU!",
-   "settings": {
-    "stability": 0.0
-   }
-  },
-  {
-   "id": "n2",
-   "voice": "5RqXmIU9ikjifeWoXHMG",
-   "language": "tr",
-   "text": "[laughs] Elif yine yaptı! Birine bir şey söylerken tell kullanılır, say me olmaz. Doğrusu:",
    "settings": {
     "stability": 0.5
    }
@@ -35,13 +29,14 @@
    }
   },
   {
-   "id": "n3",
+   "id": "tr",
    "voice": "5RqXmIU9ikjifeWoXHMG",
    "language": "tr",
-   "text": "[playfully] Sen de say me diyor muydun? Yorumlara itiraf et!",
+   "timestamps": true,
    "settings": {
     "stability": 0.5
-   }
+   },
+   "text": "[laughs] Elif yine yaptı! Birine bir şey söylerken tell kullanılır, say me olmaz. Doğrusu: [pause] [pause] [playfully] Sen de say me diyor muydun? Yorumlara itiraf et!"
   }
  ],
  "sfx": [
