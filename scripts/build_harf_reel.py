@@ -14,7 +14,7 @@ import json, os, subprocess, sys, tempfile
 from PIL import Image, ImageDraw, ImageFilter
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from build_reel import C, ROOT, W, H, font, run  # noqa: E402
+from build_reel import C, ROOT, W, H, font, run, wrap  # noqa: E402
 
 UP = 'scale=1080:1920:force_original_aspect_ratio=increase:flags=lanczos,crop=1080:1920,setsar=1'
 ACCENT = (255, 196, 92)
@@ -44,8 +44,37 @@ def overlay(path, b, progress):
     im.alpha_composite(top.filter(ImageFilter.GaussianBlur(60)))
     if b.get('chip'):
         pill(im, W / 2, 170, b['chip'], font('ExtraBold', 30), (12, 20, 30, 215), (235, 240, 245))
-    w = b.get('word')
-    if w:
+    if b.get('label'):  # ör. TÜRKÇE (kırmızı) / İNGİLİZCE (mavi)
+        pill(im, W / 2, 232, b['label'], font('ExtraBold', 30), tuple(b.get('label_color', [227, 66, 66])) + (240,), (255, 255, 255))
+    w = b.get('word'); c = b.get('card')
+    if c:  # deyim kartı: iki deyim, anlam ve örnek cümle (kutu içeriğe göre boyutlanır)
+        d = ImageDraw.Draw(im); rows = []
+        for txt, col in ((c['a'], (255, 255, 255)), ('=', MINT), (c['b'], ACCENT)):
+            size = 80
+            while size > 44 and d.textlength(txt, font=font('ExtraBold', size)) > 880: size -= 4
+            rows.append((txt, col, size))
+        fm = font('SemiBold', 48); lm = wrap(d, 'Anlamı: ' + c['meaning'], fm, 860)
+        fe, ft = font('Bold', 48), font('Medium', 40)
+        le, lt = wrap(d, c['ex_en'], fe, 800), wrap(d, c['ex_tr'], ft, 800)
+        ex_h = 40 + len(le) * 60 + 16 + len(lt) * 50 + 36
+        body = 90 + sum(sz + 24 for _, _, sz in rows) + 10 + len(lm) * 60 + 44 + ex_h + 60
+        top = max(300, (H - body) // 2 - 60)
+        box = Image.new('RGBA', (W, H), (0, 0, 0, 0)); ImageDraw.Draw(box).rounded_rectangle([60, top, W - 60, top + body], 48, fill=(10, 16, 26, 225))
+        im.alpha_composite(box)
+        pill(im, W / 2, top + 70, c.get('chip', 'İKİSİ DE AYNI ANLAMDA'), font('ExtraBold', 32), (255, 196, 92, 255), (20, 24, 32))
+        y = top + 130
+        for txt, col, sz in rows:
+            shadowed(im, (W / 2, y), txt, font('ExtraBold', sz), col, blur=6); y += sz + 24
+        y += 10
+        for ln in lm: shadowed(im, (W / 2, y), ln, fm, (210, 230, 232), blur=4); y += 60
+        y += 44
+        exl = Image.new('RGBA', (W, H), (0, 0, 0, 0)); de = ImageDraw.Draw(exl)
+        de.rounded_rectangle([110, y, W - 110, y + ex_h], 32, fill=(0, 0, 0, 150), outline=(120, 230, 190, 140), width=3)
+        im.alpha_composite(exl); d = ImageDraw.Draw(im); yy = y + 38
+        for ln in le: d.text((W / 2, yy), ln, font=fe, fill=(255, 255, 255), anchor='ma'); yy += 60
+        yy += 16
+        for ln in lt: d.text((W / 2, yy), ln, font=ft, fill=(200, 215, 220), anchor='ma'); yy += 50
+    elif w:
         f = font('ExtraBold', 150); d = ImageDraw.Draw(im); en = w['en']
         x = W / 2 - d.textlength(en, font=f) / 2; y = 250
         sh = Image.new('RGBA', im.size, (0, 0, 0, 0)); ImageDraw.Draw(sh).text((x, y), en, font=f, fill=(0, 0, 0, 200))
@@ -59,10 +88,13 @@ def overlay(path, b, progress):
         d = ImageDraw.Draw(im); size = 92
         while size > 50 and max(d.textlength(x, font=font('ExtraBold', size)) for x in t or ['']) > 980: size -= 4
         f = font('ExtraBold', size)
-        if t: shadowed(im, (W / 2, 245), t[0], f, (255, 255, 255))
-        if len(t) > 1: shadowed(im, (W / 2, 245 + size + 14), t[1], f, tuple(b.get('accent', ACCENT)))
+        y0 = 300 if b.get('label') else 245
+        if t: shadowed(im, (W / 2, y0), t[0], f, (255, 255, 255))
+        if len(t) > 1: shadowed(im, (W / 2, y0 + size + 14), t[1], f, tuple(b.get('accent', ACCENT)))
     if b.get('sub'):
-        pill(im, W / 2, 1585, b['sub'], font('Bold', 42), (12, 20, 30, 200), (255, 255, 255))
+        d = ImageDraw.Draw(im); size = 42
+        while size > 30 and d.textlength(b['sub'], font=font('Bold', size)) > 940: size -= 2
+        pill(im, W / 2, 1585, b['sub'], font('Bold', size), (12, 20, 30, 200), (255, 255, 255))
     pill(im, 120, 1760, 'DilGames', font('Bold', 30), (12, 20, 30, 190), (255, 255, 255), padx=22, pady=10)
     d = ImageDraw.Draw(im)
     d.rounded_rectangle([60, 1820, W - 60, 1828], 4, fill=(255, 255, 255, 70))
@@ -112,7 +144,7 @@ def build(spec_path, out):
         vf = (f"[0:v]trim={b.get('start', 0)}:{b.get('start', 0) + b['dur']},setpts=PTS-STARTPTS,{UP},fps=30,tpad=stop_mode=clone:stop_duration={b['dur']},"
               f"scale=1134:2016,zoompan=z='1+{z}*on/{n}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d=1:s=1080x1920:fps=30"
               + (",gblur=sigma=14,eq=brightness=-0.08" if b.get('blur') else '') + "[v];"
-              "[1:v]format=rgba,fade=in:st=0:d=0.12:alpha=1[a];[v][a]overlay,format=yuv420p[o]")
+              "[1:v]format=rgba" + (",fade=in:st=0:d=0.12:alpha=1" if i == 0 or beats[i - 1]['clip'] != b['clip'] or beats[i - 1].get('blur') != b.get('blur') else '') + "[a];[v][a]overlay,format=yuv420p[o]")
         run(['ffmpeg', '-y', '-loglevel', 'error', '-i', os.path.join(ROOT, b['clip']), '-loop', '1', '-t', str(b['dur']), '-i', f'{t}/o{i}.png',
              '-filter_complex', vf, '-map', '[o]', '-an', '-t', str(b['dur']), '-c:v', 'libx264', '-crf', '16', '-r', '30', f'{t}/s{i}.mp4'])
         segs.append(f'{t}/s{i}.mp4')

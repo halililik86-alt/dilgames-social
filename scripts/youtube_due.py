@@ -62,7 +62,7 @@ def main():
         print(json.dumps({'kanal': yt.whoami(), 'sirada': [d[2]['id'] for d in due]}, ensure_ascii=False))
     for _, p, s in due[:mx]:
         desc = post_text(s) + '\n\n#shorts'
-        res = yt.upload(video_path(s), title(s), desc, s.get('hashtags', []), dry, synthetic=s.get('type') in ('duel', 'ff', 'kaza', 'harf'))
+        res = yt.upload(video_path(s), title(s), desc, s.get('hashtags', []), dry, synthetic=s.get('type') in ('duel', 'ff', 'kaza', 'harf', 'duel2'))
         print(json.dumps({s['id']: res}, ensure_ascii=False))
         if dry: continue
         s['youtube'] = {'video_id': res['video_id'], 'url': res['url'], 'privacy': res.get('privacy'),

@@ -1,0 +1,44 @@
+{
+ "model": [
+  "eleven_v4",
+  "eleven_v3"
+ ],
+ "lines": [
+  {
+   "id": "tr",
+   "voice": "5RqXmIU9ikjifeWoXHMG",
+   "language": "tr",
+   "timestamps": true,
+   "settings": {
+    "stability": 0.5
+   },
+   "text": "[playful] Bir dertten kurtulayım derken daha büyüğüne yakalanırsan biz ne deriz? [pause] [dramatic] Yağmurdan kaçarken doluya tutuldu! [pause] [curious] Peki İngilizler ne der? [pause] [laughs] Bizde hava bozuyor, onlarda mutfak yanıyor! [pause] [playful] Sence hangisi daha komik? Yorumlara yaz!"
+  },
+  {
+   "id": "en",
+   "voice": "JBFqnCBsd6RMkjVDRZzb",
+   "timestamps": true,
+   "settings": {
+    "stability": 0.5
+   },
+   "text": "[dramatically] Out of the frying pan, into the fire! [pause] [slowly] Out of the frying pan... into the fire. [pause] [warmly] I changed jobs, but it was out of the frying pan into the fire."
+  }
+ ],
+ "sfx": [
+  {
+   "id": "whoosh",
+   "text": "quick soft whoosh transition",
+   "seconds": 0.8
+  },
+  {
+   "id": "pop",
+   "text": "soft bright UI pop, word appears",
+   "seconds": 0.5
+  },
+  {
+   "id": "ding",
+   "text": "short cheerful bell ding, correct answer",
+   "seconds": 1
+  }
+ ]
+}

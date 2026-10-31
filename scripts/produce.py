@@ -30,9 +30,9 @@ def main():
         if until and spec.get('publish_at', '9999')[:10] > until: continue
         rid = spec['id']; rec = os.path.join(OUT, 'rec-' + rid)
         print(f'==> {rid}', flush=True)
-        if spec.get('type') in ('duel', 'ff', 'kaza', 'harf'):
+        if spec.get('type') in ('duel', 'ff', 'kaza', 'harf', 'duel2'):
             # Deyim Düellosu / Yanlış Arkadaşlar: oyun kaydı yok; hazır AI klipleri (assets/ai) şablonla kurgulanır.
-            builder = {'duel': 'build_duel_reel.py', 'ff': 'build_ff_reel.py', 'kaza': 'build_kaza_reel.py', 'harf': 'build_harf_reel.py'}[spec['type']]
+            builder = {'duel': 'build_duel_reel.py', 'ff': 'build_ff_reel.py', 'kaza': 'build_kaza_reel.py', 'harf': 'build_harf_reel.py', 'duel2': 'build_harf_reel.py'}[spec['type']]
             b = subprocess.run([sys.executable, os.path.join(ROOT, 'scripts', builder), path, os.path.join(OUT, rid + '.mp4')], capture_output=True, text=True)
             print(b.stdout[-2000:], b.stderr[-2000:], flush=True)
             if b.returncode != 0:
