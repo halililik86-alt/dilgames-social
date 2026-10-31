@@ -1,0 +1,57 @@
+{
+ "model": [
+  "eleven_v4",
+  "eleven_v3"
+ ],
+ "lines": [
+  {
+   "id": "tr",
+   "voice": "5RqXmIU9ikjifeWoXHMG",
+   "text": "[playful] Her gün söylediğimiz o güzel söz... [pause] Kolay gelsin! [pause] [laughs] Ama Elif bunu İngilizceye kelimesi kelimesine çevirdi. [pause] [curious] Peki İngilizler ne der? [pause] [playful] Sence İngilizcesi olmayan başka hangi söz var? Yorumlara yaz, sıradaki bölümü onunla yapalım!",
+   "settings": {
+    "stability": 0.5
+   },
+   "timestamps": true,
+   "language": "tr"
+  },
+  {
+   "id": "elif",
+   "voice": "5RqXmIU9ikjifeWoXHMG",
+   "text": "[cheerfully] Let it come easy!",
+   "settings": {
+    "stability": 0.5
+   },
+   "timestamps": true
+  },
+  {
+   "id": "oliver",
+   "voice": "JBFqnCBsd6RMkjVDRZzb",
+   "text": "[confused] Sorry... [pause] let what come easy?",
+   "settings": {
+    "stability": 0.5
+   },
+   "timestamps": true
+  },
+  {
+   "id": "alice",
+   "voice": "Xb7hH8MSUJpSbSDYk0k2",
+   "text": "Hope it goes well! [pause] Good luck with your work!",
+   "settings": {
+    "stability": 0.5
+   },
+   "timestamps": true
+  }
+ ],
+ "sfx": [
+  {
+   "id": "scratch",
+   "text": "vinyl record scratch, comedic stop",
+   "seconds": 1
+  },
+  {
+   "id": "pop",
+   "text": "soft bright UI pop, word appears",
+   "seconds": 0.5
+  }
+ ]
+}
