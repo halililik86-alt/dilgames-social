@@ -187,7 +187,7 @@
   "format": "H1",
   "pillar": "bir harfin hikâyesi",
   "publish_at": "2026-10-31T21:37:00+03:00",
-  "status": "approved",
+  "status": "published",
   "video": "media/harf/harf-002-coffee-coffin.mp4",
   "duration": 20.44,
   "yt_title": "Coffee mi Coffin mi? Kahve istedi, tabut geldi! | Bir Harfin Hikâyesi",
@@ -198,5 +198,14 @@
     "#halloween",
     "#englishlearning",
     "#DilGames"
-  ]
+  ],
+  "media_id": "18633322018015236",
+  "permalink": "https://www.instagram.com/reel/DfK0jqDE31-/",
+  "published_at": "2026-10-31T18:39:58+0000",
+  "youtube": {
+    "video_id": "cjnNRs_NotY",
+    "url": "https://youtube.com/shorts/cjnNRs_NotY",
+    "privacy": "public",
+    "uploaded_at": "2026-10-31T18:40:06+00:00"
+  }
 }
