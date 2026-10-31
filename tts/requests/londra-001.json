@@ -1,0 +1,72 @@
+{
+ "model": [
+  "eleven_v4",
+  "eleven_v3"
+ ],
+ "lines": [
+  {
+   "id": "tr",
+   "voice": "5RqXmIU9ikjifeWoXHMG",
+   "text": "[excited] Elif Londra'ya ilk kez geldi! [pause] [nervous] Ve ilk sınav... pasaport kontrolü. [pause] [whispers] Eyvah... adresi unuttu! [pause] [playful] Devamı yarın akşam!",
+   "settings": {
+    "stability": 0.5
+   },
+   "timestamps": true,
+   "language": "tr"
+  },
+  {
+   "id": "officer",
+   "voice": "onwK4e9ZLuTAKqWW03F9",
+   "text": "[formal] What's the purpose of your visit? [pause] [suspicious] And where will you be staying?",
+   "settings": {
+    "stability": 0.5
+   },
+   "timestamps": true
+  },
+  {
+   "id": "elif",
+   "voice": "5RqXmIU9ikjifeWoXHMG",
+   "text": "[nervous] Uh... I... I'm here for work!",
+   "settings": {
+    "stability": 0.5
+   },
+   "timestamps": true
+  },
+  {
+   "id": "alice",
+   "voice": "Xb7hH8MSUJpSbSDYk0k2",
+   "text": "I'm here for work. [pause] I'm here on holiday.",
+   "settings": {
+    "stability": 0.5
+   },
+   "timestamps": true
+  }
+ ],
+ "sfx": [
+  {
+   "id": "music",
+   "text": "light cinematic travel adventure background music, warm and curious, soft strings and piano, no vocals, loopable",
+   "seconds": 22
+  },
+  {
+   "id": "stamp",
+   "text": "passport stamp thud",
+   "seconds": 0.6
+  },
+  {
+   "id": "airport",
+   "text": "airport arrival hall ambience, soft announcements, distant footsteps",
+   "seconds": 8
+  },
+  {
+   "id": "sting",
+   "text": "short suspense comedy sting, cliffhanger",
+   "seconds": 1.5
+  },
+  {
+   "id": "pop",
+   "text": "soft bright UI pop, word appears",
+   "seconds": 0.5
+  }
+ ]
+}

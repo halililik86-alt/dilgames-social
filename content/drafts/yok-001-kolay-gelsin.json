@@ -1,0 +1,173 @@
+{
+ "id": "yok-001-kolay-gelsin",
+ "type": "harf",
+ "format": "Y1",
+ "pillar": "ingilizcesi yok",
+ "episode": 1,
+ "voice_dir": "tts/audio/yok-001",
+ "music": "tts/audio/duel-011/music.mp3",
+ "beats": [
+  {
+   "clip": "media/pilot/yok-001-a.mp4",
+   "start": 0.0,
+   "chip": "İNGİLİZCESİ YOK! #1",
+   "label": "TÜRKÇE",
+   "label_color": [
+    227,
+    66,
+    66
+   ],
+   "title": [
+    "Kolay gelsin!"
+   ],
+   "say": [
+    [
+     "tr#Her gün söylediğimiz o güzel söz... [pause] Kolay gelsin!",
+     0.1
+    ]
+   ],
+   "tail": 0.15
+  },
+  {
+   "clip": "media/pilot/yok-001-a.mp4",
+   "start": 1.6,
+   "chip": "İNGİLİZCESİ YOK! #1",
+   "title": [
+    "Elif bunu kelimesi",
+    "kelimesine çevirdi..."
+   ],
+   "say": [
+    [
+     "tr#Ama Elif bunu İngilizceye kelimesi kelimesine çevirdi.",
+     0.1
+    ]
+   ],
+   "tail": 0.15
+  },
+  {
+   "clip": "media/pilot/yok-001-a.mp4",
+   "start": 3.2,
+   "chip": "İNGİLİZCESİ YOK! #1",
+   "title": [
+    "“Let it",
+    "come easy!”"
+   ],
+   "sub": "Kelimesi kelimesine: “Kolay gelsin!”",
+   "say": [
+    [
+     "elif#Let it come easy!",
+     0.1
+    ]
+   ],
+   "tail": 0.2
+  },
+  {
+   "clip": "media/pilot/yok-001-b.mp4",
+   "start": 0.6,
+   "chip": "İNGİLİZCESİ YOK! #1",
+   "title": [
+    "“Sorry...",
+    "let what come easy?”"
+   ],
+   "sub": "Pardon... ne kolay gelsin?",
+   "say": [
+    [
+     "oliver#Sorry... [pause] let what come easy?",
+     0.25
+    ]
+   ],
+   "sfx": [
+    [
+     "scratch",
+     0.0
+    ]
+   ],
+   "tail": 0.3
+  },
+  {
+   "clip": "media/pilot/yok-001-b.mp4",
+   "start": 3.2,
+   "blur": true,
+   "chip": "İNGİLİZCESİ YOK! #1",
+   "title": [
+    "Peki İngilizler",
+    "ne der?"
+   ],
+   "say": [
+    [
+     "tr#Peki İngilizler ne der?",
+     0.1
+    ]
+   ],
+   "tail": 0.15
+  },
+  {
+   "clip": "media/pilot/yok-001-a.mp4",
+   "start": 4.2,
+   "blur": true,
+   "chip": "İNGİLİZCESİ YOK! #1",
+   "card": {
+    "chip": "İNGİLİZLER BÖYLE DER",
+    "a": "Kolay gelsin!",
+    "sep": "↓",
+    "b": "Hope it goes well!",
+    "meaning": "İşin iyi gitsin, kolay gelsin.",
+    "ex_en": "Good luck with your work!",
+    "ex_tr": "İşinde başarılar! (Kolay gelsin!)"
+   },
+   "say": [
+    [
+     "alice#Hope it goes well!",
+     0.2
+    ]
+   ],
+   "sfx": [
+    [
+     "pop",
+     0.0
+    ]
+   ],
+   "tail": 0.2
+  },
+  {
+   "clip": "media/pilot/yok-001-a.mp4",
+   "start": 4.2,
+   "blur": true,
+   "chip": "İNGİLİZCESİ YOK! #1",
+   "card": {
+    "chip": "İNGİLİZLER BÖYLE DER",
+    "a": "Kolay gelsin!",
+    "sep": "↓",
+    "b": "Hope it goes well!",
+    "meaning": "İşin iyi gitsin, kolay gelsin.",
+    "ex_en": "Good luck with your work!",
+    "ex_tr": "İşinde başarılar! (Kolay gelsin!)"
+   },
+   "say": [
+    [
+     "alice#Good luck with your work!",
+     0.1
+    ]
+   ],
+   "tail": 0.4
+  },
+  {
+   "clip": "media/pilot/yok-001-b.mp4",
+   "start": 4.0,
+   "blur": true,
+   "chip": "İNGİLİZCESİ YOK! #1",
+   "title": [
+    "İngilizcesi olmayan",
+    "başka hangi söz var?"
+   ],
+   "sub": "Yorumlara yaz, sıradaki bölüm o olsun!",
+   "say": [
+    [
+     "tr#Sence İngilizcesi olmayan başka hangi söz var? Yorumlara yaz, sıradaki bölümü onunla yapalım!",
+     0.1
+    ]
+   ],
+   "tail": 0.5
+  }
+ ]
+}

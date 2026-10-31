@@ -49,7 +49,7 @@ def overlay(path, b, progress):
     w = b.get('word'); c = b.get('card')
     if c:  # deyim kartı: iki deyim, anlam ve örnek cümle (kutu içeriğe göre boyutlanır)
         d = ImageDraw.Draw(im); rows = []
-        for txt, col in ((c['a'], (255, 255, 255)), ('=', MINT), (c['b'], ACCENT)):
+        for txt, col in ((c['a'], (255, 255, 255)), (c.get('sep', '='), MINT), (c['b'], ACCENT)):
             size = 80
             while size > 44 and d.textlength(txt, font=font('ExtraBold', size)) > 880: size -= 4
             rows.append((txt, col, size))

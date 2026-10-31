@@ -1,0 +1,196 @@
+{
+ "id": "londra-001-pasaport",
+ "type": "harf",
+ "format": "L1",
+ "pillar": "londra'da bir türk",
+ "episode": 1,
+ "voice_dir": "tts/audio/londra-001",
+ "music": "tts/audio/londra-001/music.mp3",
+ "beats": [
+  {
+   "clip": "media/pilot/londra-001-a.mp4",
+   "start": 0.0,
+   "chip": "LONDRA'DA BİR TÜRK · BÖLÜM 1",
+   "title": [
+    "Elif Londra'ya",
+    "ilk kez geldi!"
+   ],
+   "say": [
+    [
+     "tr#Elif Londra'ya ilk kez geldi!",
+     0.1
+    ]
+   ],
+   "sfx": [
+    [
+     "airport",
+     0.0
+    ]
+   ],
+   "tail": 0.15
+  },
+  {
+   "clip": "media/pilot/londra-001-a.mp4",
+   "start": 2.2,
+   "chip": "LONDRA'DA BİR TÜRK · BÖLÜM 1",
+   "title": [
+    "İlk sınav:",
+    "pasaport kontrolü!"
+   ],
+   "say": [
+    [
+     "tr#Ve ilk sınav... pasaport kontrolü.",
+     0.1
+    ]
+   ],
+   "tail": 0.15
+  },
+  {
+   "clip": "media/pilot/londra-001-b.mp4",
+   "start": 0.0,
+   "chip": "LONDRA'DA BİR TÜRK · BÖLÜM 1",
+   "title": [
+    "“What's the purpose",
+    "of your visit?”"
+   ],
+   "sub": "Ziyaretinizin amacı nedir?",
+   "say": [
+    [
+     "officer#What's the purpose of your visit?",
+     0.15
+    ]
+   ],
+   "sfx": [
+    [
+     "stamp",
+     0.0
+    ]
+   ],
+   "tail": 0.25
+  },
+  {
+   "clip": "media/pilot/londra-001-c.mp4",
+   "start": 0.0,
+   "chip": "LONDRA'DA BİR TÜRK · BÖLÜM 1",
+   "title": [
+    "“Uh... I... I'm here",
+    "for work!”"
+   ],
+   "sub": "İş için buradayım!",
+   "say": [
+    [
+     "elif#Uh... I... I'm here for work!",
+     0.1
+    ]
+   ],
+   "tail": 0.25
+  },
+  {
+   "clip": "media/pilot/londra-001-c.mp4",
+   "start": 1.0,
+   "blur": true,
+   "chip": "LONDRA'DA BİR TÜRK · BÖLÜM 1",
+   "card": {
+    "chip": "BUGÜNÜN KALIBI",
+    "a": "What's the purpose of your visit?",
+    "sep": "↓",
+    "b": "I'm here for work.",
+    "meaning": "Ziyaretinizin amacı nedir? → İş için buradayım.",
+    "ex_en": "I'm here on holiday.",
+    "ex_tr": "Tatil için buradayım."
+   },
+   "say": [
+    [
+     "alice#I'm here for work.",
+     0.2
+    ]
+   ],
+   "sfx": [
+    [
+     "pop",
+     0.0
+    ]
+   ],
+   "tail": 0.2
+  },
+  {
+   "clip": "media/pilot/londra-001-c.mp4",
+   "start": 1.0,
+   "blur": true,
+   "chip": "LONDRA'DA BİR TÜRK · BÖLÜM 1",
+   "card": {
+    "chip": "BUGÜNÜN KALIBI",
+    "a": "What's the purpose of your visit?",
+    "sep": "↓",
+    "b": "I'm here for work.",
+    "meaning": "Ziyaretinizin amacı nedir? → İş için buradayım.",
+    "ex_en": "I'm here on holiday.",
+    "ex_tr": "Tatil için buradayım."
+   },
+   "say": [
+    [
+     "alice#I'm here on holiday.",
+     0.1
+    ]
+   ],
+   "tail": 0.3
+  },
+  {
+   "clip": "media/pilot/londra-001-b.mp4",
+   "start": 2.5,
+   "chip": "LONDRA'DA BİR TÜRK · BÖLÜM 1",
+   "title": [
+    "“And where will",
+    "you be staying?”"
+   ],
+   "sub": "Peki nerede kalacaksınız?",
+   "say": [
+    [
+     "officer#And where will you be staying?",
+     0.1
+    ]
+   ],
+   "tail": 0.25
+  },
+  {
+   "clip": "media/pilot/londra-001-c.mp4",
+   "start": 2.6,
+   "chip": "LONDRA'DA BİR TÜRK · BÖLÜM 1",
+   "title": [
+    "Eyvah...",
+    "adresi unuttu!"
+   ],
+   "say": [
+    [
+     "tr#Eyvah... adresi unuttu!",
+     0.1
+    ]
+   ],
+   "sfx": [
+    [
+     "sting",
+     0.2
+    ]
+   ],
+   "tail": 0.3
+  },
+  {
+   "clip": "media/pilot/londra-001-c.mp4",
+   "start": 4.0,
+   "blur": true,
+   "chip": "LONDRA'DA BİR TÜRK · BÖLÜM 1",
+   "title": [
+    "Devamı",
+    "yarın akşam..."
+   ],
+   "sub": "Takip et, kaçırma!",
+   "say": [
+    [
+     "tr#Devamı yarın akşam!",
+     0.1
+    ]
+   ],
+   "tail": 0.8
+  }
+ ]
+}
