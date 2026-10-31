@@ -9,7 +9,7 @@ Görev: geçen haftanın sonuçlarını yorumla, önümüzdeki haftanın Reels'l
 
 ## Adımlar
 1. **Fazı belirle**: en yeni rapordaki takipçi sayısına ve `100k.md`'deki fazlara bak. Rapor yoksa Faz 1.
-2. Tarihleri hesapla (Europe/Istanbul). "Hafta" = gelecek pazartesiden başlayan 7 gün. **Faz 1'de her gün 1 Reel** (7 adet). Saat: ilk 2 hafta günlere göre dönüşümlü **12:53 / 21:37**; sonra rapordaki kazanan saat. **Tam saat ve buçuk kullanma** (ör. 13:00, 20:30): dakikayı 7–23 veya 37–53 arasından seç. O tarihlerde zaten reel dosyası varsa onları sayıya dahil et, eksikleri tamamla.
+2. Tarihleri hesapla (Europe/Istanbul). "Hafta" = gelecek pazartesiden başlayan 7 gün. **Faz 1'de her gün 1 Reel** (7 adet). Saat: **11:48 / 16:48 / 21:48** (öğle Bir Harfin Hikâyesi, akşamüstü Deyim Düellosu, akşam Kazalar). **Tam saat ve buçuk kullanma** (ör. 13:00, 20:30): dakikayı 7–23 veya 37–53 arasından seç. O tarihlerde zaten reel dosyası varsa onları sayıya dahil et, eksikleri tamamla.
 3. **Analiz** (veri varsa): reel başına paylaşım/erişim, kayıt/erişim, izleme oranı, izlenme; format ve saat bazında ortalamalar. `100k.md`'deki eşiklerle karşılaştır. En iyi ve en zayıf formatı/kancayı/saati bul. 3–5 maddelik **somut** öneri yaz ve bu haftanın planına uygula. Bunu en yeni rapor dosyasının sonuna `## Analist yorumu` başlığıyla ekle.
 4. **Plan**: eksik günler için `content/reels/<YYYY-AA-GG>-<seviye>-<hikâye-slug>.json` yaz. Şema için README'deki örneğe ve mevcut dosyalara bak. Kurallar:
    - `status: "planned"`, `publish_at` ISO biçiminde `+03:00` ile, `format`: `100k.md`'deki kod (F1, F2, F4, F5, F6…), `pillar`: kısa Türkçe ad.
