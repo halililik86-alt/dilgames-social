@@ -144,7 +144,7 @@ def build(spec_path, out):
         vf = (f"[0:v]trim={b.get('start', 0)}:{b.get('start', 0) + b['dur']},setpts=PTS-STARTPTS,{UP},fps=30,tpad=stop_mode=clone:stop_duration={b['dur']},"
               f"scale=1134:2016,zoompan=z='1+{z}*on/{n}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d=1:s=1080x1920:fps=30"
               + (",gblur=sigma=14,eq=brightness=-0.08" if b.get('blur') else '') + "[v];"
-              "[1:v]format=rgba,fade=in:st=0:d=0.12:alpha=1[a];[v][a]overlay,format=yuv420p[o]")
+              "[1:v]format=rgba" + (",fade=in:st=0:d=0.12:alpha=1" if i == 0 or beats[i - 1]['clip'] != b['clip'] or beats[i - 1].get('blur') != b.get('blur') else '') + "[a];[v][a]overlay,format=yuv420p[o]")
         run(['ffmpeg', '-y', '-loglevel', 'error', '-i', os.path.join(ROOT, b['clip']), '-loop', '1', '-t', str(b['dur']), '-i', f'{t}/o{i}.png',
              '-filter_complex', vf, '-map', '[o]', '-an', '-t', str(b['dur']), '-c:v', 'libx264', '-crf', '16', '-r', '30', f'{t}/s{i}.mp4'])
         segs.append(f'{t}/s{i}.mp4')

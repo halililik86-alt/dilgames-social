@@ -1,0 +1,44 @@
+{
+ "model": [
+  "eleven_v4",
+  "eleven_v3"
+ ],
+ "lines": [
+  {
+   "id": "tr",
+   "voice": "5RqXmIU9ikjifeWoXHMG",
+   "language": "tr",
+   "timestamps": true,
+   "settings": {
+    "stability": 0.5
+   },
+   "text": "[playful] Biri lafı uzattıkça uzatıyorsa biz ne deriz? [pause] [sighs] Kırk dereden su getiriyor! [pause] [curious] Peki İngilizler ne der? [pause] [laughs] Biz kırk dere geziyoruz, onlar çalıyı dövüyor! [pause] [playful] Sence hangisi daha komik? Yorumlara yaz!"
+  },
+  {
+   "id": "en",
+   "voice": "JBFqnCBsd6RMkjVDRZzb",
+   "timestamps": true,
+   "settings": {
+    "stability": 0.5
+   },
+   "text": "[impatiently] Stop beating around the bush! [pause] [slowly] Beat... around... the bush. [pause] [warmly] Just tell me the truth. Don't beat around the bush."
+  }
+ ],
+ "sfx": [
+  {
+   "id": "whoosh",
+   "text": "quick soft whoosh transition",
+   "seconds": 0.8
+  },
+  {
+   "id": "pop",
+   "text": "soft bright UI pop, word appears",
+   "seconds": 0.5
+  },
+  {
+   "id": "ding",
+   "text": "short cheerful bell ding, correct answer",
+   "seconds": 1
+  }
+ ]
+}

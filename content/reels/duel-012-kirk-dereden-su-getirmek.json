@@ -1,0 +1,197 @@
+{
+  "id": "duel-012-kirk-dereden-su-getirmek",
+  "type": "duel2",
+  "format": "D1",
+  "pillar": "deyim düellosu",
+  "episode": 12,
+  "publish_at": "2026-11-03T17:48:00+03:00",
+  "voice_dir": "tts/audio/duel-012",
+  "music": "tts/audio/duel-011/music.mp3",
+  "beats": [
+    {
+      "clip": "media/duels2/duel-012-a.mp4",
+      "start": 0.0,
+      "chip": "DEYİM DÜELLOSU #12",
+      "title": [
+        "Biri lafı uzattıkça uzatıyorsa",
+        "biz ne deriz?"
+      ],
+      "say": [
+        [
+          "tr#Biri lafı uzattıkça uzatıyorsa biz ne deriz?",
+          0.1
+        ]
+      ],
+      "tail": 0.05
+    },
+    {
+      "clip": "media/duels2/duel-012-a.mp4",
+      "start": 1.6,
+      "chip": "DEYİM DÜELLOSU #12",
+      "label": "TÜRKÇE",
+      "label_color": [
+        227,
+        66,
+        66
+      ],
+      "title": [
+        "Kırk dereden",
+        "su getiriyor!"
+      ],
+      "sub": "Kelimesi kelimesine: “Bringing water from forty streams”",
+      "say": [
+        [
+          "tr#Kırk dereden su getiriyor!",
+          0.1
+        ]
+      ],
+      "sfx": [
+        [
+          "pop",
+          0.0
+        ]
+      ],
+      "tail": 0.3
+    },
+    {
+      "clip": "media/duels2/duel-012-a.mp4",
+      "start": 3.6,
+      "blur": true,
+      "chip": "DEYİM DÜELLOSU #12",
+      "title": [
+        "Peki İngilizler",
+        "ne der?"
+      ],
+      "say": [
+        [
+          "tr#Peki İngilizler ne der?",
+          0.1
+        ]
+      ],
+      "sfx": [
+        [
+          "whoosh",
+          0.0
+        ]
+      ],
+      "tail": 0.15
+    },
+    {
+      "clip": "media/duels2/duel-012-b.mp4",
+      "start": 0.0,
+      "chip": "DEYİM DÜELLOSU #12",
+      "label": "İNGİLİZCE",
+      "label_color": [
+        76,
+        132,
+        232
+      ],
+      "title": [
+        "Beat around",
+        "the bush"
+      ],
+      "sub": "Kelimesi kelimesine: “Çalının etrafında dövmek”",
+      "say": [
+        [
+          "en#Stop beating around the bush!",
+          0.15
+        ]
+      ],
+      "sfx": [
+        [
+          "ding",
+          0.0
+        ]
+      ],
+      "tail": 0.25
+    },
+    {
+      "clip": "media/duels2/duel-012-b.mp4",
+      "start": 1.5,
+      "chip": "TELAFFUZ",
+      "title": [
+        "Beat around",
+        "the bush"
+      ],
+      "sub": "Okunuşu: “biit ıraund dı buş”",
+      "say": [
+        [
+          "en#Beat... around... the bush.",
+          0.1
+        ]
+      ],
+      "tail": 0.15
+    },
+    {
+      "clip": "media/duels2/duel-012-b.mp4",
+      "start": 2.8,
+      "chip": "DEYİM DÜELLOSU #12",
+      "title": [
+        "Biz kırk dere geziyoruz,",
+        "onlar çalıyı dövüyor!"
+      ],
+      "accent": [
+        120,
+        230,
+        190
+      ],
+      "say": [
+        [
+          "tr#Biz kırk dere geziyoruz, onlar çalıyı dövüyor!",
+          0.1
+        ]
+      ],
+      "tail": 0.2
+    },
+    {
+      "clip": "media/duels2/duel-012-a.mp4",
+      "start": 4.0,
+      "blur": true,
+      "chip": "DEYİM DÜELLOSU #12",
+      "card": {
+        "a": "Kırk dereden su getirmek",
+        "b": "Beat around the bush",
+        "meaning": "Lafı dolandırmak.",
+        "ex_en": "Just tell me the truth. Don't beat around the bush.",
+        "ex_tr": "Bana gerçeği söyle. Kırk dereden su getirme."
+      },
+      "say": [
+        [
+          "en#Just tell me the truth. Don't beat around the bush.",
+          0.3
+        ]
+      ],
+      "tail": 0.4
+    },
+    {
+      "clip": "media/duels2/duel-012-b.mp4",
+      "start": 3.5,
+      "blur": true,
+      "chip": "DEYİM DÜELLOSU #12",
+      "title": [
+        "Sence hangisi",
+        "daha komik?"
+      ],
+      "sub": "Yorumlara yaz · DilGames'i takip et",
+      "say": [
+        [
+          "tr#Sence hangisi daha komik? Yorumlara yaz!",
+          0.1
+        ]
+      ],
+      "tail": 0.5
+    }
+  ],
+  "caption": "Deyim Düellosu #12 🇹🇷⚔️🇬🇧\n\nBiz kırk dereden su taşıyoruz, İngilizler çalıyı dövüyor 💧🌳\n\n🇹🇷 Kırk dereden su getirmek\n🇬🇧 Beat around the bush\nAnlamı: Lafı dolandırmak.\n\n“Just tell me the truth. Don't beat around the bush.”\nBana gerçeği söyle. Kırk dereden su getirme.\n\nSence hangisi daha komik? Yorumlara yaz 👇\nBilmeyen arkadaşına gönder 📩",
+  "hashtags": [
+    "#ingilizce",
+    "#ingilizceöğren",
+    "#deyimler",
+    "#englishidioms",
+    "#ingilizcedeyimler"
+  ],
+  "status": "approved",
+  "video": "media/duels2/duel-012-kirk-dereden-su-getirmek.mp4",
+  "yt_title": "Kırk dereden su getiriyor İngilizcede ne demek? | Deyim Düellosu #12",
+  "duration": 25.27
+}
