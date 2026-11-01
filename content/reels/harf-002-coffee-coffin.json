@@ -209,5 +209,17 @@
     "uploaded_at": "2026-10-31T18:40:06+00:00",
     "thumbnail": "custom"
   },
-  "cover": "media/covers/harf-002-coffee-coffin.jpg"
+  "cover": "media/covers/harf-002-coffee-coffin.jpg",
+  "insights": {
+    "views": 421,
+    "reach": 346,
+    "likes": 4,
+    "comments": 0,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 4,
+    "ig_reels_avg_watch_time": 9519,
+    "ig_reels_video_view_total_time": 3246073
+  },
+  "insights_at": "2026-11-01T20:23:59+00:00"
 }

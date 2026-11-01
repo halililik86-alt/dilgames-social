@@ -81,5 +81,17 @@
     "uploaded_at": "2026-11-01T08:52:04+00:00",
     "thumbnail": "custom"
   },
-  "cover": "media/covers/kaza-003-open-the-light.jpg"
+  "cover": "media/covers/kaza-003-open-the-light.jpg",
+  "insights": {
+    "views": 1494,
+    "reach": 1271,
+    "likes": 11,
+    "comments": 0,
+    "shares": 1,
+    "saved": 4,
+    "total_interactions": 17,
+    "ig_reels_avg_watch_time": 6831,
+    "ig_reels_video_view_total_time": 8847363
+  },
+  "insights_at": "2026-11-01T20:24:13+00:00"
 }

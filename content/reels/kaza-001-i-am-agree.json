@@ -63,5 +63,17 @@
     "thumbnail": "custom"
   },
   "cover_shift": 520,
-  "cover": "media/covers/kaza-001-i-am-agree.jpg"
+  "cover": "media/covers/kaza-001-i-am-agree.jpg",
+  "insights": {
+    "views": 1891,
+    "reach": 1646,
+    "likes": 5,
+    "comments": 0,
+    "shares": 3,
+    "saved": 3,
+    "total_interactions": 11,
+    "ig_reels_avg_watch_time": 6705,
+    "ig_reels_video_view_total_time": 11044313
+  },
+  "insights_at": "2026-11-01T20:24:06+00:00"
 }
