@@ -43,6 +43,33 @@ def video_path(s):
     return v
 
 
+def thumb(s):
+    """Özel kapağı YouTube küçük resmi yapar; hata yüklemeyi bozmaz (sonuç spec'e yazılır, tekrar denenmez)."""
+    cov = s.get('cover') and os.path.join(ROOT, s['cover'])
+    if not cov or not os.path.exists(cov):
+        return False
+    try:
+        yt.set_thumbnail(s['youtube']['video_id'], cov); s['youtube']['thumbnail'] = 'custom'
+    except SystemExit as e:
+        s['youtube']['thumb_error'] = str(e)[:300]; print(f"Kapak ayarlanamadı ({s['id']}): {e}")
+    return True
+
+
+def backfill_thumbs(dry, mx=3):
+    """Önceden yüklenmiş, kapağı sonradan eklenmiş Shorts'a küçük resmi uygular."""
+    for p in sorted(glob.glob(os.path.join(ROOT, 'content/reels/*.json'))):
+        if mx <= 0: return
+        s = json.load(open(p, encoding='utf-8'))
+        y = s.get('youtube') or {}
+        if not y.get('video_id') or 'thumbnail' in y or 'thumb_error' in y or not s.get('cover'):
+            continue
+        if dry:
+            print('kapak sırada:', s['id']); continue
+        if thumb(s):
+            mx -= 1; print('kapak:', s['id'], s['youtube'].get('thumbnail') or 'hata')
+            json.dump(s, open(p, 'w', encoding='utf-8'), ensure_ascii=False, indent=2); open(p, 'a').write('\n')
+
+
 def main():
     dry = '--dry-run' in sys.argv
     mx = int(sys.argv[sys.argv.index('--max') + 1]) if '--max' in sys.argv else 1
@@ -67,9 +94,11 @@ def main():
         if dry: continue
         s['youtube'] = {'video_id': res['video_id'], 'url': res['url'], 'privacy': res.get('privacy'),
                         'uploaded_at': dt.datetime.now(dt.timezone.utc).isoformat(timespec='seconds')}
+        thumb(s)
         json.dump(s, open(p, 'w', encoding='utf-8'), ensure_ascii=False, indent=2); open(p, 'a').write('\n')
     if not due:
         print('YouTube için sırada reel yok.')
+    backfill_thumbs(dry)
 
 
 if __name__ == '__main__':

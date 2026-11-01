@@ -70,14 +70,16 @@ def wait_container(cid, tries=30, every=10):
     raise SystemExit('Kapsayıcı zamanında hazır olmadı')
 
 
-def publish_reel(video, caption, cover_offset_ms=None, share_to_feed=True, dry_run=False, trial=False):
+def publish_reel(video, caption, cover_offset_ms=None, share_to_feed=True, dry_run=False, trial=False, cover_url=None):
     params = {'media_type': 'REELS', 'caption': caption, 'share_to_feed': 'true' if share_to_feed else 'false'}
     if trial:
         # Trial Reels: önce yalnızca takipçi olmayanlara gösterilir; iyi giderse Meta otomatik olarak takipçilere açar.
         # Hesabın uygun olması gerekir (1.000+ takipçi). Trial reel'ler akışa paylaşılmaz.
         params['trial_params'] = json.dumps({'graduation_strategy': 'SS_PERFORMANCE'})
         params.pop('share_to_feed', None)
-    if cover_offset_ms is not None:
+    if cover_url:  # özel kapak (herkese açık adres, ör. GitHub Pages); verilince thumb_offset yok sayılır
+        params['cover_url'] = cover_url
+    elif cover_offset_ms is not None:
         params['thumb_offset'] = str(int(cover_offset_ms))
     if dry_run:
         return {'dry_run': True, 'mode': MODE, 'video': video, 'bytes': os.path.getsize(video), 'params': params}
