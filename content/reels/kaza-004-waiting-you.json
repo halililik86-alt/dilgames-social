@@ -50,7 +50,7 @@
     "#ingilizcekonuşma",
     "#englishlearning"
   ],
-  "status": "approved",
+  "status": "published",
   "video": "media/kaza/kaza-004-waiting-you.mp4",
   "duration": 18.5,
   "yt_title": "“I am waiting you” deme! Doğrusu “I'm waiting for you” 😅 İngilizce hatalar",
@@ -71,5 +71,16 @@
   ],
   "seo_story": "Elif arkadaşını bekliyor ve sabrı tükendi... 😅",
   "cover": "media/covers/kaza-004-waiting-you.jpg",
-  "cover_url": "https://halililik86-alt.github.io/covers/kaza-004-waiting-you.jpg"
+  "cover_url": "https://halililik86-alt.github.io/covers/kaza-004-waiting-you.jpg",
+  "media_id": "17953170648347484",
+  "permalink": "https://www.instagram.com/reel/DfNanFyDYS8/",
+  "published_at": "2026-11-01T18:50:59+0000",
+  "story_id": "17945004894363602",
+  "youtube": {
+    "video_id": "_EAdxGYkd2M",
+    "url": "https://youtube.com/shorts/_EAdxGYkd2M",
+    "privacy": "public",
+    "uploaded_at": "2026-11-01T18:51:42+00:00",
+    "thumbnail": "custom"
+  }
 }
