@@ -79,6 +79,14 @@ def upload(video, title, description, tags=(), dry=False, synthetic=False):
             'upload_status': j.get('status', {}).get('uploadStatus')}
 
 
+def set_thumbnail(video_id, jpg):
+    """Özel küçük resim (youtube.upload izni yeterli; kanalın telefonla doğrulanmış olması gerekir). En fazla 2 MB."""
+    with open(jpg, 'rb') as f:
+        req = urllib.request.Request(f'https://www.googleapis.com/upload/youtube/v3/thumbnails/set?videoId={video_id}', data=f.read(), method='POST',
+                                     headers={'Authorization': f'Bearer {access_token()}', 'Content-Type': 'image/jpeg'})
+    return _req(req)[1]
+
+
 def stats(ids):
     j = get('videos', {'part': 'statistics', 'id': ids})
     return {it['id']: it.get('statistics', {}) for it in j.get('items', [])}
