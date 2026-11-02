@@ -188,7 +188,7 @@
     "#deyimler",
     "#englishidioms"
   ],
-  "status": "approved",
+  "status": "published",
   "video": "media/duels2/duel-011-tereyagindan-kil-ceker-gibi.mp4",
   "yt_title": "Tereyağından kıl çeker gibi İngilizcede nasıl denir? “Piece of cake”",
   "duration": 25.27,
@@ -209,5 +209,16 @@
   ],
   "seo_story": "Biz tereyağından kıl çekiyoruz, İngilizler pastasını yiyor 🧈🍰",
   "cover": "media/covers/duel-011-tereyagindan-kil-ceker-gibi.jpg",
-  "cover_url": "https://halililik86-alt.github.io/covers/duel-011-tereyagindan-kil-ceker-gibi.jpg"
+  "cover_url": "https://halililik86-alt.github.io/covers/duel-011-tereyagindan-kil-ceker-gibi.jpg",
+  "media_id": "18010915343781527",
+  "permalink": "https://www.instagram.com/reel/DfPezPtEsgm/",
+  "published_at": "2026-11-02T14:06:04+0000",
+  "story_id": "18077593103751923",
+  "youtube": {
+    "video_id": "Xz-WhQk1ZvI",
+    "url": "https://youtube.com/shorts/Xz-WhQk1ZvI",
+    "privacy": "public",
+    "uploaded_at": "2026-11-02T14:06:45+00:00",
+    "thumbnail": "custom"
+  }
 }
