@@ -50,7 +50,7 @@
     "#ingilizcekonuşma",
     "#englishlearning"
   ],
-  "status": "approved",
+  "status": "published",
   "video": "media/kaza/kaza-005-make-a-photo.mp4",
   "duration": 18.27,
   "yt_title": "“Make a photo” deme! Doğrusu “Take a photo” 😅 İngilizce hatalar",
@@ -71,5 +71,16 @@
   ],
   "seo_story": "Elif Londra’da fotoğraf çektirmek istedi... 😅",
   "cover": "media/covers/kaza-005-make-a-photo.jpg",
-  "cover_url": "https://halililik86-alt.github.io/covers/kaza-005-make-a-photo.jpg"
+  "cover_url": "https://halililik86-alt.github.io/covers/kaza-005-make-a-photo.jpg",
+  "media_id": "17922356874458199",
+  "permalink": "https://www.instagram.com/reel/DfO613EiuPR/",
+  "published_at": "2026-11-02T08:51:53+0000",
+  "story_id": "18137591311561806",
+  "youtube": {
+    "video_id": "ejVtzvev0Hc",
+    "url": "https://youtube.com/shorts/ejVtzvev0Hc",
+    "privacy": "public",
+    "uploaded_at": "2026-11-02T08:52:35+00:00",
+    "thumbnail": "custom"
+  }
 }
