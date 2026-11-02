@@ -50,7 +50,7 @@
     "#ingilizcekonuşma",
     "#englishlearning"
   ],
-  "status": "approved",
+  "status": "published",
   "video": "media/kaza/kaza-006-say-me.mp4",
   "duration": 19.77,
   "yt_title": "“Say me” deme! Doğrusu “Tell me” 😅 İngilizce hatalar",
@@ -71,5 +71,16 @@
   ],
   "seo_story": "Elif yeni ofisinde ilk gün... 😅",
   "cover": "media/covers/kaza-006-say-me.jpg",
-  "cover_url": "https://halililik86-alt.github.io/covers/kaza-006-say-me.jpg"
+  "cover_url": "https://halililik86-alt.github.io/covers/kaza-006-say-me.jpg",
+  "media_id": "18283372663290769",
+  "permalink": "https://www.instagram.com/reel/DfP_bfAjXwO/",
+  "published_at": "2026-11-02T18:51:05+0000",
+  "story_id": "18028048556704561",
+  "youtube": {
+    "video_id": "hlQOy0_-MHk",
+    "url": "https://youtube.com/shorts/hlQOy0_-MHk",
+    "privacy": "public",
+    "uploaded_at": "2026-11-02T18:51:48+00:00",
+    "thumbnail": "custom"
+  }
 }
