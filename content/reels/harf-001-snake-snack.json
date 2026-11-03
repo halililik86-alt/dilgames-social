@@ -189,7 +189,7 @@
     "#ingilizcetelaffuz",
     "#englishlearning"
   ],
-  "status": "approved",
+  "status": "published",
   "video": "media/harf/harf-001-snake-snack.mp4",
   "duration": 21.58,
   "yt_title": "Snake / Snack farkı 😅 İngilizcede tek harf, iki anlam",
@@ -210,5 +210,16 @@
   ],
   "seo_story": "Atıştırmalık istedi, yılan geldi! 🐍🍿",
   "cover": "media/covers/harf-001-snake-snack.jpg",
-  "cover_url": "https://halililik86-alt.github.io/covers/harf-001-snake-snack.jpg"
+  "cover_url": "https://halililik86-alt.github.io/covers/harf-001-snake-snack.jpg",
+  "media_id": "17952771804321943",
+  "permalink": "https://www.instagram.com/reel/DfRfkNKDJIm/",
+  "published_at": "2026-11-03T08:51:14+0000",
+  "story_id": "18113327863896523",
+  "youtube": {
+    "video_id": "6pRoZtzKwfU",
+    "url": "https://youtube.com/shorts/6pRoZtzKwfU",
+    "privacy": "public",
+    "uploaded_at": "2026-11-03T08:51:56+00:00",
+    "thumbnail": "custom"
+  }
 }
