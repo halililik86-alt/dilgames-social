@@ -50,7 +50,7 @@
     "#ingilizcekonuşma",
     "#englishlearning"
   ],
-  "status": "approved",
+  "status": "published",
   "video": "media/kaza/kaza-007-25-years.mp4",
   "duration": 19.77,
   "yt_title": "“I am 25 years” deme! Doğrusu “I'm 25 years old” 😅 İngilizce hatalar",
@@ -71,5 +71,16 @@
   ],
   "seo_story": "Elif doktora kayıt yaptırıyor... 😅",
   "cover": "media/covers/kaza-007-25-years.jpg",
-  "cover_url": "https://halililik86-alt.github.io/covers/kaza-007-25-years.jpg"
+  "cover_url": "https://halililik86-alt.github.io/covers/kaza-007-25-years.jpg",
+  "media_id": "18003879308808503",
+  "permalink": "https://www.instagram.com/reel/DfSk_5eAnZF/",
+  "published_at": "2026-11-03T18:57:59+0000",
+  "story_id": "18229849957329964",
+  "youtube": {
+    "video_id": "V9KK1pZBAB4",
+    "url": "https://youtube.com/shorts/V9KK1pZBAB4",
+    "privacy": "public",
+    "uploaded_at": "2026-11-03T18:58:43+00:00",
+    "thumbnail": "custom"
+  }
 }
