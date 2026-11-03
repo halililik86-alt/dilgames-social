@@ -190,7 +190,7 @@
     "#deyimler",
     "#englishidioms"
   ],
-  "status": "approved",
+  "status": "published",
   "video": "media/duels2/duel-012-kirk-dereden-su-getirmek.mp4",
   "yt_title": "Kırk dereden su getirmek İngilizcede nasıl denir? “Beat around the bush”",
   "duration": 25.27,
@@ -211,5 +211,16 @@
   ],
   "seo_story": "Biz kırk dereden su taşıyoruz, İngilizler çalıyı dövüyor 💧🌳",
   "cover": "media/covers/duel-012-kirk-dereden-su-getirmek.jpg",
-  "cover_url": "https://halililik86-alt.github.io/covers/duel-012-kirk-dereden-su-getirmek.jpg"
+  "cover_url": "https://halililik86-alt.github.io/covers/duel-012-kirk-dereden-su-getirmek.jpg",
+  "media_id": "17941230846388345",
+  "permalink": "https://www.instagram.com/reel/DfSB5ubDLXG/",
+  "published_at": "2026-11-03T13:51:16+0000",
+  "story_error": "API hatası 400 POST : {\"debug_info\":{\"retriable\":false,\"type\":\"ProcessingFailedError\",\"message\":\"Request processing failed\"}}",
+  "youtube": {
+    "video_id": "ViM0Y23zgP4",
+    "url": "https://youtube.com/shorts/ViM0Y23zgP4",
+    "privacy": "public",
+    "uploaded_at": "2026-11-03T13:52:03+00:00",
+    "thumbnail": "custom"
+  }
 }
