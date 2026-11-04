@@ -174,7 +174,7 @@
     "#deyimler",
     "#englishidioms"
   ],
-  "status": "approved",
+  "status": "published",
   "video": "media/duels2/duel-013-yagmurdan-kacarken-doluya.mp4",
   "yt_title": "Yağmurdan kaçarken doluya tutulmak İngilizcesi: Out of the frying pan into the fire",
   "duration": 25.86,
@@ -195,5 +195,16 @@
   ],
   "seo_story": "Biz yağmurdan kaçıp doluya tutuluyoruz, İngilizler tavadan ateşe atlıyor 🌧️🍳🔥",
   "cover": "media/covers/duel-013-yagmurdan-kacarken-doluya.jpg",
-  "cover_url": "https://halililik86-alt.github.io/covers/duel-013-yagmurdan-kacarken-doluya.jpg"
+  "cover_url": "https://halililik86-alt.github.io/covers/duel-013-yagmurdan-kacarken-doluya.jpg",
+  "media_id": "18114204371582739",
+  "permalink": "https://www.instagram.com/reel/DfUmtgnADMA/",
+  "published_at": "2026-11-04T13:51:20+0000",
+  "story_id": "18120694876950582",
+  "youtube": {
+    "video_id": "uBPtdP-gLNo",
+    "url": "https://youtube.com/shorts/uBPtdP-gLNo",
+    "privacy": "public",
+    "uploaded_at": "2026-11-04T13:51:58+00:00",
+    "thumbnail": "custom"
+  }
 }
