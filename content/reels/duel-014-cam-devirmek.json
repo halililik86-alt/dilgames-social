@@ -189,7 +189,7 @@
     "#deyimler",
     "#englishidioms"
   ],
-  "status": "approved",
+  "status": "published",
   "video": "media/duels2/duel-014-cam-devirmek.mp4",
   "yt_title": "Çam devirmek İngilizcede nasıl denir? “Put your foot in your mouth”",
   "duration": 28.34,
@@ -210,5 +210,16 @@
   ],
   "seo_story": "Biz çam deviriyoruz, İngilizler ayağını ağzına sokuyor 🌲🦶",
   "cover": "media/covers/duel-014-cam-devirmek.jpg",
-  "cover_url": "https://halililik86-alt.github.io/covers/duel-014-cam-devirmek.jpg"
+  "cover_url": "https://halililik86-alt.github.io/covers/duel-014-cam-devirmek.jpg",
+  "media_id": "18650134228059421",
+  "permalink": "https://www.instagram.com/reel/DfXLkYzE-Ad/",
+  "published_at": "2026-11-05T13:51:56+0000",
+  "story_id": "18110207201241062",
+  "youtube": {
+    "video_id": "5G1XI7u-P4o",
+    "url": "https://youtube.com/shorts/5G1XI7u-P4o",
+    "privacy": "public",
+    "uploaded_at": "2026-11-05T13:52:37+00:00",
+    "thumbnail": "custom"
+  }
 }
