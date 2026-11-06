@@ -190,7 +190,7 @@
     "#deyimler",
     "#englishidioms"
   ],
-  "status": "approved",
+  "status": "published",
   "video": "media/duels2/duel-015-dut-yemis-bulbul.mp4",
   "yt_title": "Dut yemiş bülbül gibi İngilizcede nasıl denir? “Cat got your tongue?”",
   "duration": 26.77,
@@ -211,5 +211,16 @@
   ],
   "seo_story": "Bizim bülbül dut yiyor, İngilizlerin kedisi dil kaçırıyor 🐦🐱",
   "cover": "media/covers/duel-015-dut-yemis-bulbul.jpg",
-  "cover_url": "https://halililik86-alt.github.io/covers/duel-015-dut-yemis-bulbul.jpg"
+  "cover_url": "https://halililik86-alt.github.io/covers/duel-015-dut-yemis-bulbul.jpg",
+  "media_id": "18101166803547561",
+  "permalink": "https://www.instagram.com/reel/DfZwRNgDKfG/",
+  "published_at": "2026-11-06T13:51:05+0000",
+  "story_id": "18161349304457378",
+  "youtube": {
+    "video_id": "ntYmPZ5UX24",
+    "url": "https://youtube.com/shorts/ntYmPZ5UX24",
+    "privacy": "public",
+    "uploaded_at": "2026-11-06T13:51:44+00:00",
+    "thumbnail": "custom"
+  }
 }
