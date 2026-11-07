@@ -158,7 +158,7 @@
       ]
     ]
   },
-  "status": "approved",
+  "status": "published",
   "video": "media/sitkom/sitkom-001-health-to-your-hands.mp4",
   "publish_at": "2026-11-07T21:48:00+03:00",
   "seo": {
@@ -205,5 +205,16 @@
     "ellie ve kerem",
     "türk ingilizcesi"
   ],
-  "cover_shift": 360
+  "cover_shift": 360,
+  "media_id": "17961788670270241",
+  "permalink": "https://www.instagram.com/reel/Dfc3WvOEUzS/",
+  "published_at": "2026-11-07T18:50:45+0000",
+  "story_id": "18117119642128971",
+  "youtube": {
+    "video_id": "yJDRlsMa-oY",
+    "url": "https://youtube.com/shorts/yJDRlsMa-oY",
+    "privacy": "public",
+    "uploaded_at": "2026-11-07T18:51:20+00:00",
+    "thumbnail": "custom"
+  }
 }
