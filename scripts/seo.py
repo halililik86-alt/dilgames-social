@@ -86,6 +86,17 @@ def build(s):
         yt3 = '#ingilizce #ingilizcekalıplar #shorts'
         tags = CORE_TAGS + ['ingilizce kalıplar', 'ingilizce deyimler', ph.lower(), f'{ph.lower()} ne demek', f'{ph.lower()} anlamı',
                             f'{tr_lower(x["meaning"])} ingilizce', 'english idioms', 'bugünün ifadesi', 'elif ve tom']
+    elif t == 'sitkom':
+        x = s['seo']; w, r = x['wrong'], x['right']; ep = s.get('episode', 1)
+        first = f'“{x["tr_phrase"]}” İngilizcede nasıl denir? “{w}” DEĞİL! 😂'
+        lesson = f'❌ {w}\n✅ {r}' + (f'\n✅ {x["alt"]}' if x.get('alt') else '') + f'\n\n“{x["ex_en"]}”\n{x["ex_tr"]}'
+        if x.get('next_note'): lesson += f'\n\n🎬 Ellie & Kerem · Bölüm {ep} · {x["next_note"]}'
+        ig_tags = ['#ingilizce', '#ingilizceöğren', '#ingilizcekalıplar', '#komikvideolar', '#englishlearning']
+        title = cut(f'“{x["tr_phrase"]}” İngilizcesi ne? 😂 “{w}” deme! | Ellie & Kerem #{ep}', 95)
+        lead = f'“{x["tr_phrase"]}” İngilizcede “{w}” diye çevrilmez; doğrusu: “{r}”. Ellie & Kerem sitkomu, bölüm {ep}.'
+        yt3 = '#ingilizce #ingilizcekalıplar #shorts'
+        tags = CORE_TAGS + ['ingilizce kalıplar', 'komik ingilizce', 'ingilizce sitkom', tr_lower(x['tr_phrase']), f'{tr_lower(x["tr_phrase"])} ingilizcesi',
+                            w.lower(), r.lower(), 'ellie ve kerem', 'türk ingilizcesi']
     else:
         return s
     s['caption'] = f'{first}\n\n{story}\n\n{lesson}\n\n{s.get("seo_question") or "Sen bunu biliyor muydun? Yorumlara yaz 👇"}\n\n{CTA_IG}'
