@@ -7,6 +7,7 @@ alanda (y 300-1560, Reels arayüzünün altında kalmaz). Seri tipine göre şab
   kaza  : "BUNU DEME!" + “yanlış cümle” + "Doğrusu ne?"            (Elif sahnesi)
   harf  : KELİME1 / KELİME2 (farklı harf vurgulu) + hikâye kancası  (şaka sahnesi)
   duel2 : "TÜRKÇE DEYİM" + deyim + "İngilizcesi ne?"         (deyimin harfiyen sahnesi)
+  ifade : "BUGÜNÜN İFADESİ" + “ifade” + harfiyen yanlış anlam   (yanlış anlama sahnesi; cover_scene)
 Kullanım: python3 scripts/cover.py <spec.json> <çıktı.jpg>
 """
 import json, os, re, subprocess, sys, tempfile
@@ -16,7 +17,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 W, H = 1080, 1920
 FD = '/usr/share/fonts/opentype/inter/'
 RED, MINT, GOLD, NAVY, BLUE = (233, 64, 64), (120, 230, 190), (255, 200, 90), (12, 20, 32), (76, 132, 232)
-SERIES = {'kaza': ('TÜRK İNGİLİZCESİ KAZALARI', RED), 'harf': ('BİR HARFİN HİKÂYESİ', MINT), 'duel2': ('DEYİM DÜELLOSU', GOLD)}
+SERIES = {'kaza': ('TÜRK İNGİLİZCESİ KAZALARI', RED), 'harf': ('BİR HARFİN HİKÂYESİ', MINT), 'duel2': ('DEYİM DÜELLOSU', GOLD), 'ifade': ('ELİF + TOM', MINT)}
 
 
 def font(w, s):
@@ -124,9 +125,21 @@ def cover_duel2(s):
     return im
 
 
+def cover_ifade(s):
+    sc = s['scenes'][s.get('cover_scene', 1)]
+    im = shift_down(frame(sc['clip'], s.get('cover_t', sc.get('start', 0) + 1.2)), s.get('cover_shift', 200))
+    vignette(im, 0.75, 0.75); badge(im, s, MINT)
+    chip(im, W / 2, 470, 'BUGÜNÜN İFADESİ', font('Black', 50), GOLD + (255,), NAVY, rot=-3)
+    d = ImageDraw.Draw(im); ph = f'“{s["seo"]["phrase"]}!”'
+    stroke_text(im, (W / 2, 620), ph, fit(d, ph, 'Black', 140, 980, 64), (255, 255, 255))
+    lit = f'{s["seo"]["literal"]} mı?!'
+    stroke_text(im, (W / 2, 1460), lit, fit(d, lit, 'Black', 100, 980, 56), GOLD, stroke=8)
+    return im
+
+
 def build(spec_path, out):
     s = json.load(open(spec_path, encoding='utf-8'))
-    im = {'kaza': cover_kaza, 'harf': cover_harf, 'duel2': cover_duel2}[s['type']](s)
+    im = {'kaza': cover_kaza, 'harf': cover_harf, 'duel2': cover_duel2, 'ifade': cover_ifade}[s['type']](s)
     im.convert('RGB').save(out, quality=92)
     return out
 
