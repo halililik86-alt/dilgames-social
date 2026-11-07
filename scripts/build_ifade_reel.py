@@ -10,7 +10,7 @@ reel.json alanları (type: "ifade"):
   Zamanlar sahnenin kendi başlangıcına göredir (saniye).
 Görsel: 3B animasyon (Renderforest forest-1.0, referanslar elif.jpg + tom.jpg), ses: ElevenLabs. Oyun müziği yok.
 """
-import json, os, subprocess, sys, tempfile
+import json, os, re, subprocess, sys, tempfile
 from PIL import Image, ImageDraw, ImageFilter
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -170,10 +170,61 @@ def card_mp4(tmp, r):
     os.replace(part, out); return out
 
 
+def speech_segments(path, start=0.0, length=None, noise=-35, gap=0.25):
+    """Konuşma (sessiz olmayan) aralıkları, start'a göre göreli: [[s, e], ...]."""
+    cmd = ['ffmpeg', '-hide_banner', '-nostats', '-ss', str(start)] + (['-t', str(length)] if length else []) + \
+          ['-i', path, '-af', f'silencedetect=n={noise}dB:d={gap}', '-f', 'null', '-']
+    out = subprocess.run(cmd, capture_output=True, text=True).stderr
+    dur = length or float(subprocess.run(['ffprobe', '-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', path],
+                                         capture_output=True, text=True).stdout)
+    segs, cur = [], 0.0
+    for kind, v in re.findall(r'silence_(start|end): ([0-9.]+)', out):
+        v = float(v)
+        if kind == 'start':
+            if v - cur > 0.08: segs.append([cur, v])
+        else:
+            cur = v
+    if dur - cur > 0.08 and (not segs or segs[-1][1] < cur): segs.append([cur, dur])
+    return segs
+
+
+def merge_to(segs, n):
+    segs = [list(x) for x in segs]
+    while len(segs) > n:
+        k = min(range(len(segs) - 1), key=lambda i: segs[i + 1][0] - segs[i][1])
+        segs[k][1] = segs[k + 1][1]; del segs[k + 1]
+    return segs
+
+
+def lipsync_pieces(line, clip, clip_start, win, clip_speed=1.0):
+    """ElevenLabs repliğini klibin kendi konuşmasının (dudak hareketinin) üstüne oturt.
+    Döner: [(satır_başı, satır_sonu, sahne_içi_an, tempo), ...]"""
+    w0, w1 = win
+    cs = [[a + w0, b + w0] for a, b in speech_segments(clip, clip_start + w0 * clip_speed, (w1 - w0) * clip_speed)]
+    ls = speech_segments(line, gap=0.12)
+    if not cs or not ls: return [(0, None, w0, 1.0)]
+    n = min(len(cs), len(ls)); cs, ls = merge_to(cs, n), merge_to(ls, n)
+    out, end = [], -1.0
+    for (la, lb), (ca, cb) in zip(ls, cs):
+        tempo = max(0.75, min(1.35, (lb - la) / max(0.2, cb - ca)))
+        at = max(ca, end + 0.04)  # parçalar üst üste binmesin
+        out.append((la, lb, at, tempo)); end = at + (lb - la) / tempo
+    return out
+
+
 def audio(tmp, r, total, music=True):
     vd = os.path.join(ROOT, r['voice_dir']); ev, t0 = [], 0.0
+    sync = []
     for sc in r['scenes']:
-        for name, at in sc.get('say', []): ev.append((name, t0 + at, 1.0))
+        for item in sc.get('say', []):
+            name, at = item[0], item[1]
+            if at == 'auto':  # dudak senkronu: [id, "auto", pencere_başı, pencere_sonu]
+                win = (item[2] if len(item) > 2 else 0.0, item[3] if len(item) > 3 else sc['dur'])
+                for la, lb, ca, tempo in lipsync_pieces(os.path.join(vd, name + '.mp3'), os.path.join(ROOT, sc['clip']),
+                                                        sc.get('start', 0), win):
+                    sync.append((name, t0 + ca, la, lb, tempo))
+            else:
+                ev.append((name, t0 + at, 1.0))
         for name, at in sc.get('sfx', []): ev.append((name, t0 + at, 0.55))
         t0 += sc['dur']
     scenes_end = t0
@@ -183,7 +234,11 @@ def audio(tmp, r, total, music=True):
     for k, (name, at, vol) in enumerate(ev):
         ins += ['-i', os.path.join(vd, name + '.mp3')]
         ms = int(at * 1000); parts.append(f'[{k}:a]aresample=44100,volume={vol},adelay={ms}|{ms}[e{k}]')
-    labels = [f'[e{k}]' for k in range(len(ev))]; n = len(ev)
+    for j, (name, at, la, lb, tempo) in enumerate(sync):
+        k = len(ev) + j; ins += ['-i', os.path.join(vd, name + '.mp3')]; ms = int(at * 1000)
+        cut = f'atrim={la}:{lb},' if lb else f'atrim={la},'
+        parts.append(f'[{k}:a]aresample=44100,{cut}asetpts=PTS-STARTPTS,atempo={tempo:.3f},adelay={ms}|{ms}[e{k}]')
+    labels = [f'[e{k}]' for k in range(len(ev) + len(sync))]; n = len(ev) + len(sync)
     if r.get('ambience'):
         ins += ['-i', os.path.join(vd, r['ambience'] + '.mp3')]
         parts.append(f'[{n}:a]aresample=44100,volume=0.32,atrim=0:{scenes_end},afade=t=out:st={scenes_end - 0.6}:d=0.6[amb]')
