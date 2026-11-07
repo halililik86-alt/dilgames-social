@@ -1,0 +1,172 @@
+{
+  "id": "ifade-001-break-a-leg",
+  "type": "ifade",
+  "format": "I1",
+  "pillar": "mizah",
+  "series": "ELİF + TOM",
+  "episode": 1,
+  "hook": [
+    "BACAĞINI",
+    "KIR?!"
+  ],
+  "voice_dir": "tts/audio/ifade-001",
+  "music": "music",
+  "ambience": "crowd",
+  "scenes": [
+    {
+      "clip": "media/ifade/ifade-001-a.mp4",
+      "start": 1.5,
+      "dur": 3.5,
+      "say": [
+        [
+          "e1",
+          1.7
+        ]
+      ],
+      "subs": [
+        {
+          "at": 1.6,
+          "end": 3.5,
+          "speaker": "Elif",
+          "en": "Break a leg, Tom!",
+          "tr": "(Kelimesi kelimesine: “Bacağını kır, Tom!”)"
+        }
+      ]
+    },
+    {
+      "clip": "media/ifade/ifade-001-b.mp4",
+      "start": 0,
+      "dur": 4.3,
+      "say": [
+        [
+          "t1",
+          0.9
+        ]
+      ],
+      "sfx": [
+        [
+          "sting",
+          0.45
+        ]
+      ],
+      "subs": [
+        {
+          "at": 0.8,
+          "end": 4.3,
+          "speaker": "Tom",
+          "en": "Break my leg?! Why?!",
+          "tr": "Bacağımı mı kırayım?! Neden?!"
+        }
+      ]
+    },
+    {
+      "clip": "media/ifade/ifade-001-c.mp4",
+      "start": 0,
+      "dur": 7.4,
+      "speed": 0.81,
+      "say": [
+        [
+          "e2",
+          0.3
+        ],
+        [
+          "t2",
+          3.9
+        ]
+      ],
+      "sfx": [
+        [
+          "laugh",
+          0.0
+        ]
+      ],
+      "subs": [
+        {
+          "at": 0.2,
+          "end": 3.8,
+          "speaker": "Elif",
+          "en": "No, silly! It means good luck!",
+          "tr": "Hayır, şapşal! “Bol şans” demek!"
+        },
+        {
+          "at": 3.8,
+          "end": 7.4,
+          "speaker": "Tom",
+          "en": "Oh... phew. Thanks!",
+          "tr": "Ohh... oh be. Sağ ol!"
+        }
+      ]
+    }
+  ],
+  "card": {
+    "phrase": [
+      "BREAK",
+      "A LEG!"
+    ],
+    "tr": "Bol şans!",
+    "use": "Sahneye, sınava ya da sunuma çıkacak birine söylenir.",
+    "cta": "Sen bunu kime söylerdin? Yorumlara yaz!",
+    "dur": 7.0,
+    "say": [
+      [
+        "a1",
+        0.6
+      ],
+      [
+        "n1",
+        1.9
+      ]
+    ],
+    "sfx": [
+      [
+        "whoosh",
+        0.0
+      ]
+    ]
+  },
+  "status": "approved",
+  "video": "media/ifade/ifade-001-break-a-leg.mp4",
+  "publish_at": "2026-11-07T11:48:00+03:00",
+  "seo": {
+    "phrase": "Break a leg",
+    "literal": "Bacağını kır",
+    "meaning": "Bol şans!",
+    "use": "Sahneye, sınava ya da sunuma çıkacak birine söylenir.",
+    "ex_en": "Big exam tomorrow? Break a leg!",
+    "ex_tr": "Yarın büyük sınav mı? Bol şans!"
+  },
+  "seo_story": "Tom sahneye çıkmak üzere, Elif ona şans diliyor... ama Tom yanlış anlıyor 😅",
+  "seo_question": "Sen bunu kime söylerdin? Yorumlara yaz 👇",
+  "cover_scene": 1,
+  "cover_t": 1.3,
+  "cover_shift": 330,
+  "cover": "media/covers/ifade-001-break-a-leg.jpg",
+  "cover_url": "https://halililik86-alt.github.io/covers/ifade-001-break-a-leg.jpg",
+  "duration": 22.2,
+  "caption": "İngilizcede “Break a leg” ne demek? “Bacağını kır” değil! 😅\n\nTom sahneye çıkmak üzere, Elif ona şans diliyor... ama Tom yanlış anlıyor 😅\n\n🇬🇧 Break a leg!\n❌ Bacağını kır (kelimesi kelimesine)\n✅ Bol şans!\n💡 Sahneye, sınava ya da sunuma çıkacak birine söylenir.\n\n“Big exam tomorrow? Break a leg!”\nYarın büyük sınav mı? Bol şans!\n\nSen bunu kime söylerdin? Yorumlara yaz 👇\n\n📌 Kaydet, sonra tekrar bak · 📩 Bilmeyen arkadaşına gönder\n🔔 Her gün 3 kısa İngilizce video için @dilgamesapp'i takip et",
+  "hashtags": [
+    "#ingilizce",
+    "#ingilizceöğren",
+    "#ingilizcekalıplar",
+    "#ingilizcedeyimler",
+    "#englishidioms"
+  ],
+  "yt_title": "“Break a leg” ne demek? Bacağını kır değil! 😅 İngilizce kalıplar",
+  "yt_description": "İngilizcede “Break a leg” ne demek? Kelimesi kelimesine “bacağını kır” ama anlamı: bol şans! Ne zaman söylendiği ve örnek cümlesi bu videoda.\n\nTom sahneye çıkmak üzere, Elif ona şans diliyor... ama Tom yanlış anlıyor 😅\n\n🇬🇧 Break a leg!\n❌ Bacağını kır (kelimesi kelimesine)\n✅ Bol şans!\n💡 Sahneye, sınava ya da sunuma çıkacak birine söylenir.\n\n“Big exam tomorrow? Break a leg!”\nYarın büyük sınav mı? Bol şans!\n\n🔔 Her gün 11:48, 16:48 ve 21:48'de yeni İngilizce Shorts. Abone ol, bildirimleri aç!\n\n#ingilizce #ingilizcekalıplar #shorts",
+  "yt_tags": [
+    "ingilizce",
+    "ingilizce öğren",
+    "ingilizce shorts",
+    "kolay ingilizce",
+    "dilgames",
+    "ingilizce kalıplar",
+    "ingilizce deyimler",
+    "break a leg",
+    "break a leg ne demek",
+    "break a leg anlamı",
+    "bol şans ingilizce",
+    "english idioms",
+    "bugünün ifadesi",
+    "elif ve tom"
+  ]
+}
