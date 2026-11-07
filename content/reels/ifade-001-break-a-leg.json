@@ -124,7 +124,7 @@
       ]
     ]
   },
-  "status": "approved",
+  "status": "published",
   "video": "media/ifade/ifade-001-break-a-leg.mp4",
   "publish_at": "2026-11-07T11:48:00+03:00",
   "seo": {
@@ -168,5 +168,16 @@
     "english idioms",
     "bugünün ifadesi",
     "elif ve tom"
-  ]
+  ],
+  "media_id": "17970338133077299",
+  "permalink": "https://www.instagram.com/reel/Dfbyst1Cc4E/",
+  "published_at": "2026-11-07T08:50:44+0000",
+  "story_id": "18099564653669465",
+  "youtube": {
+    "video_id": "mrsmnACQ_ak",
+    "url": "https://youtube.com/shorts/mrsmnACQ_ak",
+    "privacy": "public",
+    "uploaded_at": "2026-11-07T08:51:22+00:00",
+    "thumbnail": "custom"
+  }
 }
