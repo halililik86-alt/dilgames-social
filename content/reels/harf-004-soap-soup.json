@@ -189,7 +189,7 @@
     "#ingilizcetelaffuz",
     "#englishlearning"
   ],
-  "status": "approved",
+  "status": "published",
   "video": "media/harf/harf-004-soap-soup.mp4",
   "duration": 20.67,
   "yt_title": "Soap / Soup farkı 😅 İngilizcede tek harf, iki anlam",
@@ -210,5 +210,16 @@
   ],
   "seo_story": "Çorba istedi, sabun geldi! 🍲🧼",
   "cover": "media/covers/harf-004-soap-soup.jpg",
-  "cover_url": "https://halililik86-alt.github.io/covers/harf-004-soap-soup.jpg"
+  "cover_url": "https://halililik86-alt.github.io/covers/harf-004-soap-soup.jpg",
+  "media_id": "18212882677322063",
+  "permalink": "https://www.instagram.com/reel/DfcU_TBCjcY/",
+  "published_at": "2026-11-07T13:50:31+0000",
+  "story_id": "17895467667434666",
+  "youtube": {
+    "video_id": "aX2QRDlU_Fc",
+    "url": "https://youtube.com/shorts/aX2QRDlU_Fc",
+    "privacy": "public",
+    "uploaded_at": "2026-11-07T13:51:19+00:00",
+    "thumbnail": "custom"
+  }
 }
