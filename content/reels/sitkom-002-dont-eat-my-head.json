@@ -1,0 +1,202 @@
+{
+  "id": "sitkom-002-dont-eat-my-head",
+  "type": "sitkom",
+  "format": "S1",
+  "pillar": "mizah",
+  "series": "ELLIE & KEREM",
+  "episode": 2,
+  "hook": [
+    "“DON'T EAT MY HEAD!”?!"
+  ],
+  "voice_dir": "tts/audio/sitkom-002",
+  "music": "music",
+  "ambience": "tools",
+  "scenes": [
+    {
+      "clip": "media/sitkom/sitkom-002-a.mp4",
+      "start": 0,
+      "dur": 5.0,
+      "hook_until": 5.0,
+      "say": [
+        [
+          "e1",
+          "auto",
+          0,
+          5.0
+        ]
+      ],
+      "subs": [
+        {
+          "at": 0.1,
+          "end": 5.0,
+          "speaker": "Ellie",
+          "en": "Kerem, which screw? This one? Or this one? Are you sure?",
+          "tr": "Kerem, hangi vida? Bu mu? Şu mu? Emin misin?"
+        }
+      ]
+    },
+    {
+      "clip": "media/sitkom/sitkom-002-b.mp4",
+      "start": 0,
+      "dur": 5.0,
+      "say": [
+        [
+          "k1",
+          "auto",
+          0,
+          5.0
+        ]
+      ],
+      "subs": [
+        {
+          "at": 0.9,
+          "end": 5.0,
+          "speaker": "Kerem",
+          "en": "Ellie, please... don't eat my head!",
+          "tr": "(Kerem'in aklındaki: “Kafamı yeme!”)"
+        }
+      ]
+    },
+    {
+      "clip": "media/sitkom/sitkom-002-c.mp4",
+      "start": 0,
+      "dur": 5.0,
+      "say": [
+        [
+          "e2",
+          "auto",
+          0,
+          5.0
+        ]
+      ],
+      "sfx": [
+        [
+          "sting",
+          0.0
+        ],
+        [
+          "whoosh",
+          4.4
+        ]
+      ],
+      "subs": [
+        {
+          "at": 0.1,
+          "end": 5.0,
+          "speaker": "Ellie",
+          "en": "Eat your HEAD?! Kerem... I'm a vegetarian!",
+          "tr": "Kafanı mı yiyeyim?! Kerem... ben vejetaryenim!"
+        }
+      ]
+    },
+    {
+      "clip": "media/sitkom/sitkom-002-d.mp4",
+      "start": 0,
+      "dur": 5.0,
+      "say": [
+        [
+          "k2",
+          "auto",
+          2.0,
+          5.0
+        ]
+      ],
+      "sfx": [
+        [
+          "pot",
+          0.3
+        ],
+        [
+          "laugh",
+          0.8
+        ],
+        [
+          "rimshot",
+          4.7
+        ],
+        [
+          "laugh",
+          4.8
+        ]
+      ],
+      "subs": [
+        {
+          "at": 2.0,
+          "end": 5.0,
+          "speaker": "Kerem",
+          "en": "No problem. My English is perfect.",
+          "tr": "Sorun yok. İngilizcem mükemmel."
+        }
+      ]
+    }
+  ],
+  "card": {
+    "kicker": "KEREM'İN İNGİLİZCESİ",
+    "wrong": "Don't eat my head!",
+    "wrong_note": "“Kafamı yeme” harfiyen çevrilmez",
+    "right": "Stop bugging me!",
+    "alt": "ya da: You're driving me crazy!",
+    "next": "“My eye is on you!”",
+    "cta": "Kaçırmamak için takip et",
+    "dur": 9.4,
+    "say": [
+      [
+        "n1",
+        1.0
+      ]
+    ],
+    "sfx": [
+      [
+        "whoosh",
+        0.0
+      ]
+    ]
+  },
+  "publish_at": "2026-11-08T21:48:00+03:00",
+  "status": "approved",
+  "seo": {
+    "tr_phrase": "Kafamı yeme",
+    "wrong": "Don't eat my head",
+    "right": "Stop bugging me!",
+    "alt": "You're driving me crazy!",
+    "ex_en": "Stop bugging me! I'm trying to build this shelf!",
+    "ex_tr": "Kafamı yeme! Şu rafı kurmaya çalışıyorum!",
+    "next_note": "Bölüm 3 yakında: “My eye is on you!” 👀",
+    "cover_chip": "TÜRKÇE DÜŞÜNDÜ",
+    "cover_q": "Ellie neden korktu?"
+  },
+  "seo_story": "Kerem kitaplığı kurmaya çalışıyor, Ellie soru yağdırıyor... ve Kerem Türkçe düşünüyor 😅",
+  "seo_question": "Sen olsan ne derdin? Yorumlara yaz 👇",
+  "cover_scene": 2,
+  "cover_t": 1.0,
+  "cover_shift": 330,
+  "cover": "media/covers/sitkom-002-dont-eat-my-head.jpg",
+  "cover_url": "https://halililik86-alt.github.io/covers/sitkom-002-dont-eat-my-head.jpg",
+  "video": "media/sitkom/sitkom-002-dont-eat-my-head.mp4",
+  "caption": "“Kafamı yeme” İngilizcede nasıl denir? “Don't eat my head” DEĞİL! 😂\n\nKerem kitaplığı kurmaya çalışıyor, Ellie soru yağdırıyor... ve Kerem Türkçe düşünüyor 😅\n\n❌ Don't eat my head\n✅ Stop bugging me!\n✅ You're driving me crazy!\n\n“Stop bugging me! I'm trying to build this shelf!”\nKafamı yeme! Şu rafı kurmaya çalışıyorum!\n\n🎬 Ellie & Kerem · Bölüm 2 · Bölüm 3 yakında: “My eye is on you!” 👀\n\nSen olsan ne derdin? Yorumlara yaz 👇\n\n📌 Kaydet, sonra tekrar bak · 📩 Bilmeyen arkadaşına gönder\n🔔 Her gün 3 kısa İngilizce video için @dilgamesapp'i takip et",
+  "hashtags": [
+    "#ingilizce",
+    "#ingilizceöğren",
+    "#ingilizcekalıplar",
+    "#komikvideolar",
+    "#englishlearning"
+  ],
+  "yt_title": "“Kafamı yeme” İngilizcesi ne? 😂 “Don't eat my head” deme! | Ellie & Kerem #2",
+  "yt_description": "“Kafamı yeme” İngilizcede “Don't eat my head” diye çevrilmez; doğrusu: “Stop bugging me!”. Ellie & Kerem sitkomu, bölüm 2.\n\nKerem kitaplığı kurmaya çalışıyor, Ellie soru yağdırıyor... ve Kerem Türkçe düşünüyor 😅\n\n❌ Don't eat my head\n✅ Stop bugging me!\n✅ You're driving me crazy!\n\n“Stop bugging me! I'm trying to build this shelf!”\nKafamı yeme! Şu rafı kurmaya çalışıyorum!\n\n🎬 Ellie & Kerem · Bölüm 2 · Bölüm 3 yakında: “My eye is on you!” 👀\n\n🔔 Her gün 11:48, 16:48 ve 21:48'de yeni İngilizce Shorts. Abone ol, bildirimleri aç!\n\n#ingilizce #ingilizcekalıplar #shorts",
+  "yt_tags": [
+    "ingilizce",
+    "ingilizce öğren",
+    "ingilizce shorts",
+    "kolay ingilizce",
+    "dilgames",
+    "ingilizce kalıplar",
+    "komik ingilizce",
+    "ingilizce sitkom",
+    "kafamı yeme",
+    "kafamı yeme ingilizcesi",
+    "don't eat my head",
+    "stop bugging me",
+    "ellie ve kerem",
+    "türk ingilizcesi"
+  ]
+}
