@@ -20,12 +20,12 @@
       "say": [
         [
           "k1",
-          0.4
+          0.2
         ]
       ],
       "subs": [
         {
-          "at": 0.4,
+          "at": 0.2,
           "end": 3.8,
           "speaker": "Kerem",
           "en": "Mmm! Ellie... health to your hands!",
