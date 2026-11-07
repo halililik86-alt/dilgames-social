@@ -1,0 +1,163 @@
+{
+  "id": "sitkom-001-health-to-your-hands",
+  "type": "sitkom",
+  "format": "S1",
+  "pillar": "mizah",
+  "series": "ELLIE & KEREM",
+  "episode": 1,
+  "hook": [
+    "“HEALTH TO YOUR HANDS”?!"
+  ],
+  "voice_dir": "tts/audio/sitkom-001",
+  "music": "music",
+  "ambience": "sizzle",
+  "scenes": [
+    {
+      "clip": "media/sitkom/sitkom-001-a.mp4",
+      "start": 1.2,
+      "dur": 3.8,
+      "hook_until": 3.8,
+      "say": [
+        [
+          "k1",
+          0.4
+        ]
+      ],
+      "subs": [
+        {
+          "at": 0.4,
+          "end": 3.8,
+          "speaker": "Kerem",
+          "en": "Mmm! Ellie... health to your hands!",
+          "tr": "(Kerem'in aklındaki: “Ellerine sağlık!”)"
+        }
+      ]
+    },
+    {
+      "clip": "media/sitkom/sitkom-001-b.mp4",
+      "start": 0,
+      "dur": 4.2,
+      "say": [
+        [
+          "e1",
+          0.6
+        ]
+      ],
+      "sfx": [
+        [
+          "sting",
+          0.2
+        ]
+      ],
+      "subs": [
+        {
+          "at": 0.5,
+          "end": 4.2,
+          "speaker": "Ellie",
+          "en": "My hands?! What's wrong with my hands?!",
+          "tr": "Ellerim mi?! Ellerimde ne var?!"
+        }
+      ]
+    },
+    {
+      "clip": "media/sitkom/sitkom-001-c.mp4",
+      "start": 0,
+      "dur": 4.0,
+      "say": [
+        [
+          "m1",
+          0.5
+        ]
+      ],
+      "sfx": [
+        [
+          "door",
+          0.0
+        ],
+        [
+          "sting",
+          3.3
+        ]
+      ],
+      "subs": [
+        {
+          "at": 0.4,
+          "end": 4.0,
+          "speaker": "Anne",
+          "en": "Ellie kızım! Health to your hands!",
+          "tr": "Ellie kızım! Ellerine sağlık!"
+        }
+      ]
+    },
+    {
+      "clip": "media/sitkom/sitkom-001-d.mp4",
+      "start": 0,
+      "dur": 6.4,
+      "speed": 0.78,
+      "say": [
+        [
+          "e2",
+          0.6
+        ],
+        [
+          "k2",
+          3.3
+        ]
+      ],
+      "sfx": [
+        [
+          "glove",
+          0.0
+        ],
+        [
+          "rimshot",
+          6.0
+        ],
+        [
+          "laugh",
+          6.1
+        ]
+      ],
+      "subs": [
+        {
+          "at": 0.5,
+          "end": 3.2,
+          "speaker": "Ellie",
+          "en": "Nobody touches these hands.",
+          "tr": "Bu ellere kimse dokunmuyor."
+        },
+        {
+          "at": 3.2,
+          "end": 6.4,
+          "speaker": "Kerem",
+          "en": "No problem. My English is perfect.",
+          "tr": "Sorun yok. İngilizcem mükemmel."
+        }
+      ]
+    }
+  ],
+  "card": {
+    "kicker": "KEREM'İN İNGİLİZCESİ",
+    "wrong": "Health to your hands!",
+    "wrong_note": "“Elinize sağlık” harfiyen çevrilmez",
+    "right": "This is delicious!",
+    "alt": "ya da: You're a great cook!",
+    "next": "“Don't eat my head!”",
+    "cta": "Kaçırmamak için takip et",
+    "dur": 9.4,
+    "say": [
+      [
+        "n1",
+        1.0
+      ]
+    ],
+    "sfx": [
+      [
+        "whoosh",
+        0.0
+      ]
+    ]
+  },
+  "status": "draft",
+  "video": "media/sitkom/sitkom-001-health-to-your-hands.mp4"
+}

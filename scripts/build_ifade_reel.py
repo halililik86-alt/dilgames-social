@@ -20,7 +20,7 @@ FPS = 30
 ENC = ['-c:v', 'libx264', '-crf', '18', '-preset', 'veryfast', '-pix_fmt', 'yuv420p', '-r', str(FPS)]
 TEAL = (16, 48, 56)
 GOLD = C['gold']
-SPEAKER = {'Elif': (255, 196, 92), 'Tom': (140, 236, 200)}
+SPEAKER = {'Elif': (255, 196, 92), 'Tom': (140, 236, 200), 'Ellie': (255, 196, 92), 'Kerem': (140, 200, 255), 'Anne': (255, 150, 170)}
 
 
 def label(d, cx, y, text, f, bg, fg, padx=22, pady=10):
@@ -72,6 +72,40 @@ def sub_png(path, s, r):
     im.save(path)
 
 
+def sitcom_card(im, d, c, path):
+    """Sitkom bitişi: ❌ harfiyen çeviri / ✅ doğrusu + sıradaki bölüm (takip sebebi)."""
+    RED = (240, 110, 110)
+    d.text((W / 2, 455), c.get('kicker', 'BUGÜNÜN DERSİ'), font=font('ExtraBold', 34), fill=(140, 236, 200), anchor='mm')
+    fw = font('Black', 64)
+    while fw.size > 44 and d.textlength('✗  ' + c['wrong'], font=fw) > 960: fw = font('Black', fw.size - 4)
+    y = 520; tw = d.textlength(c['wrong'], font=fw)
+    d.text((W / 2, y), c['wrong'], font=fw, fill=RED, anchor='ma')
+    d.line([W / 2 - tw / 2 - 10, y + fw.size * 0.62, W / 2 + tw / 2 + 10, y + fw.size * 0.62], fill=RED, width=6)
+    y += fw.size + 18
+    d.text((W / 2, y), c.get('wrong_note', ''), font=font('Medium', 38), fill=(200, 222, 220), anchor='ma'); y += 90
+    size = 104
+    while size > 64 and d.textlength(c['right'], font=font('Black', size)) > 960: size -= 4
+    d.text((W / 2, y), c['right'], font=font('Black', size), fill=GOLD, anchor='ma'); y += size + 24
+    if c.get('alt'):
+        d.text((W / 2, y), c['alt'], font=font('SemiBold', 42), fill=(235, 245, 243), anchor='ma'); y += 70
+    if c.get('use'):
+        for ln in wrap(d, c['use'], font('Medium', 38), 880):
+            d.text((W / 2, y), ln, font=font('Medium', 38), fill=(200, 222, 220), anchor='ma'); y += 50
+    # sıradaki bölüm kutusu
+    by = 1150; box = Image.new('RGBA', (W, H), (0, 0, 0, 0))
+    ImageDraw.Draw(box).rounded_rectangle([90, by, W - 90, by + 300], 34, fill=(8, 26, 30, 235), outline=GOLD, width=4)
+    im.alpha_composite(box); d = ImageDraw.Draw(im)
+    label(d, W / 2, by - 28, 'SIRADAKİ BÖLÜM', font('ExtraBold', 30), GOLD + (255,), TEAL)
+    fn = font('Black', 72)
+    while fn.size > 44 and d.textlength(c['next'], font=fn) > 820: fn = font('Black', fn.size - 4)
+    d.text((W / 2, by + 110), c['next'], font=fn, fill=(255, 255, 255), anchor='mm')
+    d.text((W / 2, by + 210), c['cta'], font=font('SemiBold', 40), fill=(140, 236, 200), anchor='mm')
+    d.text((W / 2, 1650), '@dilgamesapp', font=font('ExtraBold', 60), fill=(140, 236, 200), anchor='mm')
+    d.line([W / 2 - 300, 1740, W / 2 + 300, 1740], fill=(70, 110, 116), width=3)
+    d.text((W / 2, 1790), 'GÜL  •  ÖĞREN  •  TAKİP ET', font=font('ExtraBold', 26), fill=(200, 222, 220), anchor='mm')
+    im.save(path)
+
+
 def card_png(path, r):
     c = r['card']; im = Image.new('RGBA', (W, H), TEAL + (255,)); d = ImageDraw.Draw(im)
     glow = Image.new('RGBA', (W, H), (0, 0, 0, 0))
@@ -85,6 +119,8 @@ def card_png(path, r):
     d.text((W / 2, 300), r['series'], font=font('ExtraBold', 34), fill=(220, 232, 230), anchor='mm')
     d.line([W / 2 - 300, 360, W / 2 + 300, 360], fill=(70, 110, 116), width=3)
     d.line([W / 2 - 300, 360, W / 2 - 140, 360], fill=GOLD, width=5)
+    if c.get('wrong'):
+        return sitcom_card(im, d, c, path)
     d.text((W / 2, 470), 'BUGÜNÜN İFADESİ', font=font('ExtraBold', 34), fill=(140, 236, 200), anchor='mm')
     size = 150; lines = c['phrase']
     while size > 80 and max(d.textlength(s, font=font('Black', size)) for s in lines) > 940: size -= 6
