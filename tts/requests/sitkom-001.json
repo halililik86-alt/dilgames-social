@@ -1,22 +1,107 @@
 {
- "model": ["eleven_v4", "eleven_v3"],
+ "model": [
+  "eleven_v4",
+  "eleven_v3"
+ ],
  "lines": [
-  {"id": "k1", "voice": "TX3LPaxmHKxFdv7VOQHJ", "text": "[strong Turkish accent] [delighted] Mmm! Ellie... health to your hands!", "settings": {"stability": 0.4}},
-  {"id": "e1", "voice": "pFZP5JQG7iQjIQuC4Bku", "text": "[British accent] [alarmed] My hands?! [panicked] What's wrong with my hands?!", "settings": {"stability": 0.35}},
-  {"id": "m1", "voice": "5RqXmIU9ikjifeWoXHMG", "text": "[warm, loud] Ellie kızım! Health to your hands!", "settings": {"stability": 0.4}},
-  {"id": "e2", "voice": "pFZP5JQG7iQjIQuC4Bku", "text": "[British accent] [dead serious] Nobody touches these hands.", "settings": {"stability": 0.5}},
-  {"id": "k2", "voice": "TX3LPaxmHKxFdv7VOQHJ", "text": "[strong Turkish accent] [proudly] No problem. My English is perfect.", "settings": {"stability": 0.45}},
-  {"id": "a1", "voice": "Xb7hH8MSUJpSbSDYk0k2", "text": "This is delicious!", "settings": {"stability": 0.5}},
-  {"id": "n1", "voice": "5RqXmIU9ikjifeWoXHMG", "language": "tr", "text": "[playfully] Elinize sağlık demek istiyorsan: This is delicious! [pause] İkinci bölümde: Don't eat my head! Kaçırma!", "settings": {"stability": 0.5}}
+  {
+   "id": "k1",
+   "voice": "sqN4QwtcnanCCWx6TTYj",
+   "text": "[delighted] Mmm! Ellie... health to your hands!",
+   "settings": {
+    "stability": 0.4
+   }
+  },
+  {
+   "id": "e1",
+   "voice": "pFZP5JQG7iQjIQuC4Bku",
+   "text": "[British accent] [alarmed] My hands?! [panicked] What's wrong with my hands?!",
+   "settings": {
+    "stability": 0.35
+   }
+  },
+  {
+   "id": "m1",
+   "voice": "5RqXmIU9ikjifeWoXHMG",
+   "text": "[warm, loud] Ellie kızım! Health to your hands!",
+   "settings": {
+    "stability": 0.4
+   }
+  },
+  {
+   "id": "e2",
+   "voice": "pFZP5JQG7iQjIQuC4Bku",
+   "text": "[British accent] [dead serious] Nobody touches these hands.",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "k2",
+   "voice": "sqN4QwtcnanCCWx6TTYj",
+   "text": "[proudly] No problem. My English is perfect.",
+   "settings": {
+    "stability": 0.45
+   }
+  },
+  {
+   "id": "a1",
+   "voice": "Xb7hH8MSUJpSbSDYk0k2",
+   "text": "This is delicious!",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "n1",
+   "voice": "5RqXmIU9ikjifeWoXHMG",
+   "language": "tr",
+   "text": "[playfully] Elinize sağlık demek istiyorsan: This is delicious! [pause] İkinci bölümde: Don't eat my head! Kaçırma!",
+   "settings": {
+    "stability": 0.5
+   }
+  }
  ],
  "sfx": [
-  {"id": "sizzle", "text": "pan sizzling softly in a cozy kitchen, eggs and tomatoes cooking", "seconds": 6},
-  {"id": "sting", "text": "comedic dramatic shock sting, cartoon orchestra hit", "seconds": 1.2},
-  {"id": "door", "text": "kitchen door bursting open, cheerful", "seconds": 1.0},
-  {"id": "glove", "text": "rubber kitchen glove snapping on wrist, two snaps", "seconds": 1.2},
-  {"id": "rimshot", "text": "sitcom rimshot ba-dum-tss drum", "seconds": 1.5},
-  {"id": "laugh", "text": "sitcom studio audience laughter burst", "seconds": 3},
-  {"id": "whoosh", "text": "soft quick whoosh transition", "seconds": 0.6},
-  {"id": "music", "text": "playful Turkish-flavored sitcom background music, light darbuka and pizzicato strings, cheerful comedic, no vocals, loopable", "seconds": 22}
+  {
+   "id": "sizzle",
+   "text": "pan sizzling softly in a cozy kitchen, eggs and tomatoes cooking",
+   "seconds": 6
+  },
+  {
+   "id": "sting",
+   "text": "comedic dramatic shock sting, cartoon orchestra hit",
+   "seconds": 1.2
+  },
+  {
+   "id": "door",
+   "text": "kitchen door bursting open, cheerful",
+   "seconds": 1.0
+  },
+  {
+   "id": "glove",
+   "text": "rubber kitchen glove snapping on wrist, two snaps",
+   "seconds": 1.2
+  },
+  {
+   "id": "rimshot",
+   "text": "sitcom rimshot ba-dum-tss drum",
+   "seconds": 1.5
+  },
+  {
+   "id": "laugh",
+   "text": "sitcom studio audience laughter burst",
+   "seconds": 3
+  },
+  {
+   "id": "whoosh",
+   "text": "soft quick whoosh transition",
+   "seconds": 0.6
+  },
+  {
+   "id": "music",
+   "text": "playful Turkish-flavored sitcom background music, light darbuka and pizzicato strings, cheerful comedic, no vocals, loopable",
+   "seconds": 22
+  }
  ]
 }
