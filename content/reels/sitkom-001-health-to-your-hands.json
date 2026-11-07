@@ -158,6 +158,52 @@
       ]
     ]
   },
-  "status": "draft",
-  "video": "media/sitkom/sitkom-001-health-to-your-hands.mp4"
+  "status": "approved",
+  "video": "media/sitkom/sitkom-001-health-to-your-hands.mp4",
+  "publish_at": "2026-11-07T21:48:00+03:00",
+  "seo": {
+    "tr_phrase": "Elinize sağlık",
+    "wrong": "Health to your hands",
+    "right": "This is delicious!",
+    "alt": "You're a great cook!",
+    "ex_en": "Wow, this menemen is delicious! You're a great cook!",
+    "ex_tr": "Vay, bu menemen çok lezzetli! Harika yemek yapıyorsun!",
+    "next_note": "Bölüm 2 yarın 21:48: “Don't eat my head!” 😱",
+    "cover_chip": "TÜRKÇE DÜŞÜNDÜ",
+    "cover_q": "Ellie neden panikledi?"
+  },
+  "seo_story": "Kerem, Ellie'nin menemenini övmek istedi... ama İngilizcesi biraz fazla “perfect” 😅",
+  "seo_question": "Sen olsan ne derdin? Yorumlara yaz 👇",
+  "cover_scene": 1,
+  "cover_t": 2.2,
+  "cover": "media/covers/sitkom-001-health-to-your-hands.jpg",
+  "cover_url": "https://halililik86-alt.github.io/covers/sitkom-001-health-to-your-hands.jpg",
+  "duration": 27.8,
+  "caption": "“Elinize sağlık” İngilizcede nasıl denir? “Health to your hands” DEĞİL! 😂\n\nKerem, Ellie'nin menemenini övmek istedi... ama İngilizcesi biraz fazla “perfect” 😅\n\n❌ Health to your hands\n✅ This is delicious!\n✅ You're a great cook!\n\n“Wow, this menemen is delicious! You're a great cook!”\nVay, bu menemen çok lezzetli! Harika yemek yapıyorsun!\n\n🎬 Ellie & Kerem · Bölüm 1 · Bölüm 2 yarın 21:48: “Don't eat my head!” 😱\n\nSen olsan ne derdin? Yorumlara yaz 👇\n\n📌 Kaydet, sonra tekrar bak · 📩 Bilmeyen arkadaşına gönder\n🔔 Her gün 3 kısa İngilizce video için @dilgamesapp'i takip et",
+  "hashtags": [
+    "#ingilizce",
+    "#ingilizceöğren",
+    "#ingilizcekalıplar",
+    "#komikvideolar",
+    "#englishlearning"
+  ],
+  "yt_title": "“Elinize sağlık” İngilizcesi ne? 😂 “Health to your hands” deme! | Ellie & Kerem #1",
+  "yt_description": "“Elinize sağlık” İngilizcede “Health to your hands” diye çevrilmez; doğrusu: “This is delicious!”. Ellie & Kerem sitkomu, bölüm 1.\n\nKerem, Ellie'nin menemenini övmek istedi... ama İngilizcesi biraz fazla “perfect” 😅\n\n❌ Health to your hands\n✅ This is delicious!\n✅ You're a great cook!\n\n“Wow, this menemen is delicious! You're a great cook!”\nVay, bu menemen çok lezzetli! Harika yemek yapıyorsun!\n\n🎬 Ellie & Kerem · Bölüm 1 · Bölüm 2 yarın 21:48: “Don't eat my head!” 😱\n\n🔔 Her gün 11:48, 16:48 ve 21:48'de yeni İngilizce Shorts. Abone ol, bildirimleri aç!\n\n#ingilizce #ingilizcekalıplar #shorts",
+  "yt_tags": [
+    "ingilizce",
+    "ingilizce öğren",
+    "ingilizce shorts",
+    "kolay ingilizce",
+    "dilgames",
+    "ingilizce kalıplar",
+    "komik ingilizce",
+    "ingilizce sitkom",
+    "elinize sağlık",
+    "elinize sağlık ingilizcesi",
+    "health to your hands",
+    "this is delicious",
+    "ellie ve kerem",
+    "türk ingilizcesi"
+  ],
+  "cover_shift": 360
 }

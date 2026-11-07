@@ -17,7 +17,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 W, H = 1080, 1920
 FD = '/usr/share/fonts/opentype/inter/'
 RED, MINT, GOLD, NAVY, BLUE = (233, 64, 64), (120, 230, 190), (255, 200, 90), (12, 20, 32), (76, 132, 232)
-SERIES = {'kaza': ('TÜRK İNGİLİZCESİ KAZALARI', RED), 'harf': ('BİR HARFİN HİKÂYESİ', MINT), 'duel2': ('DEYİM DÜELLOSU', GOLD), 'ifade': ('ELİF + TOM', MINT)}
+SERIES = {'kaza': ('TÜRK İNGİLİZCESİ KAZALARI', RED), 'harf': ('BİR HARFİN HİKÂYESİ', MINT), 'duel2': ('DEYİM DÜELLOSU', GOLD), 'ifade': ('ELİF + TOM', MINT), 'sitkom': ('ELLIE & KEREM', GOLD)}
 
 
 def font(w, s):
@@ -137,9 +137,21 @@ def cover_ifade(s):
     return im
 
 
+def cover_sitkom(s):
+    sc = s['scenes'][s.get('cover_scene', 1)]
+    im = shift_down(frame(sc['clip'], s.get('cover_t', sc.get('start', 0) + 1.5)), s.get('cover_shift', 260))
+    vignette(im, 0.75, 0.75); badge(im, s, GOLD)
+    chip(im, W / 2, 470, s['seo'].get('cover_chip', 'TÜRKÇE DÜŞÜNDÜ'), font('Black', 50), RED + (255,), (255, 255, 255), rot=-3)
+    d = ImageDraw.Draw(im); ph = f'“{s["seo"]["wrong"]}”'
+    stroke_text(im, (W / 2, 620), ph, fit(d, ph, 'Black', 120, 980, 60), (255, 255, 255))
+    q = s['seo'].get('cover_q', 'Ne oldu?!')
+    stroke_text(im, (W / 2, 1460), q, fit(d, q, 'Black', 96, 980, 56), GOLD, stroke=8)
+    return im
+
+
 def build(spec_path, out):
     s = json.load(open(spec_path, encoding='utf-8'))
-    im = {'kaza': cover_kaza, 'harf': cover_harf, 'duel2': cover_duel2, 'ifade': cover_ifade}[s['type']](s)
+    im = {'kaza': cover_kaza, 'harf': cover_harf, 'duel2': cover_duel2, 'ifade': cover_ifade, 'sitkom': cover_sitkom}[s['type']](s)
     im.convert('RGB').save(out, quality=92)
     return out
 
