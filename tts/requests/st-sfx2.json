@@ -1,0 +1,64 @@
+{
+ "sfx": [
+  {
+   "id": "train-whistle",
+   "text": "realistic distant steam locomotive whistle, one short clean blast, natural, not cartoonish",
+   "seconds": 1.2
+  },
+  {
+   "id": "rails-loop",
+   "text": "realistic train wheels on steel rails, steady rhythmic clickety-clack, soft ambience, seamless loop, no whistle",
+   "seconds": 4
+  },
+  {
+   "id": "coupling",
+   "text": "realistic heavy metal train coupling clunk, short and crisp, solid",
+   "seconds": 0.6
+  },
+  {
+   "id": "bounce-back",
+   "text": "soft muted low error tone, subtle modern app UI sound, not cartoonish",
+   "seconds": 0.5
+  },
+  {
+   "id": "puzzled",
+   "text": "soft neutral two-note notification, muted, modern minimal UI",
+   "seconds": 0.5
+  },
+  {
+   "id": "tunnel",
+   "text": "train rushing into a tunnel, airy whoosh with short reverb tail, realistic",
+   "seconds": 1.6
+  },
+  {
+   "id": "star-burst",
+   "text": "short bright modern success chime, clean and subtle, premium mobile app",
+   "seconds": 0.6
+  },
+  {
+   "id": "golden-wagon",
+   "text": "elegant rising reward chime with soft shimmer, premium modern mobile game",
+   "seconds": 1.2
+  },
+  {
+   "id": "ticket",
+   "text": "real paper ticket punch, crisp metal stamp click",
+   "seconds": 0.5
+  },
+  {
+   "id": "ui-tap",
+   "text": "subtle soft modern UI tap click, very short",
+   "seconds": 0.5
+  },
+  {
+   "id": "cheer",
+   "text": "short satisfying level complete stinger, modern soft synth and warm brass, no voices",
+   "seconds": 1.6
+  },
+  {
+   "id": "steam-puff",
+   "text": "short realistic steam release hiss, soft",
+   "seconds": 0.5
+  }
+ ]
+}
