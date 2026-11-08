@@ -155,6 +155,422 @@
    "settings": {
     "stability": 0.5
    }
+  },
+  {
+   "id": "L01-09",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] Nice to meet you.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L01-10",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] How are you?",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L01-11",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] I am fine thank you.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L01-12",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] She is my sister.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L01-13",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] This is my book.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L01-14",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] I have a red bike.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L01-15",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] We are good friends.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L01-16",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] It is cold today.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L01-17",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] Where is the cat?",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L01-18",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] I can swim.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L01-19",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] He likes green tea.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L01-20",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] Anna lives in a big house.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L02-01",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] I wake up at seven.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L02-02",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] I drink milk every morning.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L02-03",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] She goes to school by bus.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L02-04",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] Do you like music?",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L02-05",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] There is a park near my house.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L02-06",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] We play football on Sunday.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L02-07",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] What time is it?",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L02-08",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] My father works in a hospital.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L02-09",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] I do not eat meat.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L02-10",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] Can you help me?",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L02-11",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] The shop opens at nine.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L02-12",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] They are watching a film.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L02-13",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] I am reading a new book.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L02-14",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] Where do you live?",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L02-15",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] It is raining outside.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L02-16",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] My brother is taller than me.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L02-17",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] How much is this bag?",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L02-18",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] I went to the cinema yesterday.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L02-19",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] She bought a blue dress.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L02-20",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] We had a great time at the beach.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
   }
  ]
 }

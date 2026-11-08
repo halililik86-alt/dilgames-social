@@ -1,0 +1,18 @@
+{
+ "lines": [
+  {
+   "id": "words-2",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[clear, friendly teacher voice] Nice.\n\nTo.\n\nMeet.\n\nHow.\n\nAre.\n\nOld.\n\nFine.\n\nShe.\n\nSister.\n\nBrother.\n\nBook.\n\nPen.\n\nHave.\n\nRed.\n\nBike.\n\nBlue.\n\nWe.\n\nFriends.\n\nThey.\n\nIt.\n\nCold.\n\nToday.\n\nHot.\n\nWhere.\n\nCan.\n\nSwim.\n\nRun.\n\nHe.\n\nLikes.\n\nGreen.\n\nTea.\n\nCoffee.\n\nAnna.\n\nLives.\n\nIn.\n\nBig.\n\nHouse.\n\nSmall.\n\nWake.\n\nUp.\n\nAt.\n\nSeven.\n\nEight.\n\nDrink.\n\nMilk.\n\nEvery.\n\nWater.\n\nGoes.\n\nSchool.\n\nBy.\n\nBus.\n\nCar.\n\nDo.\n\nMusic.\n\nGames.\n\nThere.\n\nPark.\n\nNear.\n\nShop.\n\nPlay.\n\nFootball.\n\nOn.\n\nSunday.\n\nMonday.\n\nWhat.\n\nTime.\n\nDay.\n\nFather.\n\nWorks.\n\nHospital.\n\nBank.\n\nNot.\n\nMeat.\n\nFish.\n\nHelp.\n\nMe.\n\nCall.\n\nOpens.\n\nNine.\n\nCloses.\n\nWatching.\n\nFilm.\n\nReading.\n\nNew.\n\nLive.\n\nWork.\n\nRaining.\n\nOutside.\n\nSnowing.\n\nTaller.\n\nThan.\n\nShorter.\n\nMuch.\n\nBag.\n\nMany.\n\nWent.\n\nCinema.\n\nYesterday.\n\nBought.\n\nDress.\n\nHad.\n\nGreat.\n\nBeach.",
+   "timestamps": true,
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  }
+ ]
+}
