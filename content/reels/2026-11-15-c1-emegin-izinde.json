@@ -1,0 +1,27 @@
+{
+  "id": "2026-11-15-c1-emegin-izinde",
+  "publish_at": "2026-11-15T11:48:00+03:00",
+  "format": "F2",
+  "pillar": "seviye",
+  "record": {
+    "tab": "C1 Advanced",
+    "pack": 0,
+    "level": 1
+  },
+  "hook": {
+    "lines": [
+      "C1 seviyesi",
+      "Kaç kelimesini",
+      "biliyorsun?"
+    ]
+  },
+  "caption": "C1 seviyesinde bir hikâye: kaç kelimesini biliyorsun? 🎯\n\nBu video C1'deki \"Emeğin izinde\" hikâyesinden. Cümleleri dinle, anlamını tahmin et.\n\nBildiğin kelime sayısını yoruma yaz, arkadaşına da gönder 📩",
+  "hashtags": [
+    "#ingilizce",
+    "#ingilizceöğren",
+    "#ingilizcepratik",
+    "#englishlearning",
+    "#c1english"
+  ],
+  "status": "planned"
+}

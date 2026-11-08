@@ -1,0 +1,33 @@
+{
+  "id": "2026-11-11-a1-cati-bahcesi",
+  "publish_at": "2026-11-11T11:48:00+03:00",
+  "format": "F1",
+  "pillar": "meydan okuma",
+  "record": {
+    "tab": "A1 Beginner",
+    "pack": 1,
+    "level": 1
+  },
+  "hook": {
+    "lines": [
+      "A1 seviyesi",
+      "Bu cümleyi",
+      "kurabilir misin?"
+    ]
+  },
+  "captions": {
+    "complete": [
+      "CEVAP",
+      "Cümleyi tamamla, sesli dinle"
+    ]
+  },
+  "caption": "Boşluğu doldur 👇\n\nShe ______ a small garden.\n\nİpucu: Küçük bir bahçe keşfediyor.\nCevabını yoruma yaz, doğrusu videonun sonunda 👀\nBilemeyen bir arkadaşına gönder 📩",
+  "hashtags": [
+    "#ingilizce",
+    "#ingilizceöğren",
+    "#ingilizcepratik",
+    "#englishlearning",
+    "#ingilizcekelimeler"
+  ],
+  "status": "planned"
+}
