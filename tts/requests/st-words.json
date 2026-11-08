@@ -1,0 +1,18 @@
+{
+ "lines": [
+  {
+   "id": "words-1",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[clear, friendly teacher voice] Hello.\n\nGood.\n\nMorning.\n\nThank.\n\nYou.\n\nSee.\n\nThis.\n\nIs.\n\nA.\n\nCat.\n\nDog.\n\nI.\n\nAm.\n\nHappy.\n\nSad.\n\nMy.\n\nName.\n\nTom.\n\nYour.\n\nLike.\n\nApples.\n\nEat.\n\nThe.\n\nPlays.\n\nWith.\n\nBall.",
+   "timestamps": true,
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  }
+ ]
+}

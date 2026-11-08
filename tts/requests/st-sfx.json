@@ -1,0 +1,74 @@
+{
+ "sfx": [
+  {
+   "id": "train-whistle",
+   "text": "short cheerful toy train whistle, bright and friendly",
+   "seconds": 1.0
+  },
+  {
+   "id": "rails-loop",
+   "text": "wooden toy train rolling on wooden rails, gentle rhythmic clickety-clack, seamless loop",
+   "seconds": 4.0
+  },
+  {
+   "id": "coupling",
+   "text": "small metal coupling clink as a toy wagon attaches, satisfying",
+   "seconds": 0.5
+  },
+  {
+   "id": "bounce-back",
+   "text": "cartoon boing, playful bounce back, not negative",
+   "seconds": 0.5
+  },
+  {
+   "id": "puzzled",
+   "text": "soft puzzled hum, cute cartoon \"hmm?\" tone, no voice",
+   "seconds": 0.6
+  },
+  {
+   "id": "tunnel",
+   "text": "toy train whoosh entering a tunnel, echo fading",
+   "seconds": 1.5
+  },
+  {
+   "id": "star-burst",
+   "text": "sparkle star burst, magical twinkle",
+   "seconds": 0.8
+  },
+  {
+   "id": "golden-wagon",
+   "text": "golden chime shimmer, rewarding, rising",
+   "seconds": 1.2
+  },
+  {
+   "id": "ticket",
+   "text": "paper ticket stamp punch",
+   "seconds": 0.5
+  },
+  {
+   "id": "ui-tap",
+   "text": "soft wooden UI tap",
+   "seconds": 0.5
+  },
+  {
+   "id": "bridge-creak",
+   "text": "wooden bridge creaking lightly, playful tension",
+   "seconds": 1.5
+  },
+  {
+   "id": "cheer",
+   "text": "small group of kids cheering briefly, happy",
+   "seconds": 1.5
+  },
+  {
+   "id": "steam-puff",
+   "text": "short steam puff from a toy locomotive",
+   "seconds": 0.5
+  },
+  {
+   "id": "tick",
+   "text": "soft countdown tick",
+   "seconds": 0.5
+  }
+ ]
+}

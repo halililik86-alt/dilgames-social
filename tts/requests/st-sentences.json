@@ -1,0 +1,160 @@
+{
+ "lines": [
+  {
+   "id": "L01-01",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] Hello.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L01-02",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] Good morning.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L01-03",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] Thank you.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L01-04",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] This is a cat.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L01-05",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] I am happy.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L01-06",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] My name is Tom.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L01-07",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] I like apples.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L01-08",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] The dog plays with the ball.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "ready",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[cheerful] Ready? Speak!",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "all-aboard",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[excited] All aboard!",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "great-job",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[happy] Great job!",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "try-again",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[encouraging] Try again!",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  }
+ ]
+}

@@ -1,0 +1,44 @@
+{
+ "ids": [
+  "tiko-01-hello",
+  "tiko-02-voice",
+  "tiko-03-mic",
+  "tiko-04-first-word",
+  "tiko-05-great",
+  "tiko-06-super",
+  "tiko-07-wow",
+  "tiko-08-not-yet",
+  "tiko-09-again",
+  "tiko-10-unclear",
+  "tiko-11-hint",
+  "tiko-12-speaker",
+  "tiko-13-all-aboard",
+  "tiko-14-golden",
+  "tiko-15-tunnel",
+  "tiko-16-three-stars",
+  "tiko-17-new-line",
+  "tiko-18-bridge",
+  "tiko-19-question",
+  "tiko-20-whisper",
+  "tiko-21-skip",
+  "tiko-22-daily",
+  "tiko-23-welcome-back",
+  "tiko-24-goodbye"
+ ],
+ "lines": [
+  {
+   "id": "tiko-all",
+   "voice": "5RqXmIU9ikjifeWoXHMG",
+   "text": "[cheerful] Merhaba! Ben Tiko, bu trenin kondüktörüyüm.\n\nBu tren senin sesinle hareket eder. [pause] Söylediğin her doğru kelime yeni bir vagon olur!\n\nSeni duyabilmem için mikrofon iznine ihtiyacım var.\n\nHadi, ilk kelimeyi söyle: Hello!\n\n[excited] Harika! Bir vagon daha!\n\nSüpersin! Tren büyüyor!\n\n[amazed] Vay canına, çok hızlısın!\n\n[gentle] Hmm, o kelimenin sırası henüz gelmedi.\n\nBir daha dene, sen yaparsın!\n\n[curious] Tam duyamadım, biraz daha yüksek söyler misin?\n\nTakıldın mı? Parlayan kelimeye bak!\n\nHoparlöre dokunursan kelimeyi sana söylerim.\n\n[excited] Herkes yolcu mu? [pause] Şimdi cümlenin tamamını söyle!\n\n[proud] Altın vagonu kazandın!\n\nTünele giriyoruz, sıkı tutun!\n\nÜç yıldız! Tam bir makinist oldun!\n\nYeni bir şehre doğru yola çıkıyoruz!\n\nDikkat, köprüdeyiz! Biraz acele etmeliyiz.\n\nBu bir soru treni. Sonunda soru işaretini unutma!\n\nFısıldasan da olur, seni duyarım.\n\nİstersen bu cümleyi geçebiliriz, sonra tekrar deneriz.\n\nGünaydın! Sabah seferi seni bekliyor.\n\nTekrar hoş geldin! Tren hazır.\n\n[warm] Görüşürüz, yarın yine yola çıkalım!",
+   "timestamps": true,
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "tr",
+   "settings": {
+    "stability": 0.5
+   }
+  }
+ ]
+}
