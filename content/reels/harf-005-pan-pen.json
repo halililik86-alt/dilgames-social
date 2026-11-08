@@ -189,7 +189,7 @@
     "#ingilizcetelaffuz",
     "#englishlearning"
   ],
-  "status": "approved",
+  "status": "published",
   "video": "media/harf/harf-005-pan-pen.mp4",
   "duration": 20.82,
   "yt_title": "Pan / Pen farkı 😅 İngilizcede tek harf, iki anlam",
@@ -210,5 +210,16 @@
   ],
   "seo_story": "Kalem istedi, tava geldi! 🍳✏️",
   "cover": "media/covers/harf-005-pan-pen.jpg",
-  "cover_url": "https://halililik86-alt.github.io/covers/harf-005-pan-pen.jpg"
+  "cover_url": "https://halililik86-alt.github.io/covers/harf-005-pan-pen.jpg",
+  "media_id": "17980028664148818",
+  "permalink": "https://www.instagram.com/reel/Dfe51tJDVNG/",
+  "published_at": "2026-11-08T13:50:57+0000",
+  "story_id": "18118292471152373",
+  "youtube": {
+    "video_id": "MGM18uDzeO4",
+    "url": "https://youtube.com/shorts/MGM18uDzeO4",
+    "privacy": "public",
+    "uploaded_at": "2026-11-08T13:51:39+00:00",
+    "thumbnail": "custom"
+  }
 }
