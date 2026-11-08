@@ -209,5 +209,17 @@
     "privacy": "public",
     "uploaded_at": "2026-11-08T18:51:28+00:00",
     "thumbnail": "custom"
-  }
+  },
+  "insights": {
+    "views": 264,
+    "reach": 194,
+    "likes": 0,
+    "comments": 0,
+    "shares": 0,
+    "saved": 1,
+    "total_interactions": 1,
+    "ig_reels_avg_watch_time": 6659,
+    "ig_reels_video_view_total_time": 1265286
+  },
+  "insights_at": "2026-11-08T20:21:03+00:00"
 }
