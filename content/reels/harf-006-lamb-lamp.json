@@ -189,7 +189,7 @@
     "#ingilizcetelaffuz",
     "#englishlearning"
   ],
-  "status": "approved",
+  "status": "published",
   "video": "media/harf/harf-006-lamb-lamp.mp4",
   "duration": 22.0,
   "yt_title": "Lamb / Lamp farkı 😅 İngilizcede tek harf, iki anlam",
@@ -210,5 +210,16 @@
   ],
   "seo_story": "Lamba istedi, kuzu geldi! 🐑💡",
   "cover": "media/covers/harf-006-lamb-lamp.jpg",
-  "cover_url": "https://halililik86-alt.github.io/covers/harf-006-lamb-lamp.jpg"
+  "cover_url": "https://halililik86-alt.github.io/covers/harf-006-lamb-lamp.jpg",
+  "media_id": "18079229045447987",
+  "permalink": "https://www.instagram.com/reel/Dfhe2NUEWir/",
+  "published_at": "2026-11-09T13:52:49+0000",
+  "story_id": "17889959223488322",
+  "youtube": {
+    "video_id": "r7CWPaMTx34",
+    "url": "https://youtube.com/shorts/r7CWPaMTx34",
+    "privacy": "public",
+    "uploaded_at": "2026-11-09T13:53:33+00:00",
+    "thumbnail": "custom"
+  }
 }
