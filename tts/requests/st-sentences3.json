@@ -1,0 +1,1044 @@
+{
+ "lines": [
+  {
+   "id": "L07-01",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] I used to play the piano.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L07-02",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] She enjoys swimming in the sea.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L07-03",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] You might need an umbrella.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L07-04",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] He decided to learn Spanish.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L07-05",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] Did you use to live here?",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L07-06",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] I am good at cooking.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L07-07",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] We are thinking about moving abroad.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L07-08",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] It may snow tonight.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L07-09",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] Would you like to dance?",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L07-10",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] She stopped eating sugar last year.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L07-11",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] I am looking forward to seeing you.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L07-12",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] You had better leave now.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L07-13",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] He is interested in history.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L07-14",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] They might be at home.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L07-15",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] I forgot to lock the door.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L07-16",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] Why did you stop running?",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L07-17",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] We used to go camping every summer.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L07-18",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] She avoids driving at night.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L07-19",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] Do you mind waiting a moment?",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L07-20",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] I would rather stay at home tonight.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L08-01",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] This bridge was built long ago.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L08-02",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] English is spoken all over the world.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L08-03",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] If I were rich I would travel.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L08-04",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] The letter was sent yesterday.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L08-05",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] What would you do with a million dollars?",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L08-06",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] The room is cleaned every day.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L08-07",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] If I had time I would help.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L08-08",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] My phone was stolen on the train.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L08-09",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] Where was this photo taken?",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L08-10",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] If she knew she would tell us.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L08-11",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] The windows will be repaired tomorrow.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L08-12",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] I would buy that car if I could.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L08-13",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] The museum was opened by the mayor.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L08-14",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] Would you live in another country?",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L08-15",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] Our dinner is being cooked now.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L08-16",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] If I were you I would wait.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L08-17",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] The songs were written by my uncle.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L08-18",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] What would happen if we lost?",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L08-19",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] The tickets have been sold.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L08-20",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] If it were warmer we would swim.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L09-01",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] The man who lives next door is a doctor.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L09-02",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] She said that she was tired.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L09-03",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] Do you know where the station is?",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L09-04",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] This is the book I told you about.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L09-05",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] He asked me if I was ready.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L09-06",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] The town where I grew up is small.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L09-07",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] Can you tell me what time it is?",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L09-08",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] They told us to wait outside.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L09-09",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] The girl whose bag I found thanked me.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L09-10",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] She asked where I had been.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L09-11",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] I wonder why he left so early.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L09-12",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] That is the restaurant where we met.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L09-13",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] He said he would call me later.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L09-14",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] Do you remember when we first met?",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L09-15",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] The film which we watched was boring.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L09-16",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] My teacher told me to practice more.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L09-17",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] I do not know what she wants.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L09-18",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] Everyone who came enjoyed the party.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L09-19",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] Could you tell me where you live?",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L09-20",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] She promised she would never be late.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L10-01",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] I have been waiting for an hour.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L10-02",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] If I had known I would have come.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L10-03",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] I wish I could speak French.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L10-04",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] When we arrived the film had started?",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L10-05",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] How long have you been learning English?",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L10-06",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] She wishes she had more free time.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L10-07",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] The train had left before we got there.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L10-08",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] If you had asked I would have helped.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L10-09",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] They have been working all night.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L10-10",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] I should have listened to my mother.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L10-11",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] He must have forgotten our meeting.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L10-12",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] Everyone had gone when I woke up.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L10-13",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] I wish I had not said that.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L10-14",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] Had you ever seen the sea before?",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L10-15",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] It has been snowing since morning.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L10-16",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] You could have told me earlier.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L10-17",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] We would have won if we had tried.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L10-18",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] What have you been doing all day?",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L10-19",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] She might have missed the bus.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  },
+  {
+   "id": "L10-20",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[warm, clear] I wish this journey would never end.",
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  }
+ ]
+}
