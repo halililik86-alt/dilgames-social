@@ -189,7 +189,7 @@
     "#ingilizcetelaffuz",
     "#englishlearning"
   ],
-  "status": "approved",
+  "status": "published",
   "video": "media/harf/harf-007-angry-hungry.mp4",
   "duration": 21.65,
   "yt_title": "Angry / Hungry farkı 😅 İngilizcede küçük bir ses, iki anlam",
@@ -210,5 +210,16 @@
   ],
   "seo_story": "Acıktım dedi, herkes kaçtı! 😡🍕",
   "cover": "media/covers/harf-007-angry-hungry.jpg",
-  "cover_url": "https://halililik86-alt.github.io/covers/harf-007-angry-hungry.jpg"
+  "cover_url": "https://halililik86-alt.github.io/covers/harf-007-angry-hungry.jpg",
+  "media_id": "17899898664405234",
+  "permalink": "https://www.instagram.com/reel/DfkDn_vim70/",
+  "published_at": "2026-11-10T13:52:41+0000",
+  "story_id": "18146416678595467",
+  "youtube": {
+    "video_id": "o5iJ30Gghkc",
+    "url": "https://youtube.com/shorts/o5iJ30Gghkc",
+    "privacy": "public",
+    "uploaded_at": "2026-11-10T13:53:25+00:00",
+    "thumbnail": "custom"
+  }
 }
