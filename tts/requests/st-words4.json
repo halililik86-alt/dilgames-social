@@ -1,0 +1,18 @@
+{
+ "lines": [
+  {
+   "id": "words-4",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[clear, friendly teacher voice] Bags.\n\nBoxes.\n\nStudy.\n\nPass.\n\nFail.\n\nWhile.\n\nWalking.\n\nBirthday.\n\nWedding.\n\nWaiting.\n\nForget.\n\nRemember.\n\nHungry.\n\nCook.\n\nLights.\n\nOut.\n\nDrive.\n\nSun.\n\nShining.\n\nMoon.\n\nPromise.\n\nWrite.\n\nListening.\n\nTalking.\n\nHurry.\n\nCatch.\n\nMiss.\n\nUsed.\n\nPiano.\n\nGuitar.\n\nEnjoys.\n\nSwimming.\n\nSea.\n\nLake.\n\nMight.\n\nAn.\n\nUmbrella.\n\nCoat.\n\nDecided.\n\nLearn.\n\nSpanish.\n\nFrench.\n\nUse.\n\nBad.\n\nThinking.\n\nAbout.\n\nMoving.\n\nAbroad.\n\nStaying.\n\nTonight.\n\nWould.\n\nDance.\n\nSing.\n\nStopped.\n\nEating.\n\nSugar.\n\nYear.\n\nSalt.\n\nLooking.\n\nForward.\n\nSeeing.\n\nMeeting.\n\nBetter.\n\nNow.\n\nLater.\n\nInterested.\n\nHistory.\n\nScience.\n\nForgot.\n\nLock.\n\nWhy.\n\nStop.\n\nRunning.\n\nCamping.\n\nAvoids.\n\nDriving.\n\nMind.\n\nMoment.\n\nMinute.\n\nRather.\n\nBridge.\n\nBuilt.\n\nAgo.\n\nMade.\n\nEnglish.\n\nSpoken.\n\nOver.\n\nWorld.\n\nWritten.\n\nRich.\n\nPoor.\n\nLetter.\n\nSent.\n\nMillion.\n\nDollars.\n\nPounds.\n\nCleaned.\n\nMoney.\n\nStolen.\n\nPhoto.\n\nTaken.\n\nKnew.\n\nTell.\n\nUs.\n\nAsk.\n\nWindows.\n\nRepaired.\n\nPainted.\n\nMuseum.\n\nMayor.\n\nClosed.\n\nAnother.\n\nCountry.\n\nOur.\n\nBeing.\n\nServed.\n\nSongs.\n\nUncle.\n\nAunt.\n\nHappen.\n\nWon.\n\nTickets.\n\nSold.\n\nWarmer.\n\nColder.\n\nMan.\n\nDoctor.\n\nTeacher.\n\nSaid.\n\nKnow.\n\nStation.\n\nTold.\n\nAsked.\n\nReady.\n\nBusy.\n\nTown.\n\nGrew.\n\nInside.\n\nGirl.\n\nWhose.\n\nThanked.\n\nWonder.\n\nSo.\n\nRestaurant.\n\nHotel.\n\nEarlier.\n\nFirst.\n\nWatched.\n\nExciting.\n\nPractice.\n\nWants.\n\nNeeds.\n\nEveryone.\n\nEnjoyed.\n\nConcert.\n\nPromised.\n\nHour.\n\nWish.\n\nSpeak.\n\nLearning.\n\nTeaching.\n\nWishes.\n\nFree.\n\nBefore.\n\nGot.\n\nHelped.\n\nWorking.\n\nListened.\n\nForgotten.\n\nWoke.\n\nDone.\n\nOcean.\n\nTried.\n\nMissed.\n\nJourney.\n\nEnd.",
+   "timestamps": true,
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  }
+ ]
+}

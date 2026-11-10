@@ -1,0 +1,18 @@
+{
+ "lines": [
+  {
+   "id": "words-3",
+   "voice": "hpp4J3VqNfWAUOO0d1Us",
+   "text": "[clear, friendly teacher voice] Visited.\n\nGrandmother.\n\nLast.\n\nWeek.\n\nMonth.\n\nDid.\n\nMatch.\n\nGame.\n\nGoing.\n\nTravel.\n\nNext.\n\nSummer.\n\nWinter.\n\nCome.\n\nParty.\n\nGo.\n\nFor.\n\nLunch.\n\nDinner.\n\nWeather.\n\nWas.\n\nVery.\n\nMother.\n\nMoved.\n\nCity.\n\nWhen.\n\nArrive.\n\nLeave.\n\nNight.\n\nCooked.\n\nTogether.\n\nBuy.\n\nSell.\n\nHoliday.\n\nTired.\n\nAfter.\n\nCame.\n\nLeft.\n\nStay.\n\nHome.\n\nSnowed.\n\nLot.\n\nRained.\n\nWalked.\n\nAlong.\n\nRiver.\n\nRoad.\n\nWho.\n\nOpened.\n\nWindow.\n\nDoor.\n\nLost.\n\nKeys.\n\nPhone.\n\nVisit.\n\nParis.\n\nMay.\n\nJune.\n\nBest.\n\nOf.\n\nLife.\n\nWorst.\n\nShould.\n\nMore.\n\nLess.\n\nFinish.\n\nHomework.\n\nStart.\n\nAny.\n\nFridge.\n\nBread.\n\nTrain.\n\nFaster.\n\nSlower.\n\nMust.\n\nWear.\n\nHelmet.\n\nHat.\n\nPeople.\n\nHere.\n\nYoungest.\n\nHer.\n\nClass.\n\nOldest.\n\nTouch.\n\nThat.\n\nTake.\n\nSome.\n\nTable.\n\nChair.\n\nCould.\n\nOpen.\n\nPlease.\n\nClose.\n\nToo.\n\nSweet.\n\nRuns.\n\nSlowly.\n\nHis.\n\nQuickly.\n\nPay.\n\nWait.\n\nRoom.\n\nBigger.\n\nYours.\n\nSmaller.\n\nNeed.\n\nFew.\n\nMinutes.\n\nHours.\n\nWhich.\n\nCheaper.\n\nHeavier.\n\nBed.\n\nEarly.\n\nLate.\n\nMost.\n\nBeautiful.\n\nBoring.\n\nGet.\n\nNever.\n\nBeen.\n\nLondon.\n\nEver.\n\nSeen.\n\nSnow.\n\nRain.\n\nHas.\n\nJust.\n\nFinished.\n\nStarted.\n\nLived.\n\nTen.\n\nYears.\n\nSince.\n\nCalled.\n\nYet.\n\nAlready.\n\nArrived.\n\nKnown.\n\nChildhood.\n\nLong.\n\nWallet.\n\nAgain.\n\nFound.\n\nAll.\n\nBroken.\n\nArm.\n\nLeg.\n\nEaten.\n\nCake.\n\nMet.\n\nWorked.\n\nMarch.\n\nChildren.\n\nGone.\n\nBird.\n\nUgly.\n\nSleeping.\n\nCooking.\n\nWill.\n\nBe.\n\nSunny.\n\nTomorrow.\n\nCloudy.\n\nIf.\n\nRains.\n\nSnows.\n\nWere.\n\nDoing.\n\nThink.\n\nWin.\n\nLose.\n\nPlaying.\n\nCards.\n\nEvening.\n\nChess.",
+   "timestamps": true,
+   "model": [
+    "eleven_v4",
+    "eleven_v3"
+   ],
+   "language": "en",
+   "settings": {
+    "stability": 0.5
+   }
+  }
+ ]
+}
