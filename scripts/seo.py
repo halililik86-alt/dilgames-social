@@ -97,7 +97,23 @@ def build(s):
         yt3 = '#ingilizce #ingilizcekalıplar #shorts'
         tags = CORE_TAGS + ['ingilizce kalıplar', 'komik ingilizce', 'ingilizce sitkom', tr_lower(x['tr_phrase']), f'{tr_lower(x["tr_phrase"])} ingilizcesi',
                             w.lower(), r.lower(), 'ellie ve kerem', 'türk ingilizcesi']
+    elif t in ('promo', 'post'):
+        # Oyun tanıtımı (Reels) ve aynı kapağın akış gönderisi (görsel). Spec'te seo: keyword, mode, how, sentences [[en, tr]], cta
+        x = s['seo']
+        first = x['first']
+        lesson = (f'🎮 {x["how"]}\n\n' + '\n'.join(f'🇬🇧 {en}\n🇹🇷 {tr}' for en, tr in x.get('sentences', []))
+                  + '\n\n📲 Ücretsiz dene: dilgames.app · App Store · Google Play (erken erişim) · bağlantı profilde')
+        ig_tags = x.get('ig_tags') or ['#ingilizce', '#ingilizceöğren', '#oyunlaöğren', '#ingilizcekelimeler', '#englishlearning']
+        title = cut(x.get('yt_title') or first, 95)
+        lead = x.get('yt_lead') or first
+        yt3 = '#ingilizce #ingilizceöğren #shorts'
+        tags = CORE_TAGS + ['ingilizce oyun', 'oyunla ingilizce öğren', 'ingilizce kelime oyunu', 'ingilizce cümle kurma',
+                            'a1 ingilizce', 'ingilizce öğrenme uygulaması', 'english learning game'] + x.get('yt_tags', [])
     else:
+        return s
+    if t == 'post':  # akış gönderisi: kaydet/gönder çağrısı + oyunun adı, YouTube alanı yok
+        s['caption'] = f'{first}\n\n{story}\n\n{lesson}\n\n{s.get("seo_question") or "Hangisini önce denersin? Yorumlara yaz 👇"}\n\n{CTA_IG}'
+        s['hashtags'] = ig_tags[:5]; s['seo_story'] = story
         return s
     s['caption'] = f'{first}\n\n{story}\n\n{lesson}\n\n{s.get("seo_question") or "Sen bunu biliyor muydun? Yorumlara yaz 👇"}\n\n{CTA_IG}'
     s['hashtags'] = ig_tags[:5]

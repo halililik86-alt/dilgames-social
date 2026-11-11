@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Zamanı gelmiş ve onaylanmış ('approved') Reels'leri Instagram'a yayınlar.
+"""Zamanı gelmiş ve onaylanmış ('approved') Reels'leri (ve media: image görsel gönderileri) Instagram'a yayınlar.
 
 Onay: haftalık üretim PR'ı main'e birleştirildiğinde reel'ler 'approved' olur.
 Video dosyası, PR'daki GitHub Release'ten (reels-<tarih>) indirilir.
@@ -29,7 +29,15 @@ def main():
             due.append((s['publish_at'], path, s))
     due.sort()
     for _, path, s in due[:mx]:
-        rid = s['id']; video = os.path.join(ROOT, 'out', rid + '.mp4')
+        rid = s['id']
+        if s.get('media') == 'image':  # kapak/görsel akış gönderisi (hikâyeye eklenmez)
+            res = ig.publish_image(s['image_url'], post_text(s), dry)
+            print(json.dumps({rid: res}, ensure_ascii=False))
+            if dry: continue
+            s.update({'status': 'published', 'media_id': res['media_id'], 'permalink': res.get('permalink'), 'published_at': res.get('timestamp')})
+            json.dump(s, open(path, 'w', encoding='utf-8'), ensure_ascii=False, indent=2); open(path, 'a').write('\n')
+            continue
+        video = os.path.join(ROOT, 'out', rid + '.mp4')
         if s.get('video') and os.path.exists(os.path.join(ROOT, s['video'])):
             video = os.path.join(ROOT, s['video'])  # repoda duran (elle ya da yerelde üretilmiş) video
         elif not os.path.exists(video):
