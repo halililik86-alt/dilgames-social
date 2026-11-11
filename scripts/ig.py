@@ -102,6 +102,19 @@ def publish_reel(video, caption, cover_offset_ms=None, share_to_feed=True, dry_r
     return {'container_id': c['id'], 'media_id': pub['id'], 'permalink': media.get('permalink'), 'timestamp': media.get('timestamp')}
 
 
+def publish_image(image_url, caption, dry_run=False):
+    """Tek görsellik akış gönderisi (JPEG, herkese açık adres; en-boy 4:5 ile 1,91:1 arası)."""
+    params = {'image_url': image_url, 'caption': caption}
+    if dry_run:
+        return {'dry_run': True, 'mode': MODE, 'params': params}
+    uid = env('IG_USER_ID')
+    c = call('POST', f'{uid}/media', params)
+    wait_container(c['id'], tries=12, every=5)
+    pub = call('POST', f'{uid}/media_publish', {'creation_id': c['id']})
+    media = call('GET', pub['id'], {'fields': 'id,permalink,timestamp'})
+    return {'container_id': c['id'], 'media_id': pub['id'], 'permalink': media.get('permalink'), 'timestamp': media.get('timestamp')}
+
+
 def publish_story(video, dry_run=False):
     """Aynı videoyu hikâye olarak paylaşır (resmi API; çıkartma/link eklenemez). Yalnızca onaylı reel'in ardından çağrılır."""
     params = {'media_type': 'STORIES'}

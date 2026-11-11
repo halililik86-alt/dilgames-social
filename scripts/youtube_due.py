@@ -79,7 +79,7 @@ def main():
     due = []
     for p in sorted(glob.glob(os.path.join(ROOT, 'content/reels/*.json'))):
         s = json.load(open(p, encoding='utf-8'))
-        if s.get('status') not in ('approved', 'published') or s.get('youtube'):
+        if s.get('status') not in ('approved', 'published') or s.get('youtube') or s.get('media') == 'image':
             continue
         at = dt.datetime.fromisoformat(s['publish_at'])
         if at <= now and s['publish_at'][:10] >= START:
@@ -89,7 +89,7 @@ def main():
         print(json.dumps({'kanal': yt.whoami(), 'sirada': [d[2]['id'] for d in due]}, ensure_ascii=False))
     for _, p, s in due[:mx]:
         desc = s.get('yt_description') or (post_text(s) + '\n\n#shorts')  # seo.py üretir
-        res = yt.upload(video_path(s), title(s), desc, s.get('yt_tags') or s.get('hashtags', []), dry, synthetic=s.get('type') in ('duel', 'ff', 'kaza', 'harf', 'duel2'))
+        res = yt.upload(video_path(s), title(s), desc, s.get('yt_tags') or s.get('hashtags', []), dry, synthetic=s.get('type') in ('duel', 'ff', 'kaza', 'harf', 'duel2', 'ifade', 'sitkom', 'promo'))
         print(json.dumps({s['id']: res}, ensure_ascii=False))
         if dry: continue
         s['youtube'] = {'video_id': res['video_id'], 'url': res['url'], 'privacy': res.get('privacy'),
