@@ -43,13 +43,13 @@ def main():
         elif not os.path.exists(video):
             os.makedirs(os.path.dirname(video), exist_ok=True)
             subprocess.run(['gh', 'release', 'download', s['release'], '-p', rid + '.mp4', '-D', os.path.dirname(video), '--clobber'], check=True)
-        res = ig.publish_reel(video, post_text(s), s.get('cover_offset_ms', 1500), True, dry, bool(s.get('trial')), s.get('cover_url'))
+        res = ig.publish_reel(video, post_text(s), s.get('cover_offset_ms', 1500), True, dry, bool(s.get('trial')), s.get('cover_url'), s.get('video_url'))
         print(json.dumps({rid: res}, ensure_ascii=False))
         if dry: continue
         s.update({'status': 'published', 'media_id': res['media_id'], 'permalink': res.get('permalink'), 'published_at': res.get('timestamp')})
         if s.get('story', True):  # aynı videoyu hikâyeye de ekle; hata olursa reel yayını etkilenmez
             try:
-                st = ig.publish_story(video)
+                st = ig.publish_story(video, video_url=s.get('video_url'))
                 s['story_id'] = st['story_id']; print(json.dumps({rid: st}, ensure_ascii=False))
             except SystemExit as e:
                 s['story_error'] = str(e)[:300]; print(f'Hikâye paylaşılamadı: {e}')
