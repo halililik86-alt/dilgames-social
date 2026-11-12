@@ -70,7 +70,7 @@ def wait_container(cid, tries=30, every=10):
     raise SystemExit('Kapsayıcı zamanında hazır olmadı')
 
 
-def publish_reel(video, caption, cover_offset_ms=None, share_to_feed=True, dry_run=False, trial=False, cover_url=None):
+def publish_reel(video, caption, cover_offset_ms=None, share_to_feed=True, dry_run=False, trial=False, cover_url=None, video_url=None):
     params = {'media_type': 'REELS', 'caption': caption, 'share_to_feed': 'true' if share_to_feed else 'false'}
     if trial:
         # Trial Reels: önce yalnızca takipçi olmayanlara gösterilir; iyi giderse Meta otomatik olarak takipçilere açar.
@@ -84,7 +84,10 @@ def publish_reel(video, caption, cover_offset_ms=None, share_to_feed=True, dry_r
     if dry_run:
         return {'dry_run': True, 'mode': MODE, 'video': video, 'bytes': os.path.getsize(video), 'params': params}
     uid = env('IG_USER_ID')
-    if MODE == 'facebook':
+    if video_url:  # herkese açık adresten (ör. GitHub Pages) çekilir; dosya yükleme adımı yok
+        params['video_url'] = video_url
+        c = call('POST', f'{uid}/media', params)
+    elif MODE == 'facebook':
         params['upload_type'] = 'resumable'
         c = call('POST', f'{uid}/media', params)
         size = os.path.getsize(video)
@@ -115,13 +118,16 @@ def publish_image(image_url, caption, dry_run=False):
     return {'container_id': c['id'], 'media_id': pub['id'], 'permalink': media.get('permalink'), 'timestamp': media.get('timestamp')}
 
 
-def publish_story(video, dry_run=False):
+def publish_story(video, dry_run=False, video_url=None):
     """Aynı videoyu hikâye olarak paylaşır (resmi API; çıkartma/link eklenemez). Yalnızca onaylı reel'in ardından çağrılır."""
     params = {'media_type': 'STORIES'}
     if dry_run:
         return {'dry_run': True, 'mode': MODE, 'video': video, 'params': params}
     uid = env('IG_USER_ID')
-    if MODE == 'facebook':
+    if video_url:
+        params['video_url'] = video_url
+        c = call('POST', f'{uid}/media', params)
+    elif MODE == 'facebook':
         params['upload_type'] = 'resumable'
         c = call('POST', f'{uid}/media', params)
         size = os.path.getsize(video)
