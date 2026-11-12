@@ -5,7 +5,7 @@
   "format": "G1",
   "pillar": "tanıtım",
   "publish_at": "2026-11-12T21:49:00+03:00",
-  "status": "approved",
+  "status": "published",
   "story": false,
   "image": "media/posts/post-kelime-avi.jpg",
   "image_url": "https://halililik86-alt.github.io/posts/post-kelime-avi.jpg",
@@ -51,5 +51,8 @@
     "#ingilizcekelimeler",
     "#oyunlaöğren",
     "#englishlearning"
-  ]
+  ],
+  "media_id": "18435487540194599",
+  "permalink": "https://www.instagram.com/p/DfpvVH7oC4W/",
+  "published_at": "2026-11-12T18:50:27+0000"
 }
