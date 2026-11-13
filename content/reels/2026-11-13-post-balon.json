@@ -5,7 +5,7 @@
   "format": "G1",
   "pillar": "tanıtım",
   "publish_at": "2026-11-13T21:49:00+03:00",
-  "status": "approved",
+  "status": "published",
   "story": false,
   "image": "media/posts/post-balon.jpg",
   "image_url": "https://halililik86-alt.github.io/posts/post-balon.jpg",
@@ -47,5 +47,8 @@
     "#ingilizcecümleler",
     "#oyunlaöğren",
     "#englishlearning"
-  ]
+  ],
+  "media_id": "18119467277022235",
+  "permalink": "https://www.instagram.com/p/DfsUJGuGHDE/",
+  "published_at": "2026-11-13T18:50:40+0000"
 }
