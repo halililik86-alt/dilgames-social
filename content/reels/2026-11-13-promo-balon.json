@@ -4,7 +4,7 @@
   "format": "P1",
   "pillar": "tanıtım",
   "publish_at": "2026-11-13T16:49:00+03:00",
-  "status": "approved",
+  "status": "published",
   "video": "media/promo/promo-balon.mp4",
   "cover": "media/covers/promo-balon.jpg",
   "cover_url": "https://halililik86-alt.github.io/covers/promo-balon.jpg",
@@ -68,5 +68,16 @@
     "ingilizce hikaye a1",
     "ingilizce cümle yapısı"
   ],
-  "video_url": "https://halililik86-alt.github.io/reels/promo-balon.mp4"
+  "video_url": "https://halililik86-alt.github.io/reels/promo-balon.mp4",
+  "media_id": "18092749883696228",
+  "permalink": "https://www.instagram.com/reel/Dfr9g7AjUCi/",
+  "published_at": "2026-11-13T15:33:29+0000",
+  "story_id": "18074886251762341",
+  "youtube": {
+    "video_id": "cM4ergh_33Q",
+    "url": "https://youtube.com/shorts/cM4ergh_33Q",
+    "privacy": "public",
+    "uploaded_at": "2026-11-13T15:34:40+00:00",
+    "thumbnail": "custom"
+  }
 }
