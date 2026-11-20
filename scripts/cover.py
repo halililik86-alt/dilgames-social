@@ -17,7 +17,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 W, H = 1080, 1920
 FD = '/usr/share/fonts/opentype/inter/'
 RED, MINT, GOLD, NAVY, BLUE = (233, 64, 64), (120, 230, 190), (255, 200, 90), (12, 20, 32), (76, 132, 232)
-SERIES = {'kaza': ('TÜRK İNGİLİZCESİ KAZALARI', RED), 'harf': ('BİR HARFİN HİKÂYESİ', MINT), 'duel2': ('DEYİM DÜELLOSU', GOLD), 'ifade': ('ELİF + TOM', MINT), 'sitkom': ('ELLIE & KEREM', GOLD), 'ellietom': ('ELLIE & TOM', GOLD)}
+SERIES = {'kaza': ('TÜRK İNGİLİZCESİ KAZALARI', RED), 'harf': ('BİR HARFİN HİKÂYESİ', MINT), 'duel2': ('DEYİM DÜELLOSU', GOLD), 'ifade': ('ELİF + TOM', MINT), 'sitkom': ('ELLIE & KEREM', GOLD), 'ellietom': ('ELLIE & TOM', GOLD), 'gelin': ('TÜRK ANNESİ vs İNGİLİZ GELİN', GOLD)}
 
 
 def font(w, s):
@@ -181,7 +181,7 @@ def cover_card(s):
 
 def build(spec_path, out):
     s = json.load(open(spec_path, encoding='utf-8'))
-    im = {'kaza': cover_kaza, 'harf': cover_harf, 'duel2': cover_duel2, 'ifade': cover_ifade, 'sitkom': cover_sitkom, 'ellietom': cover_card}[s['type']](s)
+    im = {'kaza': cover_kaza, 'harf': cover_harf, 'duel2': cover_duel2, 'ifade': cover_ifade, 'sitkom': cover_sitkom, 'ellietom': cover_card, 'gelin': cover_card}[s['type']](s)
     im.convert('RGB').save(out, quality=92)
     return out
 
