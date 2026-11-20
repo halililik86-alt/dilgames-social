@@ -5,7 +5,7 @@
   "pillar": "mizah",
   "series": "ELLIE & TOM",
   "episode": 1,
-  "status": "approved",
+  "status": "published",
   "video": "media/ellie-tom/et-001-break-the-ice.mp4",
   "video_url": "https://halililik86-alt.github.io/reels/et-001-break-the-ice.mp4",
   "duration": 11.59,
@@ -56,5 +56,16 @@
     "ellie ve tom"
   ],
   "cover_y": 330,
-  "publish_at": "2026-11-20T21:48:00+03:00"
+  "publish_at": "2026-11-20T21:48:00+03:00",
+  "media_id": "18073209725503515",
+  "permalink": "https://www.instagram.com/reel/Df-jex0js6Q/",
+  "published_at": "2026-11-20T20:51:19+0000",
+  "story_id": "18021787322966878",
+  "youtube": {
+    "video_id": "52mEbzFr-Tk",
+    "url": "https://youtube.com/shorts/52mEbzFr-Tk",
+    "privacy": "public",
+    "uploaded_at": "2026-11-20T20:52:11+00:00",
+    "thumbnail": "custom"
+  }
 }
