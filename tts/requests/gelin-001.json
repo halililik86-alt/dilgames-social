@@ -1,0 +1,20 @@
+{
+ "model": ["eleven_v4", "eleven_v3"],
+ "lines": [
+  {"id": "m1", "voice": "5RqXmIU9ikjifeWoXHMG", "text": "[warm, motherly, a bit loud] Ellie kızım... are you hungry?", "settings": {"stability": 0.4}},
+  {"id": "e1", "voice": "pFZP5JQG7iQjIQuC4Bku", "text": "[British accent] [politely] Oh, no, thank you!", "settings": {"stability": 0.45}},
+  {"id": "m2", "voice": "5RqXmIU9ikjifeWoXHMG", "text": "[cheerfully, not listening] Okay! [pause] Eat!", "settings": {"stability": 0.4}},
+  {"id": "m3", "voice": "5RqXmIU9ikjifeWoXHMG", "text": "[proud, triumphant] See? You WERE hungry!", "settings": {"stability": 0.4}},
+  {"id": "e2", "voice": "pFZP5JQG7iQjIQuC4Bku", "text": "[British accent] [mouth full, muffled] Mm-hmm...", "settings": {"stability": 0.5}},
+  {"id": "n1", "voice": "5RqXmIU9ikjifeWoXHMG", "language": "tr", "text": "[playfully] Doydum demek için: I'm full! [pause] Bunu annene gönder!", "settings": {"stability": 0.5}}
+ ],
+ "sfx": [
+  {"id": "plates", "text": "plates and serving dishes being placed quickly on a wooden table, cutlery clinking, cozy home", "seconds": 3},
+  {"id": "sting", "text": "comedic dramatic shock sting, cartoon orchestra hit", "seconds": 1.2},
+  {"id": "gulp", "text": "cartoon gulp swallowing sound", "seconds": 0.8},
+  {"id": "laugh", "text": "sitcom studio audience laughter burst", "seconds": 3},
+  {"id": "whoosh", "text": "soft quick whoosh transition", "seconds": 0.6},
+  {"id": "room", "text": "cozy Turkish home dining room ambience, distant tea glasses clinking, soft", "seconds": 16},
+  {"id": "music", "text": "playful Turkish-flavored sitcom background music, light darbuka and pizzicato strings, cheerful comedic, no vocals, loopable", "seconds": 22}
+ ]
+}
