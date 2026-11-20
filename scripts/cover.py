@@ -17,7 +17,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 W, H = 1080, 1920
 FD = '/usr/share/fonts/opentype/inter/'
 RED, MINT, GOLD, NAVY, BLUE = (233, 64, 64), (120, 230, 190), (255, 200, 90), (12, 20, 32), (76, 132, 232)
-SERIES = {'kaza': ('TÜRK İNGİLİZCESİ KAZALARI', RED), 'harf': ('BİR HARFİN HİKÂYESİ', MINT), 'duel2': ('DEYİM DÜELLOSU', GOLD), 'ifade': ('ELİF + TOM', MINT), 'sitkom': ('ELLIE & KEREM', GOLD)}
+SERIES = {'kaza': ('TÜRK İNGİLİZCESİ KAZALARI', RED), 'harf': ('BİR HARFİN HİKÂYESİ', MINT), 'duel2': ('DEYİM DÜELLOSU', GOLD), 'ifade': ('ELİF + TOM', MINT), 'sitkom': ('ELLIE & KEREM', GOLD), 'ellietom': ('ELLIE & TOM', GOLD)}
 
 
 def font(w, s):
@@ -127,8 +127,12 @@ def cover_duel2(s):
 
 def cover_ifade(s):
     sc = s['scenes'][s.get('cover_scene', 1)]
-    im = shift_down(frame(sc['clip'], s.get('cover_t', sc.get('start', 0) + 1.2)), s.get('cover_shift', 200))
-    vignette(im, 0.75, 0.75); badge(im, s, MINT)
+    im = frame(sc['clip'], s.get('cover_t', sc.get('start', 0) + 1.2))
+    if s.get('cover_crop'):  # [y0, y1, cx]: gömülü altyazı bantlarını dışarıda bırakan yakın çekim (1920 ölçeğinde)
+        y0, y1, cx = (list(s['cover_crop']) + [W / 2])[:3]; h = y1 - y0; w = h * W / H
+        x0 = max(0, min(W - w, cx - w / 2)); im = im.crop((int(x0), int(y0), int(x0 + w), int(y1))).resize((W, H), Image.LANCZOS)
+    im = shift_down(im, s.get('cover_shift', 200))
+    vignette(im, 0.75, 0.75); badge(im, s, SERIES.get(s['type'], ('', MINT))[1])
     chip(im, W / 2, 470, 'BUGÜNÜN İFADESİ', font('Black', 50), GOLD + (255,), NAVY, rot=-3)
     d = ImageDraw.Draw(im); ph = f'“{s["seo"]["phrase"]}!”'
     stroke_text(im, (W / 2, 620), ph, fit(d, ph, 'Black', 140, 980, 64), (255, 255, 255))
@@ -149,9 +153,35 @@ def cover_sitkom(s):
     return im
 
 
+def cover_card(s):
+    """Kart düzeni: videoda gömülü altyazı olan bölümler için. Sahne ortada çerçeveli kartta (altyazı sahnenin parçası),
+    seri rozeti + ifade üstte, merak sorusu altta; hepsi 3:4 ızgara alanında."""
+    sc = s['scenes'][s.get('cover_scene', 0)]
+    src = frame(sc['clip'], s.get('cover_t', 1.2)).convert('RGB')
+    ya = s.get('cover_y', 280); src = src.crop((0, ya, W, ya + 1350))          # 4:5 bölge
+    cw, chh, cx0, cy0 = 760, 950, (W - 760) // 2, 600
+    card = src.resize((cw, chh), Image.LANCZOS)
+    bg = Image.new('RGBA', (W, H), (12, 34, 42, 255))
+    glow = src.resize((W, H)).filter(ImageFilter.GaussianBlur(60)).convert('RGBA'); glow.putalpha(70); bg.alpha_composite(glow)
+    sh = Image.new('RGBA', (W, H), (0, 0, 0, 0)); ImageDraw.Draw(sh).rounded_rectangle([cx0 + 6, cy0 + 14, cx0 + cw + 6, cy0 + chh + 14], 40, fill=(0, 0, 0, 150))
+    bg.alpha_composite(sh.filter(ImageFilter.GaussianBlur(18)))
+    m = Image.new('L', (cw, chh), 0); ImageDraw.Draw(m).rounded_rectangle([0, 0, cw - 1, chh - 1], 40, fill=255)
+    bg.paste(card, (cx0, cy0), m)
+    ImageDraw.Draw(bg).rounded_rectangle([cx0, cy0, cx0 + cw, cy0 + chh], 40, outline=GOLD, width=5)
+    name, col = SERIES.get(s['type'], ('DilGames', MINT))
+    chip(bg, W / 2, 300, f"{name} #{s.get('episode', '')}", font('ExtraBold', 32), col + (255,), NAVY)
+    d = ImageDraw.Draw(bg); d.text((W / 2, 380), s.get('cover_kicker', 'BUGÜNÜN İFADESİ'), font=font('ExtraBold', 34), fill=MINT, anchor='mm')
+    ph = f'“{s["seo"]["phrase"]}!”'
+    stroke_text(bg, (W / 2, 490), ph, fit(d, ph, 'Black', 112, 1000, 60), (255, 255, 255), stroke=8)
+    q = s['seo'].get('cover_q') or f'{s["seo"]["literal"]} mı?!'
+    stroke_text(bg, (W / 2, 1625), q, fit(d, q, 'Black', 92, 1000, 52), GOLD, stroke=8)
+    d.text((W / 2, 1800), '@dilgamesapp', font=font('ExtraBold', 40), fill=(200, 222, 220), anchor='mm')
+    return bg
+
+
 def build(spec_path, out):
     s = json.load(open(spec_path, encoding='utf-8'))
-    im = {'kaza': cover_kaza, 'harf': cover_harf, 'duel2': cover_duel2, 'ifade': cover_ifade, 'sitkom': cover_sitkom}[s['type']](s)
+    im = {'kaza': cover_kaza, 'harf': cover_harf, 'duel2': cover_duel2, 'ifade': cover_ifade, 'sitkom': cover_sitkom, 'ellietom': cover_card}[s['type']](s)
     im.convert('RGB').save(out, quality=92)
     return out
 

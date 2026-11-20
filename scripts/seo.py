@@ -75,17 +75,19 @@ def build(s):
         lead = f'“{c["a"]}” deyiminin İngilizcesi: “{c["b"]}”. Anlamı: {tr_lower(c["meaning"])} Telaffuzu ve örnek cümlesi bu videoda.'
         yt3 = '#ingilizce #ingilizcedeyimler #shorts'
         tags = CORE_TAGS + ['ingilizce deyimler', 'türkçe deyimlerin ingilizcesi', tr_lower(c['a']), c['b'].lower(), f'{tr_lower(c["a"])} ingilizcesi', 'deyim düellosu', 'english idioms']
-    elif t == 'ifade':
+    elif t in ('ifade', 'ellietom'):
         x = s['seo']; ph = x['phrase']
         first = f'İngilizcede “{ph}” ne demek? “{x["literal"]}” değil! 😅'
+        first = x.get('first') or first
         lesson = (f'🇬🇧 {ph}!\n❌ {x["literal"]} (kelimesi kelimesine)\n✅ {x["meaning"]}\n💡 {x["use"]}'
                   f'\n\n“{x["ex_en"]}”\n{x["ex_tr"]}')
         ig_tags = ['#ingilizce', '#ingilizceöğren', '#ingilizcekalıplar', '#ingilizcedeyimler', '#englishidioms']
         title = cut(f'“{ph}” ne demek? {x["literal"]} değil! 😅 İngilizce kalıplar', 95)
         lead = f'İngilizcede “{ph}” ne demek? Kelimesi kelimesine “{tr_lower(x["literal"])}” ama anlamı: {tr_lower(x["meaning"])} Ne zaman söylendiği ve örnek cümlesi bu videoda.'
+        lesson = x.get('lesson') or lesson; title = cut(x['yt_title'], 95) if x.get('yt_title') else title
         yt3 = '#ingilizce #ingilizcekalıplar #shorts'
         tags = CORE_TAGS + ['ingilizce kalıplar', 'ingilizce deyimler', ph.lower(), f'{ph.lower()} ne demek', f'{ph.lower()} anlamı',
-                            f'{tr_lower(x["meaning"])} ingilizce', 'english idioms', 'bugünün ifadesi', 'elif ve tom']
+                            f'{tr_lower(x["meaning"])} ingilizce', 'english idioms', 'bugünün ifadesi', 'ellie ve tom' if t == 'ellietom' else 'elif ve tom']
     elif t == 'sitkom':
         x = s['seo']; w, r = x['wrong'], x['right']; ep = s.get('episode', 1)
         first = f'“{x["tr_phrase"]}” İngilizcede nasıl denir? “{w}” DEĞİL! 😂'
