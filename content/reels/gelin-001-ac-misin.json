@@ -1,0 +1,200 @@
+{
+  "id": "gelin-001-ac-misin",
+  "type": "gelin",
+  "format": "G2",
+  "pillar": "mizah",
+  "series": "TÜRK ANNESİ vs İNGİLİZ GELİN",
+  "episode": 1,
+  "hook": [
+    "ANNEYE “HAYIR” DENİR Mİ?"
+  ],
+  "voice_dir": "tts/audio/gelin-001",
+  "music": "music",
+  "ambience": "room",
+  "scenes": [
+    {
+      "clip": "media/gelin/gelin-001-a.mp4",
+      "start": 0,
+      "dur": 6.0,
+      "hook_until": 6.0,
+      "say": [
+        [
+          "m1",
+          "auto",
+          0,
+          4.4
+        ],
+        [
+          "e1",
+          "auto",
+          4.3,
+          6.0
+        ]
+      ],
+      "subs": [
+        {
+          "at": 0.3,
+          "end": 4.3,
+          "speaker": "Anne",
+          "en": "Ellie kızım... are you hungry?",
+          "tr": "Ellie kızım... aç mısın?"
+        },
+        {
+          "at": 4.3,
+          "end": 6.0,
+          "speaker": "Ellie",
+          "en": "Oh, no, thank you!",
+          "tr": "Yok, teşekkür ederim!"
+        }
+      ]
+    },
+    {
+      "clip": "media/gelin/gelin-001-b.mp4",
+      "start": 0,
+      "dur": 5.0,
+      "say": [
+        [
+          "m2",
+          2.4
+        ]
+      ],
+      "sfx": [
+        [
+          "plates",
+          0.1
+        ],
+        [
+          "sting",
+          4.6
+        ]
+      ],
+      "subs": [
+        {
+          "at": 2.3,
+          "end": 5.0,
+          "speaker": "Anne",
+          "en": "Okay! Eat!",
+          "tr": "Tamam! Ye!"
+        }
+      ]
+    },
+    {
+      "clip": "media/gelin/gelin-001-c.mp4",
+      "start": 0,
+      "dur": 6.0,
+      "say": [
+        [
+          "m3",
+          "auto",
+          0,
+          3.8
+        ],
+        [
+          "e2",
+          4.2
+        ]
+      ],
+      "sfx": [
+        [
+          "gulp",
+          3.9
+        ],
+        [
+          "laugh",
+          5.2
+        ]
+      ],
+      "subs": [
+        {
+          "at": 0.2,
+          "end": 3.95,
+          "speaker": "Anne",
+          "en": "See? You WERE hungry!",
+          "tr": "Gördün mü? Açmışsın işte!"
+        },
+        {
+          "at": 4.0,
+          "end": 6.0,
+          "speaker": "Ellie",
+          "en": "Mm-hmm...",
+          "tr": "Hı-hı..."
+        }
+      ]
+    }
+  ],
+  "card": {
+    "kicker": "TÜRK ANNESİ SÖZLÜĞÜ",
+    "wrong": "No, thank you.",
+    "wrong_note": "Türk annesi için “hayır” = “biraz daha”",
+    "right": "I'm full!",
+    "alt": "ya da: Help yourself! = Buyrun, alın",
+    "next": "“Close the window!”",
+    "cta": "Bunu annene gönder!",
+    "dur": 6.0,
+    "say": [
+      [
+        "n1",
+        0.6
+      ]
+    ],
+    "sfx": [
+      [
+        "whoosh",
+        0.0
+      ]
+    ]
+  },
+  "publish_at": "2026-11-21T16:48:00+03:00",
+  "status": "approved",
+  "seo": {
+    "first": "Türk annesine “No, thank you” demek... 😂 İngiliz gelin denedi",
+    "phrase": "Are you hungry?",
+    "literal": "Aç mısın",
+    "tr_phrase": "Doydum",
+    "wrong": "No, thank you (Türk annesi bunu duymaz)",
+    "right": "I'm full!",
+    "alt": "Help yourself! (Buyrun, kendiniz alın)",
+    "ex_en": "Thank you, it was delicious, but I'm full!",
+    "ex_tr": "Teşekkürler, çok lezzetliydi ama doydum!",
+    "next_note": "Sıradaki: “Close the window!” (cereyan yapar 😅)",
+    "cover_q": "“Hayır” cevap değil!",
+    "yt_title": "Türk annesine “No, thank you” denir mi? 😂 | Türk Annesi vs İngiliz Gelin #1"
+  },
+  "seo_story": "İngiliz gelin Ellie kayınvalidesine kibarca “No, thank you” dedi... Türk annesi bunu “biraz daha” diye anladı 🍽️",
+  "seo_question": "Senin annen de böyle mi? Bunu annene gönder 👇",
+  "cover_scene": 1,
+  "cover_t": 4.6,
+  "cover_y": 200,
+  "cover_kicker": "İNGİLİZ GELİN, TÜRK ANNESİ",
+  "cover": "media/covers/gelin-001-ac-misin.jpg",
+  "cover_url": "https://halililik86-alt.github.io/covers/gelin-001-ac-misin.jpg",
+  "video": "media/gelin/gelin-001-ac-misin.mp4",
+  "video_url": "https://halililik86-alt.github.io/reels/gelin-001-ac-misin.mp4",
+  "duration": 23.0,
+  "caption": "Türk annesine “No, thank you” demek... 😂 İngiliz gelin denedi\n\nİngiliz gelin Ellie kayınvalidesine kibarca “No, thank you” dedi... Türk annesi bunu “biraz daha” diye anladı 🍽️\n\n🇹🇷 Doydum\n❌ No, thank you (Türk annesi bunu duymaz)\n✅ I'm full!\n✅ Help yourself! (Buyrun, kendiniz alın)\n\n“Thank you, it was delicious, but I'm full!”\nTeşekkürler, çok lezzetliydi ama doydum!\n\n🎬 Türk Annesi vs. İngiliz Gelin · Bölüm 1 · Sıradaki: “Close the window!” (cereyan yapar 😅)\n\nSenin annen de böyle mi? Bunu annene gönder 👇\n\n📌 Kaydet, sonra tekrar bak · 📩 Bilmeyen arkadaşına gönder\n🔔 Her gün 3 kısa İngilizce video için @dilgamesapp'i takip et",
+  "hashtags": [
+    "#türkannesi",
+    "#ingilizce",
+    "#ingilizceöğren",
+    "#komikvideolar",
+    "#ingilizcekalıplar"
+  ],
+  "yt_title": "Türk annesine “No, thank you” denir mi? 😂 | Türk Annesi vs İngiliz Gelin #1",
+  "yt_description": "Türk annesi İngiliz gelinine İngilizce konuşursa... Doğrusu: “I'm full!”. Türk Annesi vs. İngiliz Gelin, bölüm 1.\n\nİngiliz gelin Ellie kayınvalidesine kibarca “No, thank you” dedi... Türk annesi bunu “biraz daha” diye anladı 🍽️\n\n🇹🇷 Doydum\n❌ No, thank you (Türk annesi bunu duymaz)\n✅ I'm full!\n✅ Help yourself! (Buyrun, kendiniz alın)\n\n“Thank you, it was delicious, but I'm full!”\nTeşekkürler, çok lezzetliydi ama doydum!\n\n🎬 Türk Annesi vs. İngiliz Gelin · Bölüm 1 · Sıradaki: “Close the window!” (cereyan yapar 😅)\n\n🔔 Her gün 11:48, 16:48 ve 21:48'de yeni İngilizce Shorts. Abone ol, bildirimleri aç!\n\n#türkannesi #ingilizce #shorts",
+  "yt_tags": [
+    "ingilizce",
+    "ingilizce öğren",
+    "ingilizce shorts",
+    "kolay ingilizce",
+    "dilgames",
+    "türk annesi",
+    "yabancı gelin",
+    "ingiliz gelin",
+    "komik ingilizce",
+    "ingilizce kalıplar",
+    "doydum",
+    "doydum ingilizcesi",
+    "i'm full",
+    "türk ailesi"
+  ]
+}

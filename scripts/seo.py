@@ -99,6 +99,19 @@ def build(s):
         yt3 = '#ingilizce #ingilizcekalıplar #shorts'
         tags = CORE_TAGS + ['ingilizce kalıplar', 'komik ingilizce', 'ingilizce sitkom', tr_lower(x['tr_phrase']), f'{tr_lower(x["tr_phrase"])} ingilizcesi',
                             w.lower(), r.lower(), 'ellie ve kerem', 'türk ingilizcesi']
+    elif t == 'gelin':
+        # Türk Annesi vs İngiliz Gelin: anne Türk annesi klasiğini İngilizceye harfiyen taşır; asıl hedef "annene gönder" paylaşımı
+        x = s['seo']; w, r = x['wrong'], x['right']; ep = s.get('episode', 1)
+        first = x['first']
+        lesson = (f'🇹🇷 {x["tr_phrase"]}\n❌ {w}\n✅ {r}' + (f'\n✅ {x["alt"]}' if x.get('alt') else '')
+                  + f'\n\n“{x["ex_en"]}”\n{x["ex_tr"]}')
+        if x.get('next_note'): lesson += f'\n\n🎬 Türk Annesi vs. İngiliz Gelin · Bölüm {ep} · {x["next_note"]}'
+        ig_tags = x.get('ig_tags') or ['#türkannesi', '#ingilizce', '#ingilizceöğren', '#komikvideolar', '#ingilizcekalıplar']
+        title = cut(x.get('yt_title') or f'{first} | Türk Annesi vs İngiliz Gelin #{ep}', 95)
+        lead = x.get('yt_lead') or f'Türk annesi İngiliz gelinine İngilizce konuşursa... Doğrusu: “{r}”. Türk Annesi vs. İngiliz Gelin, bölüm {ep}.'
+        yt3 = '#türkannesi #ingilizce #shorts'
+        tags = CORE_TAGS + ['türk annesi', 'yabancı gelin', 'ingiliz gelin', 'komik ingilizce', 'ingilizce kalıplar',
+                            tr_lower(x['tr_phrase']), f'{tr_lower(x["tr_phrase"])} ingilizcesi', r.lower(), 'türk ailesi']
     elif t in ('promo', 'post'):
         # Oyun tanıtımı (Reels) ve aynı kapağın akış gönderisi (görsel). Spec'te seo: keyword, mode, how, sentences [[en, tr]], cta
         x = s['seo']
