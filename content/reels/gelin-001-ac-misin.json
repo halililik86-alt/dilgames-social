@@ -145,7 +145,7 @@
     ]
   },
   "publish_at": "2026-11-21T16:48:00+03:00",
-  "status": "approved",
+  "status": "published",
   "seo": {
     "first": "Türk annesine “No, thank you” demek... 😂 İngiliz gelin denedi",
     "phrase": "Are you hungry?",
@@ -196,5 +196,16 @@
     "doydum ingilizcesi",
     "i'm full",
     "türk ailesi"
-  ]
+  ],
+  "media_id": "18080831711764249",
+  "permalink": "https://www.instagram.com/reel/DgA22ArE9VU/",
+  "published_at": "2026-11-21T18:19:05+0000",
+  "story_id": "18024623735942065",
+  "youtube": {
+    "video_id": "IuPgtv5NgeI",
+    "url": "https://youtube.com/shorts/IuPgtv5NgeI",
+    "privacy": "public",
+    "uploaded_at": "2026-11-21T18:19:55+00:00",
+    "thumbnail": "custom"
+  }
 }
