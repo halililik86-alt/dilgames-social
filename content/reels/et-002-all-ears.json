@@ -5,7 +5,7 @@
   "pillar": "mizah",
   "series": "ELLIE & TOM",
   "episode": 2,
-  "status": "approved",
+  "status": "published",
   "video": "media/ellie-tom/et-002-all-ears.mp4",
   "video_url": "https://halililik86-alt.github.io/reels/et-002-all-ears.mp4",
   "duration": 8.83,
@@ -56,5 +56,16 @@
     "ellie ve tom"
   ],
   "cover_y": 150,
-  "publish_at": "2026-11-21T21:48:00+03:00"
+  "publish_at": "2026-11-21T21:48:00+03:00",
+  "media_id": "18457981966127066",
+  "permalink": "https://www.instagram.com/reel/DgBaWj2FfjN/",
+  "published_at": "2026-11-21T23:29:20+0000",
+  "story_id": "18143666629537115",
+  "youtube": {
+    "video_id": "9Ek2zrFJa-8",
+    "url": "https://youtube.com/shorts/9Ek2zrFJa-8",
+    "privacy": "public",
+    "uploaded_at": "2026-11-21T23:30:09+00:00",
+    "thumbnail": "custom"
+  }
 }
