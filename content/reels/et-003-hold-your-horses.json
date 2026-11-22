@@ -5,7 +5,7 @@
   "pillar": "mizah",
   "series": "ELLIE & TOM",
   "episode": 3,
-  "status": "approved",
+  "status": "published",
   "video": "media/ellie-tom/et-003-hold-your-horses.mp4",
   "video_url": "https://halililik86-alt.github.io/reels/et-003-hold-your-horses.mp4",
   "duration": 11.08,
@@ -56,5 +56,16 @@
     "ellie ve tom"
   ],
   "cover_y": 330,
-  "publish_at": "2026-11-22T21:48:00+03:00"
+  "publish_at": "2026-11-22T21:48:00+03:00",
+  "media_id": "18120338008789886",
+  "permalink": "https://www.instagram.com/reel/DgDfO-FCn9m/",
+  "published_at": "2026-11-22T18:50:26+0000",
+  "story_id": "18115686769891752",
+  "youtube": {
+    "video_id": "42nu9vABo8k",
+    "url": "https://youtube.com/shorts/42nu9vABo8k",
+    "privacy": "public",
+    "uploaded_at": "2026-11-22T18:51:31+00:00",
+    "thumbnail": "custom"
+  }
 }
