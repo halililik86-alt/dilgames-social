@@ -3,7 +3,9 @@
   "type": "story",
   "media": "story",
   "series": "deyim",
-  "status": "approved",
+  "status": "published",
   "source": "duel-015-dut-yemis-bulbul",
-  "publish_at": "2026-11-23T18:38:00+03:00"
+  "publish_at": "2026-11-23T18:38:00+03:00",
+  "story_id": "18113086313224529",
+  "published_at": "2026-11-23T16:18:55+00:00"
 }
