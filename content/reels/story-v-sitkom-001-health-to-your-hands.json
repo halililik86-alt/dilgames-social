@@ -3,7 +3,9 @@
   "type": "story",
   "media": "story",
   "series": "komedi",
-  "status": "approved",
+  "status": "published",
   "source": "sitkom-001-health-to-your-hands",
-  "publish_at": "2026-11-23T18:29:00+03:00"
+  "publish_at": "2026-11-23T18:29:00+03:00",
+  "story_id": "18078428813479745",
+  "published_at": "2026-11-23T16:01:37+00:00"
 }
