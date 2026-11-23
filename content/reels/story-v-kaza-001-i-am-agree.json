@@ -3,7 +3,9 @@
   "type": "story",
   "media": "story",
   "series": "hata",
-  "status": "approved",
+  "status": "published",
   "source": "kaza-001-i-am-agree",
-  "publish_at": "2026-11-23T18:44:00+03:00"
+  "publish_at": "2026-11-23T18:44:00+03:00",
+  "story_id": "17957282412317481",
+  "published_at": "2026-11-23T16:34:22+00:00"
 }
