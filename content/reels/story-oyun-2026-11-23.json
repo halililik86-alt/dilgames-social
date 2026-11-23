@@ -3,9 +3,11 @@
   "type": "story",
   "media": "story",
   "series": "oyun",
-  "status": "approved",
+  "status": "published",
   "image": "media/highlights/story-oyun.jpg",
   "image_url": "https://halililik86-alt.github.io/stories/story-oyun.jpg",
   "publish_at": "2026-11-23T17:45:00+03:00",
-  "_not": "Seri tanıtım hikâyesi; arşive düşünce aynı adlı öne çıkanın ilk öğesi ve kapağı olur."
+  "_not": "Seri tanıtım hikâyesi; arşive düşünce aynı adlı öne çıkanın ilk öğesi ve kapağı olur.",
+  "story_id": "18118164260033038",
+  "published_at": "2026-11-23T14:48:11+00:00"
 }
