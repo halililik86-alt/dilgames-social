@@ -12,6 +12,7 @@
 - Kapak: her bölüm için `python3 scripts/cover.py <spec> media/covers/<id>.jpg` (büyük merak cümlesi + seri rozeti, yazılar 3:4 alanında). Kapağı herkese açık site deposuna `covers/<id>.jpg` olarak it; spec'e `cover` (repo yolu, YouTube küçük resmi) ve `cover_url` (Instagram `cover_url`) yaz. Kapağı görmeden onaya verme; yüz yazının altında kalmamalı.
 - Yayına vermeden önce sesi ölç: müziksiz kopya üret, `silencedetect` ile 1,3 sn'den uzun boşluk olmamalı.
 - Yeni reel = `content/reels/<YYYY-AA-GG>-<seviye>-<hikâye>.json`, `status: planned`. Hashtag ≤ 5.
+- Seri düzeni tek kaynaktan: `content/series.json` (6 seri; Instagram öne çıkan adları + kapak ikonları `media/highlights/`, YouTube oynatma listeleri). Yeni bir `type` eklenince oraya da ekle; `youtube_due.py` yeni videoyu serisinin listesine kendisi ekler (`scripts/playlists.py`, kurulum `playlists.yml`).
 - Yayın yalnızca onay PR'ı main'e birleştirildikten sonra olur; bu güvenceyi zayıflatma.
 - Oyun kaydı oyunun dosyalarını değiştirmez; motor erişimi `record.cjs` içinde tarayıcıda yapılan yamayla sağlanır. Oyunun derlemesi değişip kanca bulunamazsa `HOOK` regex'ini güncelle.
 - Kayıt botu ipucu hakkı harcamamak için `world.hint()` kullanmaz; eşleşmeyi `world.match()` ile bulur.

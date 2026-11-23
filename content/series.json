@@ -1,0 +1,79 @@
+{
+  "_not": "Serilerin tek kaynağı: Instagram öne çıkanları ve YouTube oynatma listeleri bu sınıflandırmaya göre. Yeni bir 'type' eklenince buraya da ekle. Sıra = profildeki/kanaldaki sıra.",
+  "series": [
+    {
+      "key": "kagit",
+      "ig": "İki Kâğıt Arası",
+      "types": [
+        "kagit"
+      ],
+      "order": "episode",
+      "yt_title": "İki Kâğıt Arası (Between Two Sheets of Paper) | İngilizce altyazılı gizem dizisi",
+      "yt_description": "İki Kâğıt Arası, DilGames'in 20 bölümlük İngilizce–Türkçe altyazılı animasyon gizem dizisidir. Elie, dayısından kalan kitapçıda “iki kâğıt arasına” saklanmış bir not bulur; ipuçları onu kapalı bir vapur iskelesine ve son vapura götürür. Her bölüm yaklaşık 20 saniye ve bir günlük İngilizce kalıp öğretir (Hold on, Nice try, Come alone…). Bölümleri sırayla izle; yeni bölüm her gün 16:48'de.",
+      "ig_cover": "media/highlights/kagit.jpg"
+    },
+    {
+      "key": "komedi",
+      "ig": "Komik Kalıplar",
+      "types": [
+        "ellietom",
+        "sitkom",
+        "ifade",
+        "gelin"
+      ],
+      "order": "date",
+      "yt_title": "Komik İngilizce Skeçler | İngilizce kalıplar ne demek? (Ellie & Tom)",
+      "yt_description": "İngilizce kalıpların kelimesi kelimesine çevrilince nasıl komik yanlış anlaşılmalara yol açtığını gösteren kısa skeçler: Ellie & Tom, Ellie & Kerem ve Türk Annesi vs İngiliz Gelin. Her videoda bir İngilizce kalıbın (break the ice, hold your horses, spill the beans…) gerçek anlamı ve örnek cümlesi var.",
+      "ig_cover": "media/highlights/komedi.jpg"
+    },
+    {
+      "key": "kelime",
+      "ig": "Kelimeler",
+      "types": [
+        "harf",
+        "ff"
+      ],
+      "order": "date",
+      "yt_title": "Karıştırılan İngilizce Kelimeler | Bir harf, bambaşka anlam",
+      "yt_description": "Tek harfle anlamı değişen İngilizce kelimeler (coffee/coffin, angry/hungry…) ve Türkçeye benzeyip başka anlama gelen “yalancı eş” kelimeler (sympathetic, control…). Her videoda iki kelimenin farkı, okunuşu ve doğru kullanımı.",
+      "ig_cover": "media/highlights/kelime.jpg"
+    },
+    {
+      "key": "deyim",
+      "ig": "Deyimler",
+      "types": [
+        "duel",
+        "duel2"
+      ],
+      "order": "date",
+      "yt_title": "Türkçe Deyimlerin İngilizcesi | Deyim Düellosu",
+      "yt_description": "Türkçe deyimler İngilizcede nasıl söylenir? Pireyi deve yapmak, kırk yılda bir, dut yemiş bülbül gibi deyimlerin İngilizce karşılıkları, anlamları ve örnek cümleleri. Deyim Düellosu serisi.",
+      "ig_cover": "media/highlights/deyim.jpg"
+    },
+    {
+      "key": "hata",
+      "ig": "Hatalar",
+      "types": [
+        "kaza"
+      ],
+      "order": "date",
+      "yt_title": "Türklerin En Sık Yaptığı İngilizce Hatalar | Türk İngilizcesi Kazaları",
+      "yt_description": "“I am agree”, “I am boring” gibi Türklerin İngilizcede en sık yaptığı hatalar ve doğruları. Her videoda yanlış cümle, doğrusu ve nedeni.",
+      "ig_cover": "media/highlights/hata.jpg"
+    },
+    {
+      "key": "oyun",
+      "ig": "Oyun",
+      "types": [
+        "promo",
+        "F1",
+        "F2",
+        "F6"
+      ],
+      "order": "date",
+      "yt_title": "DilGames Oyunuyla İngilizce | Oyundan hikâyeler ve tanıtımlar",
+      "yt_description": "DilGames, oynayarak İngilizce cümle kurmayı öğreten mobil oyun. Bu listede oyundan kısa İngilizce hikâyeler (Akşam Vapuru, Son Kartpostal, Mahalle Konseri) ve oyun modlarının tanıtımları var. dilgames.app",
+      "ig_cover": "media/highlights/oyun.jpg"
+    }
+  ]
+}

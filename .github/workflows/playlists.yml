@@ -1,0 +1,52 @@
+name: YouTube oynatma listeleri
+
+# content/series.json'daki seri sınıflandırmasına göre YouTube oynatma listelerini ve kanal ana sayfası raflarını kurar.
+# Yeni yüklenen videolar youtube_due.py içinde listelerine otomatik eklenir; bu iş akışı ilk kurulum ve düzeltme içindir.
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'scopes = izinleri göster, sync = listeleri kur/doldur, sections = ana sayfa rafları'
+        type: choice
+        options: [scopes, sync, sections]
+        default: scopes
+      dry_run:
+        description: 'Yalnızca planı göster (YouTube''a yazma)'
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish
+  cancel-in-progress: false
+
+jobs:
+  playlists:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 20
+      - name: Listeler
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+        run: python3 scripts/playlists.py ${{ inputs.mode }} ${{ inputs.dry_run && '--dry-run' || '' }}
+      - name: Liste kimliklerini kaydet
+        if: ${{ !cancelled() }}
+        run: |
+          git config user.name "dilgames-bot"; git config user.email "dilgames-bot@users.noreply.github.com"
+          git add content/playlists_state.json 2>/dev/null || true
+          git diff --cached --quiet && exit 0
+          git commit -m "Oynatma listeleri: $(date -u +%F\ %H:%M)"
+          for i in 1 2 3 4 5; do
+            git push && exit 0
+            git fetch --depth=20 origin main && git rebase origin/main || exit 1
+            sleep 5
+          done
+          exit 1
