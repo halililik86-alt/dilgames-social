@@ -43,6 +43,7 @@ def _story(s):
 def build(s):
     t = s.get('type')
     story = s.get('seo_story') or _story(s)
+    cta_ig = CTA_IG
     if t == 'kaza':
         w, r = s['wrong'], s['right']
         first = f'İngilizcede en sık yapılan hatalardan biri: “{w}” 😅'
@@ -112,6 +113,28 @@ def build(s):
         yt3 = '#türkannesi #ingilizce #shorts'
         tags = CORE_TAGS + ['türk annesi', 'yabancı gelin', 'ingiliz gelin', 'komik ingilizce', 'ingilizce kalıplar',
                             tr_lower(x['tr_phrase']), f'{tr_lower(x["tr_phrase"])} ingilizcesi', r.lower(), 'türk ailesi']
+    elif t == 'kagit':
+        # İki Kâğıt Arası: 20 bölümlük İngilizce-Türkçe altyazılı gizem dizisi. Ana anahtar kelime bölümün kalıbı ("X ne demek")
+        # + "İngilizce dizi". GEO: tanım cümlesi ("X, İngilizcede Y demektir") ve dizinin ne olduğunu anlatan sabit paragraf,
+        # yapay zekâ aramalarının alıntılayabileceği açık, bağımsız cümleler olarak açıklamada.
+        x = s['seo']; ph = x['phrase']; ep = s.get('episode', 1); tot = s.get('episodes', 20)
+        first = f'İngilizce “{ph}” ne demek? 🔎 İki Kâğıt Arası · {ep}. bölüm'
+        lesson = (f'🇬🇧 {ph}\n🇹🇷 {x["tr"]}\n💡 {x["use"]}\n\n🎬 Bölümden: “{x["ex_en"]}”\n{x["ex_tr"]}'
+                  + (f'\n\n⏭️ {ep + 1}. bölümde: {x["next"]}' if x.get('next') else '\n\n🏁 Sezon finali. Diziyi baştan izlemek için profildeki “İki Kâğıt Arası” öne çıkanına bak.'))
+        ig_tags = ['#ingilizce', '#ingilizceöğren', '#ingilizcedizi', '#ikikagitarasi', '#learnenglish']
+        title = cut(f'“{ph}” ne demek? 🔎 İki Kâğıt Arası {ep}. Bölüm | İngilizce altyazılı dizi', 95)
+        lead = (f'“{ph}” İngilizcede “{tr_lower(x["tr"])}” demektir. {x["use"]} '
+                f'Bu sahne, İngilizce–Türkçe altyazılı animasyon gizem dizisi İki Kâğıt Arası’nın (Between Two Sheets of Paper) {ep}. bölümünden.')
+        about = ('📚 İki Kâğıt Arası nedir? DilGames’in 20 bölümlük İngilizce öğrenme dizisi. Elie, dayısından kalan kitapçıda '
+                 '“iki kâğıt arasına” saklanmış bir not bulur; ipuçları onu kapalı bir vapur iskelesine ve son vapura götürür. '
+                 'Her bölüm yaklaşık 20 saniye; tüm konuşmalar İngilizce ve Türkçe altyazılı, her bölümde bir günlük İngilizce kalıp var. '
+                 f'Yeni bölüm her gün 16:48’de.')
+        yt3 = '#ingilizce #ingilizcedizi #shorts'
+        tags = CORE_TAGS + ['ingilizce dizi', 'ingilizce altyazılı dizi', 'ingilizce öğrenmek için dizi', 'iki kağıt arası', 'between two sheets of paper',
+                            ph.lower(), f'{ph.lower()} ne demek', f'{ph.lower()} anlamı', f'{tr_lower(x["tr"])} ingilizce', 'gizem dizisi', 'elie ve tom',
+                            'ingilizce kalıplar', 'animasyon dizi']
+        s['seo_about'] = about
+        cta_ig = "📌 Kaydet, diziyi sırayla izle · 📩 Gizem seven arkadaşına gönder\n🔔 Yeni bölüm her gün 16:48'de: @dilgamesapp'i takip et"
     elif t in ('promo', 'post'):
         # Oyun tanıtımı (Reels) ve aynı kapağın akış gönderisi (görsel). Spec'te seo: keyword, mode, how, sentences [[en, tr]], cta
         x = s['seo']
@@ -130,10 +153,11 @@ def build(s):
         s['caption'] = f'{first}\n\n{story}\n\n{lesson}\n\n{s.get("seo_question") or "Hangisini önce denersin? Yorumlara yaz 👇"}\n\n{CTA_IG}'
         s['hashtags'] = ig_tags[:5]; s['seo_story'] = story
         return s
-    s['caption'] = f'{first}\n\n{story}\n\n{lesson}\n\n{s.get("seo_question") or "Sen bunu biliyor muydun? Yorumlara yaz 👇"}\n\n{CTA_IG}'
+    s['caption'] = f'{first}\n\n{story}\n\n{lesson}\n\n{s.get("seo_question") or "Sen bunu biliyor muydun? Yorumlara yaz 👇"}\n\n{cta_ig}'
     s['hashtags'] = ig_tags[:5]
     s['yt_title'] = title
-    s['yt_description'] = f'{lead}\n\n{story}\n\n{lesson}\n\n{CTA_YT}\n\n{yt3}'
+    about = s.pop('seo_about', None)
+    s['yt_description'] = f'{lead}\n\n{story}\n\n{lesson}\n\n' + (f'{about}\n\n' if about else '') + f'{CTA_YT}\n\n{yt3}'
     seen, out = set(), []
     for x in tags:
         x = re.sub(r'[“”"?!.,]', '', x).strip()
