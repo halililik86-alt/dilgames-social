@@ -10,6 +10,7 @@ import datetime as dt, glob, json, os, subprocess, sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, 'scripts'))
 import yt  # noqa: E402
+import playlists  # noqa: E402
 from tr import soru_eki  # noqa: E402
 from produce import post_text  # noqa: E402
 
@@ -95,6 +96,8 @@ def main():
         s['youtube'] = {'video_id': res['video_id'], 'url': res['url'], 'privacy': res.get('privacy'),
                         'uploaded_at': dt.datetime.now(dt.timezone.utc).isoformat(timespec='seconds')}
         thumb(s)
+        pl = playlists.add_one(s)  # serinin oynatma listesine (content/series.json); hata yüklemeyi etkilemez
+        if pl: s['youtube']['playlist'] = pl
         json.dump(s, open(p, 'w', encoding='utf-8'), ensure_ascii=False, indent=2); open(p, 'a').write('\n')
     if not due:
         print('YouTube için sırada reel yok.')
