@@ -3,7 +3,9 @@
   "type": "story",
   "media": "story",
   "series": "komedi",
-  "status": "approved",
+  "status": "published",
   "source": "et-002-all-ears",
-  "publish_at": "2026-11-23T18:26:00+03:00"
+  "publish_at": "2026-11-23T18:26:00+03:00",
+  "story_id": "17957329908298093",
+  "published_at": "2026-11-23T15:54:30+00:00"
 }
