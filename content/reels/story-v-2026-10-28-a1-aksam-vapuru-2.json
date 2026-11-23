@@ -3,7 +3,9 @@
   "type": "story",
   "media": "story",
   "series": "oyun",
-  "status": "approved",
+  "status": "published",
   "source": "2026-10-28-a1-aksam-vapuru-2",
-  "publish_at": "2026-11-23T18:47:00+03:00"
+  "publish_at": "2026-11-23T18:47:00+03:00",
+  "story_id": "18125439109960154",
+  "published_at": "2026-11-23T16:40:33+00:00"
 }
