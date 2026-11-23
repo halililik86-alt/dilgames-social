@@ -30,6 +30,13 @@ def main():
     due.sort()
     for _, path, s in due[:mx]:
         rid = s['id']
+        if s.get('media') == 'story':  # yalnızca görsel hikâye (seri tanıtımı); akışa/YouTube'a gitmez
+            res = ig.publish_story_image(s['image_url'], dry)
+            print(json.dumps({rid: res}, ensure_ascii=False))
+            if dry: continue
+            s.update({'status': 'published', 'story_id': res['story_id'], 'published_at': now.isoformat(timespec='seconds')})
+            json.dump(s, open(path, 'w', encoding='utf-8'), ensure_ascii=False, indent=2); open(path, 'a').write('\n')
+            continue
         if s.get('media') == 'image':  # kapak/görsel akış gönderisi (hikâyeye eklenmez)
             res = ig.publish_image(s['image_url'], post_text(s), dry)
             print(json.dumps({rid: res}, ensure_ascii=False))

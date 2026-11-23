@@ -118,6 +118,18 @@ def publish_image(image_url, caption, dry_run=False):
     return {'container_id': c['id'], 'media_id': pub['id'], 'permalink': media.get('permalink'), 'timestamp': media.get('timestamp')}
 
 
+def publish_story_image(image_url, dry_run=False):
+    """Görsel hikâye (JPEG, 9:16, herkese açık adres). Seri tanıtımı / öne çıkan kapağı için."""
+    params = {'media_type': 'STORIES', 'image_url': image_url}
+    if dry_run:
+        return {'dry_run': True, 'mode': MODE, 'params': params}
+    uid = env('IG_USER_ID')
+    c = call('POST', f'{uid}/media', params)
+    wait_container(c['id'], tries=12, every=5)
+    pub = call('POST', f'{uid}/media_publish', {'creation_id': c['id']})
+    return {'story_id': pub['id']}
+
+
 def publish_story(video, dry_run=False, video_url=None):
     """Aynı videoyu hikâye olarak paylaşır (resmi API; çıkartma/link eklenemez). Yalnızca onaylı reel'in ardından çağrılır."""
     params = {'media_type': 'STORIES'}
