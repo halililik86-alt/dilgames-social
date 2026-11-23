@@ -3,7 +3,9 @@
   "type": "story",
   "media": "story",
   "series": "kelime",
-  "status": "approved",
+  "status": "published",
   "source": "harf-004-soap-soup",
-  "publish_at": "2026-11-23T18:33:00+03:00"
+  "publish_at": "2026-11-23T18:33:00+03:00",
+  "story_id": "18345370015276506",
+  "published_at": "2026-11-23T16:09:43+00:00"
 }
