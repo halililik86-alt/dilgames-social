@@ -3,7 +3,9 @@
   "type": "story",
   "media": "story",
   "series": "oyun",
-  "status": "approved",
+  "status": "published",
   "source": "2026-10-29-a2-sehirde-bir-gun",
-  "publish_at": "2026-11-23T18:49:00+03:00"
+  "publish_at": "2026-11-23T18:49:00+03:00",
+  "story_id": "18345272404276016",
+  "published_at": "2026-11-23T16:46:16+00:00"
 }
