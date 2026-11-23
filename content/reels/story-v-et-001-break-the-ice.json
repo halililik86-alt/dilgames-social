@@ -3,7 +3,9 @@
   "type": "story",
   "media": "story",
   "series": "komedi",
-  "status": "approved",
+  "status": "published",
   "source": "et-001-break-the-ice",
-  "publish_at": "2026-11-23T18:27:00+03:00"
+  "publish_at": "2026-11-23T18:27:00+03:00",
+  "story_id": "18121658294045859",
+  "published_at": "2026-11-23T15:56:35+00:00"
 }
