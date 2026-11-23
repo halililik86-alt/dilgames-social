@@ -3,8 +3,10 @@
   "type": "story",
   "media": "story",
   "series": "deyim",
-  "status": "approved",
+  "status": "published",
   "image": "media/highlights/card-deyim-1.jpg",
   "image_url": "https://halililik86-alt.github.io/stories/card-deyim-1.jpg",
-  "publish_at": "2026-11-23T18:36:00+03:00"
+  "publish_at": "2026-11-23T18:36:00+03:00",
+  "story_id": "18136770907782500",
+  "published_at": "2026-11-23T16:15:49+00:00"
 }
