@@ -3,7 +3,9 @@
   "type": "story",
   "media": "story",
   "series": "hata",
-  "status": "approved",
+  "status": "published",
   "source": "kaza-007-25-years",
-  "publish_at": "2026-11-23T18:43:00+03:00"
+  "publish_at": "2026-11-23T18:43:00+03:00",
+  "story_id": "18224974762346893",
+  "published_at": "2026-11-23T16:31:37+00:00"
 }
