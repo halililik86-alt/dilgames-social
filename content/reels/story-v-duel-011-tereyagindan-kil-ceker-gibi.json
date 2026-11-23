@@ -3,7 +3,9 @@
   "type": "story",
   "media": "story",
   "series": "deyim",
-  "status": "approved",
+  "status": "published",
   "source": "duel-011-tereyagindan-kil-ceker-gibi",
-  "publish_at": "2026-11-23T18:39:00+03:00"
+  "publish_at": "2026-11-23T18:39:00+03:00",
+  "story_id": "18127101853925151",
+  "published_at": "2026-11-23T16:20:53+00:00"
 }
