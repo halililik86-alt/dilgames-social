@@ -80,7 +80,7 @@ def main():
     due = []
     for p in sorted(glob.glob(os.path.join(ROOT, 'content/reels/*.json'))):
         s = json.load(open(p, encoding='utf-8'))
-        if s.get('status') not in ('approved', 'published') or s.get('youtube') or s.get('media') == 'image':
+        if s.get('status') not in ('approved', 'published') or s.get('youtube') or s.get('media') in ('image', 'story'):
             continue
         at = dt.datetime.fromisoformat(s['publish_at'])
         if at <= now and s['publish_at'][:10] >= START:
