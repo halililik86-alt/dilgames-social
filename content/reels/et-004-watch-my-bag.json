@@ -5,7 +5,7 @@
   "pillar": "mizah",
   "series": "ELLIE & TOM",
   "episode": 4,
-  "status": "approved",
+  "status": "published",
   "video": "media/ellie-tom/et-004-watch-my-bag.mp4",
   "video_url": "https://halililik86-alt.github.io/reels/et-004-watch-my-bag.mp4",
   "duration": 12.62,
@@ -56,5 +56,16 @@
     "ellie ve tom"
   ],
   "cover_y": 380,
-  "publish_at": "2026-11-23T21:48:00+03:00"
+  "publish_at": "2026-11-23T21:48:00+03:00",
+  "media_id": "18121619432051425",
+  "permalink": "https://www.instagram.com/reel/DgGEObnjinj/",
+  "published_at": "2026-11-23T18:52:13+0000",
+  "story_id": "18100437377136415",
+  "youtube": {
+    "video_id": "JC05pTmJgPI",
+    "url": "https://youtube.com/shorts/JC05pTmJgPI",
+    "privacy": "public",
+    "uploaded_at": "2026-11-23T18:53:08+00:00",
+    "thumbnail": "custom"
+  }
 }
