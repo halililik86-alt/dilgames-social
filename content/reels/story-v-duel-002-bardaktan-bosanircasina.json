@@ -3,7 +3,9 @@
   "type": "story",
   "media": "story",
   "series": "deyim",
-  "status": "approved",
+  "status": "published",
   "source": "duel-002-bardaktan-bosanircasina",
-  "publish_at": "2026-11-23T18:41:00+03:00"
+  "publish_at": "2026-11-23T18:41:00+03:00",
+  "story_id": "18115835324154859",
+  "published_at": "2026-11-23T16:27:50+00:00"
 }
