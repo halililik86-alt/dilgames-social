@@ -3,7 +3,9 @@
   "type": "story",
   "media": "story",
   "series": "kelime",
-  "status": "approved",
+  "status": "published",
   "source": "harf-007-angry-hungry",
-  "publish_at": "2026-11-23T18:34:00+03:00"
+  "publish_at": "2026-11-23T18:34:00+03:00",
+  "story_id": "18611152546071325",
+  "published_at": "2026-11-23T16:11:38+00:00"
 }
