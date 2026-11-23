@@ -3,8 +3,10 @@
   "type": "story",
   "media": "story",
   "series": "komedi",
-  "status": "approved",
+  "status": "published",
   "image": "media/highlights/card-komedi-1.jpg",
   "image_url": "https://halililik86-alt.github.io/stories/card-komedi-1.jpg",
-  "publish_at": "2026-11-23T18:25:00+03:00"
+  "publish_at": "2026-11-23T18:25:00+03:00",
+  "story_id": "18197119792393089",
+  "published_at": "2026-11-23T15:52:57+00:00"
 }
