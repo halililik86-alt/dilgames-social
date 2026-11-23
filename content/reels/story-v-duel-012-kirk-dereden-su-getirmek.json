@@ -3,7 +3,9 @@
   "type": "story",
   "media": "story",
   "series": "deyim",
-  "status": "approved",
+  "status": "published",
   "source": "duel-012-kirk-dereden-su-getirmek",
-  "publish_at": "2026-11-23T18:40:00+03:00"
+  "publish_at": "2026-11-23T18:40:00+03:00",
+  "story_id": "17991323286094117",
+  "published_at": "2026-11-23T16:25:10+00:00"
 }
