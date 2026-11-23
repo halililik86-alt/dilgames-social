@@ -3,7 +3,9 @@
   "type": "story",
   "media": "story",
   "series": "oyun",
-  "status": "approved",
+  "status": "published",
   "source": "2026-11-13-promo-balon",
-  "publish_at": "2026-11-23T18:48:00+03:00"
+  "publish_at": "2026-11-23T18:48:00+03:00",
+  "story_id": "18136788073663613",
+  "published_at": "2026-11-23T16:42:37+00:00"
 }
