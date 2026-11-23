@@ -17,7 +17,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 W, H = 1080, 1920
 FD = '/usr/share/fonts/opentype/inter/'
 RED, MINT, GOLD, NAVY, BLUE = (233, 64, 64), (120, 230, 190), (255, 200, 90), (12, 20, 32), (76, 132, 232)
-SERIES = {'kaza': ('TÜRK İNGİLİZCESİ KAZALARI', RED), 'harf': ('BİR HARFİN HİKÂYESİ', MINT), 'duel2': ('DEYİM DÜELLOSU', GOLD), 'ifade': ('ELİF + TOM', MINT), 'sitkom': ('ELLIE & KEREM', GOLD), 'ellietom': ('ELLIE & TOM', GOLD), 'gelin': ('TÜRK ANNESİ vs İNGİLİZ GELİN', GOLD)}
+SERIES = {'kaza': ('TÜRK İNGİLİZCESİ KAZALARI', RED), 'harf': ('BİR HARFİN HİKÂYESİ', MINT), 'duel2': ('DEYİM DÜELLOSU', GOLD), 'ifade': ('ELİF + TOM', MINT), 'sitkom': ('ELLIE & KEREM', GOLD), 'ellietom': ('ELLIE & TOM', GOLD), 'gelin': ('TÜRK ANNESİ vs İNGİLİZ GELİN', GOLD), 'kagit': ('İKİ KÂĞIT ARASI', (244, 228, 190))}
 
 
 def font(w, s):
@@ -179,9 +179,36 @@ def cover_card(s):
     return bg
 
 
+def cover_kagit(s):
+    """İki Kâğıt Arası (gizem dizisi): kart düzeni, kâğıt rengi çerçeve. Üstte seri + bölüm no, bölüm adı ve merak cümlesi;
+    altta bölümün İngilizce kalıbı = Türkçesi. Yazılar 3:4 ızgara alanında (y 240-1680), sahne kartın içinde."""
+    PAPER = (244, 228, 190)
+    sc = s['scenes'][s.get('cover_scene', 0)]
+    src = frame(sc['clip'], s.get('cover_t', 1.2)).convert('RGB')
+    ya = s.get('cover_y', 280); src = src.crop((0, ya, W, ya + 1350))
+    cw, chh, cx0, cy0 = 760, 950, (W - 760) // 2, 610
+    card = src.resize((cw, chh), Image.LANCZOS)
+    bg = Image.new('RGBA', (W, H), (14, 20, 30, 255))
+    glow = src.resize((W, H)).filter(ImageFilter.GaussianBlur(60)).convert('RGBA'); glow.putalpha(80); bg.alpha_composite(glow)
+    sh = Image.new('RGBA', (W, H), (0, 0, 0, 0)); ImageDraw.Draw(sh).rounded_rectangle([cx0 + 6, cy0 + 14, cx0 + cw + 6, cy0 + chh + 14], 28, fill=(0, 0, 0, 160))
+    bg.alpha_composite(sh.filter(ImageFilter.GaussianBlur(18)))
+    m = Image.new('L', (cw, chh), 0); ImageDraw.Draw(m).rounded_rectangle([0, 0, cw - 1, chh - 1], 28, fill=255)
+    bg.paste(card, (cx0, cy0), m)
+    ImageDraw.Draw(bg).rounded_rectangle([cx0, cy0, cx0 + cw, cy0 + chh], 28, outline=PAPER, width=6)
+    ep, tot = s.get('episode', ''), s.get('episodes', 20)
+    chip(bg, W / 2, 300, f"İKİ KÂĞIT ARASI · {ep}/{tot}", font('ExtraBold', 32), PAPER + (255,), NAVY)
+    d = ImageDraw.Draw(bg)
+    d.text((W / 2, 378), s['seo']['title'].replace('i', 'İ').upper(), font=font('ExtraBold', 34), fill=MINT, anchor='mm')
+    hk = s['seo']['hook']
+    stroke_text(bg, (W / 2, 492), hk, fit(d, hk, 'Black', 96, 1010, 56), (255, 255, 255), stroke=8)
+    q = f'“{s["seo"]["phrase"]}” = {s["seo"]["tr"]}'
+    stroke_text(bg, (W / 2, 1632), q, fit(d, q, 'Black', 64, 980, 28), PAPER, stroke=7)
+    return bg
+
+
 def build(spec_path, out):
     s = json.load(open(spec_path, encoding='utf-8'))
-    im = {'kaza': cover_kaza, 'harf': cover_harf, 'duel2': cover_duel2, 'ifade': cover_ifade, 'sitkom': cover_sitkom, 'ellietom': cover_card, 'gelin': cover_card}[s['type']](s)
+    im = {'kaza': cover_kaza, 'harf': cover_harf, 'duel2': cover_duel2, 'ifade': cover_ifade, 'sitkom': cover_sitkom, 'ellietom': cover_card, 'gelin': cover_card, 'kagit': cover_kagit}[s['type']](s)
     im.convert('RGB').save(out, quality=92)
     return out
 
