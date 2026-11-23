@@ -3,8 +3,10 @@
   "type": "story",
   "media": "story",
   "series": "hata",
-  "status": "approved",
+  "status": "published",
   "image": "media/highlights/card-hata-1.jpg",
   "image_url": "https://halililik86-alt.github.io/stories/card-hata-1.jpg",
-  "publish_at": "2026-11-23T18:42:00+03:00"
+  "publish_at": "2026-11-23T18:42:00+03:00",
+  "story_id": "17994825480084931",
+  "published_at": "2026-11-23T16:29:55+00:00"
 }
