@@ -13,6 +13,17 @@ import ig  # noqa: E402
 from produce import post_text  # noqa: E402
 
 
+def video_file(s):
+    rid = s['id']
+    video = os.path.join(ROOT, 'out', rid + '.mp4')
+    if s.get('video') and os.path.exists(os.path.join(ROOT, s['video'])):
+        return os.path.join(ROOT, s['video'])  # repoda duran (elle ya da yerelde üretilmiş) video
+    if not os.path.exists(video):
+        os.makedirs(os.path.dirname(video), exist_ok=True)
+        subprocess.run(['gh', 'release', 'download', s['release'], '-p', rid + '.mp4', '-D', os.path.dirname(video), '--clobber'], check=True)
+    return video
+
+
 def main():
     dry = '--dry-run' in sys.argv
     mx = int(sys.argv[sys.argv.index('--max') + 1]) if '--max' in sys.argv else 1
@@ -30,8 +41,12 @@ def main():
     due.sort()
     for _, path, s in due[:mx]:
         rid = s['id']
-        if s.get('media') == 'story':  # yalnızca görsel hikâye (seri tanıtımı); akışa/YouTube'a gitmez
-            res = ig.publish_story_image(s['image_url'], dry)
+        if s.get('media') == 'story':  # yalnızca hikâye (seri tanıtımı/öne çıkan içeriği); akışa/YouTube'a gitmez
+            if s.get('source'):  # yayınlanmış bir reel'in videosu hikâye olarak
+                src = json.load(open(os.path.join(ROOT, 'content/reels', s['source'] + '.json'), encoding='utf-8'))
+                res = ig.publish_story(video_file(src), dry, video_url=src.get('video_url'))
+            else:
+                res = ig.publish_story_image(s['image_url'], dry)
             print(json.dumps({rid: res}, ensure_ascii=False))
             if dry: continue
             s.update({'status': 'published', 'story_id': res['story_id'], 'published_at': now.isoformat(timespec='seconds')})
@@ -44,12 +59,7 @@ def main():
             s.update({'status': 'published', 'media_id': res['media_id'], 'permalink': res.get('permalink'), 'published_at': res.get('timestamp')})
             json.dump(s, open(path, 'w', encoding='utf-8'), ensure_ascii=False, indent=2); open(path, 'a').write('\n')
             continue
-        video = os.path.join(ROOT, 'out', rid + '.mp4')
-        if s.get('video') and os.path.exists(os.path.join(ROOT, s['video'])):
-            video = os.path.join(ROOT, s['video'])  # repoda duran (elle ya da yerelde üretilmiş) video
-        elif not os.path.exists(video):
-            os.makedirs(os.path.dirname(video), exist_ok=True)
-            subprocess.run(['gh', 'release', 'download', s['release'], '-p', rid + '.mp4', '-D', os.path.dirname(video), '--clobber'], check=True)
+        video = video_file(s)
         res = ig.publish_reel(video, post_text(s), s.get('cover_offset_ms', 1500), True, dry, bool(s.get('trial')), s.get('cover_url'), s.get('video_url'))
         print(json.dumps({rid: res}, ensure_ascii=False))
         if dry: continue
