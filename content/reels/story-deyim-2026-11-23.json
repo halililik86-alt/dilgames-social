@@ -3,9 +3,11 @@
   "type": "story",
   "media": "story",
   "series": "deyim",
-  "status": "approved",
+  "status": "published",
   "image": "media/highlights/story-deyim.jpg",
   "image_url": "https://halililik86-alt.github.io/stories/story-deyim.jpg",
   "publish_at": "2026-11-23T17:47:00+03:00",
-  "_not": "Seri tanıtım hikâyesi; arşive düşünce aynı adlı öne çıkanın ilk öğesi ve kapağı olur."
+  "_not": "Seri tanıtım hikâyesi; arşive düşünce aynı adlı öne çıkanın ilk öğesi ve kapağı olur.",
+  "story_id": "18143497159713893",
+  "published_at": "2026-11-23T14:51:39+00:00"
 }
