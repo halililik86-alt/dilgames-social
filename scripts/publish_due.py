@@ -13,6 +13,9 @@ import ig  # noqa: E402
 from produce import post_text  # noqa: E402
 
 
+STORY_MAX = 3  # bir çalışmada en çok kaç hikâye-only öğe
+
+
 def video_file(s):
     rid = s['id']
     video = os.path.join(ROOT, 'out', rid + '.mp4')
@@ -39,7 +42,11 @@ def main():
         if s.get('status') == 'approved' and dt.datetime.fromisoformat(s['publish_at']) <= now:
             due.append((s['publish_at'], path, s))
     due.sort()
-    for _, path, s in due[:mx]:
+    # Hikâye-only öğeler (media: story) gönderi kotasını (--max) yemez: önce zamanı gelen gönderiler, sonra en çok
+    # STORY_MAX hikâye. Aksi halde 16:30 tanıtım hikâyesi 16:48 reel'inin önüne geçip onu sonraki çalışmaya bırakıyordu.
+    posts = [d for d in due if d[2].get('media') != 'story'][:mx]
+    stories = [d for d in due if d[2].get('media') == 'story'][:STORY_MAX]
+    for _, path, s in posts + stories:
         rid = s['id']
         if s.get('media') == 'story':  # yalnızca hikâye (seri tanıtımı/öne çıkan içeriği); akışa/YouTube'a gitmez
             if s.get('source'):  # yayınlanmış bir reel'in videosu hikâye olarak
