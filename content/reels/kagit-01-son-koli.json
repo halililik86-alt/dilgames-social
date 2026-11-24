@@ -62,5 +62,12 @@
     "elie ve tom",
     "ingilizce kalıplar",
     "animasyon dizi"
-  ]
+  ],
+  "youtube": {
+    "video_id": "cd4goG_0_ZE",
+    "url": "https://youtube.com/shorts/cd4goG_0_ZE",
+    "privacy": "public",
+    "uploaded_at": "2026-11-24T13:53:15+00:00",
+    "thumbnail": "custom"
+  }
 }
