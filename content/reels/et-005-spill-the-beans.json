@@ -5,7 +5,7 @@
   "pillar": "mizah",
   "series": "ELLIE & TOM",
   "episode": 5,
-  "status": "approved",
+  "status": "published",
   "video": "media/ellie-tom/et-005-spill-the-beans.mp4",
   "video_url": "https://halililik86-alt.github.io/reels/et-005-spill-the-beans.mp4",
   "duration": 10.12,
@@ -56,5 +56,16 @@
     "ellie ve tom"
   ],
   "cover_y": 330,
-  "publish_at": "2026-11-24T21:48:00+03:00"
+  "publish_at": "2026-11-24T21:48:00+03:00",
+  "media_id": "18355426765265918",
+  "permalink": "https://www.instagram.com/reel/DgIo8UIALym/",
+  "published_at": "2026-11-24T18:51:30+0000",
+  "story_id": "18464584186193287",
+  "youtube": {
+    "video_id": "G2ByKVhaIOE",
+    "url": "https://youtube.com/shorts/G2ByKVhaIOE",
+    "privacy": "public",
+    "uploaded_at": "2026-11-24T18:52:21+00:00",
+    "thumbnail": "custom"
+  }
 }
