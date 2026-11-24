@@ -6,7 +6,7 @@
   "series": "İKİ KÂĞIT ARASI",
   "episode": 1,
   "episodes": 20,
-  "status": "approved",
+  "status": "published",
   "video": "media/kagit/kagit-01-son-koli.mp4",
   "video_url": "https://halililik86-alt.github.io/reels/kagit-01-son-koli.mp4",
   "duration": 22.57,
@@ -69,5 +69,9 @@
     "privacy": "public",
     "uploaded_at": "2026-11-24T13:53:15+00:00",
     "thumbnail": "custom"
-  }
+  },
+  "media_id": "18123725594002223",
+  "permalink": "https://www.instagram.com/reel/DgIIzUEET-p/",
+  "published_at": "2026-11-24T14:10:37+0000",
+  "story_id": "18021950651971981"
 }
