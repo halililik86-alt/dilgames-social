@@ -6,7 +6,7 @@
   "series": "İKİ KÂĞIT ARASI",
   "episode": 2,
   "episodes": 20,
-  "status": "approved",
+  "status": "published",
   "video": "media/kagit/kagit-02-kilo-hesabi.mp4",
   "video_url": "https://halililik86-alt.github.io/reels/kagit-02-kilo-hesabi.mp4",
   "duration": 19.53,
@@ -63,5 +63,16 @@
     "elie ve tom",
     "ingilizce kalıplar",
     "animasyon dizi"
-  ]
+  ],
+  "media_id": "18508155922098460",
+  "permalink": "https://www.instagram.com/reel/DgKrfezzndq/",
+  "published_at": "2026-11-25T13:52:05+0000",
+  "story_id": "18155068117547286",
+  "youtube": {
+    "video_id": "zheBujfQlLk",
+    "url": "https://youtube.com/shorts/zheBujfQlLk",
+    "privacy": "public",
+    "uploaded_at": "2026-11-25T13:53:15+00:00",
+    "thumbnail": "custom"
+  }
 }
