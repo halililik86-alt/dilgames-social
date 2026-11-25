@@ -5,7 +5,7 @@
   "pillar": "mizah",
   "series": "ELLIE & TOM",
   "episode": 6,
-  "status": "approved",
+  "status": "published",
   "video": "media/ellie-tom/et-006-on-the-house.mp4",
   "video_url": "https://halililik86-alt.github.io/reels/et-006-on-the-house.mp4",
   "duration": 9.21,
@@ -56,5 +56,16 @@
     "ellie ve tom"
   ],
   "cover_y": 470,
-  "publish_at": "2026-11-25T21:48:00+03:00"
+  "publish_at": "2026-11-25T21:48:00+03:00",
+  "media_id": "18020621207991844",
+  "permalink": "https://www.instagram.com/reel/DgLNxG1hNCn/",
+  "published_at": "2026-11-25T18:51:35+0000",
+  "story_id": "18141718177642656",
+  "youtube": {
+    "video_id": "vFqWePsnvIE",
+    "url": "https://youtube.com/shorts/vFqWePsnvIE",
+    "privacy": "public",
+    "uploaded_at": "2026-11-25T18:52:19+00:00",
+    "thumbnail": "custom"
+  }
 }
