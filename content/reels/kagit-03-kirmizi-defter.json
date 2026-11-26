@@ -6,7 +6,7 @@
   "series": "İKİ KÂĞIT ARASI",
   "episode": 3,
   "episodes": 20,
-  "status": "approved",
+  "status": "published",
   "video": "media/kagit/kagit-03-kirmizi-defter.mp4",
   "video_url": "https://halililik86-alt.github.io/reels/kagit-03-kirmizi-defter.mp4",
   "duration": 19.4,
@@ -63,5 +63,16 @@
     "elie ve tom",
     "ingilizce kalıplar",
     "animasyon dizi"
-  ]
+  ],
+  "media_id": "18114537944232306",
+  "permalink": "https://www.instagram.com/reel/DgNxQyAuG6_/",
+  "published_at": "2026-11-26T18:40:19+0000",
+  "story_id": "18016845323760736",
+  "youtube": {
+    "video_id": "f57qUeH26sI",
+    "url": "https://youtube.com/shorts/f57qUeH26sI",
+    "privacy": "public",
+    "uploaded_at": "2026-11-26T18:41:05+00:00",
+    "thumbnail": "custom"
+  }
 }
