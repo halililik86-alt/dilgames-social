@@ -56,5 +56,12 @@
     "ellie ve tom"
   ],
   "cover_y": 450,
-  "publish_at": "2026-11-27T21:48:00+03:00"
+  "publish_at": "2026-11-27T21:48:00+03:00",
+  "youtube": {
+    "video_id": "MsZdpazOTEU",
+    "url": "https://youtube.com/shorts/MsZdpazOTEU",
+    "privacy": "public",
+    "uploaded_at": "2026-11-27T19:42:47+00:00",
+    "thumbnail": "custom"
+  }
 }

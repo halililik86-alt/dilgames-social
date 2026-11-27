@@ -6,7 +6,7 @@
   "series": "İKİ KÂĞIT ARASI",
   "episode": 4,
   "episodes": 20,
-  "status": "approved",
+  "status": "published",
   "video": "media/kagit/kagit-04-kapali-zarf.mp4",
   "video_url": "https://halililik86-alt.github.io/reels/kagit-04-kapali-zarf.mp4",
   "duration": 19.87,
@@ -63,5 +63,16 @@
     "elie ve tom",
     "ingilizce kalıplar",
     "animasyon dizi"
-  ]
+  ],
+  "media_id": "18124123517323290",
+  "permalink": "https://www.instagram.com/reel/DgQdFAigcxa/",
+  "published_at": "2026-11-27T19:41:44+0000",
+  "story_id": "18005937675034696",
+  "youtube": {
+    "video_id": "yTFaC4ZF7hA",
+    "url": "https://youtube.com/shorts/yTFaC4ZF7hA",
+    "privacy": "public",
+    "uploaded_at": "2026-11-27T19:42:42+00:00",
+    "thumbnail": "custom"
+  }
 }
