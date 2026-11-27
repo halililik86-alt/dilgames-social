@@ -5,7 +5,7 @@
   "pillar": "mizah",
   "series": "ELLIE & TOM",
   "episode": 7,
-  "status": "approved",
+  "status": "published",
   "video": "media/ellie-tom/et-007-hold-that-thought.mp4",
   "video_url": "https://halililik86-alt.github.io/reels/et-007-hold-that-thought.mp4",
   "duration": 12.04,
@@ -56,5 +56,16 @@
     "ellie ve tom"
   ],
   "cover_y": 330,
-  "publish_at": "2026-11-26T21:48:00+03:00"
+  "publish_at": "2026-11-26T21:48:00+03:00",
+  "media_id": "17888950338503991",
+  "permalink": "https://www.instagram.com/reel/DgOjT4vJd91/",
+  "published_at": "2026-11-27T01:57:46+0000",
+  "story_id": "18009077498794659",
+  "youtube": {
+    "video_id": "BWEoP_O1URs",
+    "url": "https://youtube.com/shorts/BWEoP_O1URs",
+    "privacy": "public",
+    "uploaded_at": "2026-11-27T01:58:47+00:00",
+    "thumbnail": "custom"
+  }
 }
