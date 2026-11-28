@@ -5,7 +5,7 @@
   "pillar": "mizah",
   "series": "ELLIE & TOM",
   "episode": 9,
-  "status": "approved",
+  "status": "published",
   "video": "media/ellie-tom/et-009-call-it-a-day.mp4",
   "video_url": "https://halililik86-alt.github.io/reels/et-009-call-it-a-day.mp4",
   "duration": 10.92,
@@ -56,5 +56,16 @@
     "ellie ve tom"
   ],
   "cover_y": 330,
-  "publish_at": "2026-11-28T21:48:00+03:00"
+  "publish_at": "2026-11-28T21:48:00+03:00",
+  "media_id": "18094485287216441",
+  "permalink": "https://www.instagram.com/reel/DgS8K2zADpu/",
+  "published_at": "2026-11-28T18:51:58+0000",
+  "story_id": "18119379953107758",
+  "youtube": {
+    "video_id": "7YIHRzP_tgI",
+    "url": "https://youtube.com/shorts/7YIHRzP_tgI",
+    "privacy": "public",
+    "uploaded_at": "2026-11-28T18:52:48+00:00",
+    "thumbnail": "custom"
+  }
 }
