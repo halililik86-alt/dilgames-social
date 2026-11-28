@@ -6,7 +6,7 @@
   "series": "İKİ KÂĞIT ARASI",
   "episode": 5,
   "episodes": 20,
-  "status": "approved",
+  "status": "published",
   "video": "media/kagit/kagit-05-17-numarali-dolap.mp4",
   "video_url": "https://halililik86-alt.github.io/reels/kagit-05-17-numarali-dolap.mp4",
   "duration": 19.87,
@@ -63,5 +63,16 @@
     "elie ve tom",
     "ingilizce kalıplar",
     "animasyon dizi"
-  ]
+  ],
+  "media_id": "18038383859913425",
+  "permalink": "https://www.instagram.com/reel/DgSZ-XIBCKj/",
+  "published_at": "2026-11-28T13:53:10+0000",
+  "story_id": "18105734225565266",
+  "youtube": {
+    "video_id": "M20qny8G_yM",
+    "url": "https://youtube.com/shorts/M20qny8G_yM",
+    "privacy": "public",
+    "uploaded_at": "2026-11-28T13:53:59+00:00",
+    "thumbnail": "custom"
+  }
 }
