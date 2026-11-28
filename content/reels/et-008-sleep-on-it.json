@@ -5,7 +5,7 @@
   "pillar": "mizah",
   "series": "ELLIE & TOM",
   "episode": 8,
-  "status": "approved",
+  "status": "published",
   "video": "media/ellie-tom/et-008-sleep-on-it.mp4",
   "video_url": "https://halililik86-alt.github.io/reels/et-008-sleep-on-it.mp4",
   "duration": 10.5,
@@ -63,5 +63,9 @@
     "privacy": "public",
     "uploaded_at": "2026-11-27T19:42:47+00:00",
     "thumbnail": "custom"
-  }
+  },
+  "media_id": "18112789700248299",
+  "permalink": "https://www.instagram.com/reel/DgRJy_1BMTM/",
+  "published_at": "2026-11-28T02:12:29+0000",
+  "story_id": "18048577169828075"
 }
